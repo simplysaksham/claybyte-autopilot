@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-29",
+  "items": [
+    {
+      "slot": 1, "kind": "carousel", "publish_at": "2026-10-29T21:05:00+05:30", "pillar": 5,
+      "topic": "Batch a week of reels in one afternoon",
+      "keyword": "IDEA", "sources": [],
+      "caption": "Film a week of reels in one afternoon 🎬 Save this for your next batch day.\n\nThe system:\n1. Pick 7 ideas before you touch the camera\n2. Write only the hooks, bullet the rest\n3. Film in batches: talking shots, b-roll, voiceovers\n4. Edit inside one template\n5. Schedule the whole week in one sitting\n\nNeed the 7 ideas? Comment IDEA and I'll DM you my free Reel Idea Machine.\n\n#contentcreator #reelstips #contentbatching #creatortips #aitools",
+      "spec": {
+        "id": "2026-10-29-c1", "keyword": "IDEA",
+        "cover": {"kicker": "SAVE THIS", "title": "Film a week of reels in one afternoon", "sub": "The batching system, step by step.",
+                  "scene": {"set": "studio", "cam": "wide", "action": "wave", "props": [], "sets": {"studio": {"laptop": {"title": "batch day", "lines": ["> 7 ideas: done", "> hooks: done", "> filming..."]}}}}},
+        "slides": [
+          {"type": "point", "n": "01", "title": "Pick 7 ideas first", "body": "Never start a filming day without the list. Ideas on Sunday, camera on Monday."},
+          {"type": "point", "n": "02", "title": "Write hooks only", "body": "Don't script every word. Write the first line of each reel, then bullet the rest."},
+          {"type": "list", "title": "Film in this order", "items": ["All talking shots in one outfit", "All b-roll in one pass", "All voiceovers back to back"]},
+          {"type": "point", "n": "04", "title": "Edit in one template", "body": "Same font, same caption style, same intro length. Every decision you skip is speed you keep."},
+          {"type": "steps", "title": "Schedule the week", "items": ["Export all 7 reels", "Write captions in one sitting", "Schedule them and stop thinking about it"]},
+          {"type": "quote", "text": "Consistency is a system, not a mood.", "by": "ClayByte"},
+          {"type": "cta", "title": "Need the 7 ideas?", "keyword": "IDEA", "sub": "Comment IDEA and I'll DM you my free Reel Idea Machine. Follow so the DM lands."}
+        ]
+      }
+    },
+    {
+      "slot": 2, "kind": "reel", "publish_at": "2026-10-29T21:45:00+05:30", "pillar": 2,
+      "topic": "3 hook formulas: callout, proof first, versus",
+      "keyword": "IDEA", "sources": [],
+      "caption": "Your reel isn't bad. Your first line is. 👇\n\n3 hooks that stop the scroll:\n1. The callout: name exactly who it's for\n2. Proof first: show the result before the how\n3. Versus: two options, one clear winner\n\nThen write 10, score each out of 10, and post the winner.\n\nWant a machine that writes and scores hooks for you? Comment IDEA and I'll DM it to you free. Follow so the DM lands 📩\n\n#hooks #reelstips #contentcreator #instagramgrowth #creatortips #aitools",
+      "script": {
+        "id": "2026-10-29-r1", "keyword": "IDEA", "voice": "am_michael", "speed": 1.1, "seed": 1,
+        "highlight": ["IDEA", "three", "ten"],
+        "cover_beat": 1,
+        "sets": {
+          "machine": {"sign": "HOOKS"},
+          "desk": {"phone": {"app": "Reels", "title": "Hey guys, so today...", "lines": ["Viewers: gone", "after 1 second"], "pill": "Scrolled past"}},
+          "conveyor": {"poster": {"title": "HOOK SCORE", "big": "7+", "sub": "OR WRITE ANOTHER"}, "keep": "POST"}
+        },
+        "beats": [
+          {"banner": "YOUR REEL ISN'T BAD", "vo": "Your reel isn't bad. Your first line is.", "set": "desk", "cam": "wide", "mascot": {"action": "sad"}, "props": ["rain"], "overlay": {"type": "none"}},
+          {"banner": "3 HOOKS THAT WORK", "vo": "Use one of three hooks. Callout, proof, or versus.", "set": "machine", "cam": "close", "mascot": {"action": "point"}, "props": ["bulbs"], "overlay": {"type": "chips", "items": ["Callout", "Proof", "Versus"]}},
+          {"banner": "1. THE CALLOUT", "vo": "Callout. Name exactly who it's for. If you edit reels at 2 a.m., stop scrolling.", "set": "studio", "cam": "wide", "mascot": {"action": "type"}, "overlay": {"type": "card", "title": "The Callout", "items": ["If you edit reels at 2am,", "stop scrolling."]}},
+          {"banner": "2. PROOF FIRST", "vo": "Proof. Show the result before the how. This edit took four minutes. Here's how.", "set": "stage", "cam": "wide", "mascot": {"action": "celebrate"}, "props": ["trophy"], "overlay": {"type": "bigstat", "value": "4 min", "label": "RESULT FIRST, HOW SECOND"}},
+          {"banner": "3. VERSUS", "vo": "Versus. Two options, one winner. Phone or camera for reels?", "set": "desk", "cam": "close", "mascot": {"action": "think"}, "overlay": {"type": "compare", "left": {"name": "Phone", "items": ["Always with you", "Feels native"]}, "right": {"name": "Camera", "items": ["Sharper", "Slower to post"]}, "winner": "left"}},
+          {"banner": "WRITE 10, POST 1", "vo": "Write ten hooks. Score each one. Post only the winner.", "set": "conveyor", "cam": "wide", "mascot": {"action": "wave"}, "props": ["belt"], "belt": [{"score": 9}, {"score": 4}, {"score": 8}, {"score": 3}]},
+          {"banner": "FREE: COMMENT IDEA", "vo": "Want a machine that writes and scores hooks for you? Comment IDEA, and I'll DM it to you.", "set": "machine", "cam": "wide", "mascot": {"action": "wave"}, "overlay": {"type": "cta", "keyword": "IDEA"}}
+        ]
+      }
+    }
+  ]
+}
