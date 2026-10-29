@@ -88,8 +88,8 @@ Cover scenes: show the mascot clearly (cam wide or close, avoid `pile` which hid
 ```json
 {"date":"2026-10-31",
  "items":[
-   {"slot":1,"kind":"carousel","spec":{...carousel json...},"caption":"…","keyword":"IDEA","topic":"…","pillar":2,"sources":[]},
-   {"slot":2,"kind":"reel","script":{...reel json...},"caption":"…","keyword":null,"topic":"…","pillar":1,"sources":["https://…"]},
-   {"slot":3,"kind":"reel","script":{...},"caption":"…","keyword":"HOOK","topic":"…","pillar":3,"sources":[]}
+   {"slot":1,"kind":"carousel","publish_at":"2026-10-31T10:00:00+05:30","spec":{...carousel json...},"caption":"…","keyword":"IDEA","topic":"…","pillar":2,"sources":[]},
+   {"slot":2,"kind":"reel","publish_at":"2026-10-31T13:30:00+05:30","script":{...reel json...},"caption":"…","keyword":null,"topic":"…","pillar":1,"sources":["https://…"]},
+   {"slot":3,"kind":"reel","publish_at":"2026-10-31T19:30:00+05:30","script":{...},"caption":"…","keyword":"HOOK","topic":"…","pillar":3,"sources":[]}
  ]}
 ```
