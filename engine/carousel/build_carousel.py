@@ -50,7 +50,7 @@ def slide_html(s, i, n, kw):
     if t == "cta":
         k = E(s.get("keyword", kw))
         return f'''<section class="s cta"><h2>{E(s.get("title","Want the free kit?"))}</h2>
-<div class="cbox"><i></i><b>{k}</b><span>Post</span></div><p class="body">{E(s.get("sub", f"Comment {k} and I'll DM it to you. Follow so the DM lands."))}</p>{foot}</section>'''
+{f'<div class="cbox"><i></i><b>{k}</b><span>Post</span></div>' if k else ''}<p class="body">{E(s.get("sub", f"Comment {k} and I'll DM it to you. Follow so the DM lands."))}</p>{foot}</section>'''
     raise ValueError("unknown slide type " + str(t))
 
 async def shoot(page_html, out_dir, cid, n):

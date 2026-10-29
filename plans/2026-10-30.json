@@ -1,0 +1,442 @@
+{
+ "date": "2026-10-30",
+ "items": [
+  {
+   "slot": 1,
+   "kind": "carousel",
+   "publish_at": "2026-10-30T10:00:00+05:30",
+   "pillar": 4,
+   "topic": "Brand deal rate card: 5 things to price separately",
+   "keyword": null,
+   "sources": [],
+   "caption": "Stop quoting one flat number for brand deals. Save this before your next one 💸\n\nA flat fee hides 5 things that should each have a price:\n1. Deliverables: every reel, story and post listed\n2. Usage rights: can they run your content as ads? For how long?\n3. Exclusivity: are you blocked from working with competitors?\n4. Revisions: how many rounds are included\n5. Rush: a shorter deadline costs more\n\nPut each one on its own line. When a brand pushes back on price, you remove a line instead of cutting your rate.\n\nFollow for daily AI + creator business tips.\n\n#branddeals #ratecard #creatoreconomy #ugccreator #contentcreator #influencertips",
+   "spec": {
+    "id": "2026-10-30-c1",
+    "keyword": null,
+    "cover": {
+     "kicker": "SAVE THIS",
+     "title": "Stop quoting one flat fee",
+     "sub": "5 things to price separately in every brand deal.",
+     "scene": {
+      "set": "stage",
+      "cam": "wide",
+      "action": "celebrate",
+      "props": [
+       "coins"
+      ],
+      "sets": {}
+     }
+    },
+    "slides": [
+     {
+      "type": "point",
+      "n": "01",
+      "title": "Deliverables",
+      "body": "List every piece: each reel, story and post, with a price next to it. No \"content package\" blobs."
+     },
+     {
+      "type": "point",
+      "n": "02",
+      "title": "Usage rights",
+      "body": "Posting on your page is one thing. Running your video as their ad is another. Price it by platform and by month."
+     },
+     {
+      "type": "point",
+      "n": "03",
+      "title": "Exclusivity",
+      "body": "If they block you from working with competitors, that's income you give up. It gets its own line."
+     },
+     {
+      "type": "point",
+      "n": "04",
+      "title": "Revisions",
+      "body": "Include a set number of rounds, like two. Every extra round is billed. Write that down before you start."
+     },
+     {
+      "type": "point",
+      "n": "05",
+      "title": "Rush fee",
+      "body": "Need it in three days instead of ten? Faster turnaround means other work gets moved. Charge for it."
+     },
+     {
+      "type": "compare",
+      "title": "When they push back",
+      "left": {
+       "name": "Flat fee",
+       "items": [
+        "Cut your rate",
+        "Same work, less money"
+       ]
+      },
+      "right": {
+       "name": "Line items",
+       "items": [
+        "Remove a line",
+        "Less work, same rate"
+       ]
+      },
+      "winner": "right"
+     },
+     {
+      "type": "cta",
+      "title": "Save this for your next deal",
+      "keyword": null,
+      "sub": "Follow for daily AI + creator business tips."
+     }
+    ]
+   }
+  },
+  {
+   "slot": 2,
+   "kind": "reel",
+   "publish_at": "2026-10-30T13:30:00+05:30",
+   "pillar": 1,
+   "topic": "Teach Claude your caption voice with a custom skill",
+   "keyword": "IDEA",
+   "sources": [
+    "https://support.claude.com/en/articles/12512180-using-skills-in-claude",
+    "https://support.claude.com/en/articles/12512198"
+   ],
+   "caption": "Comment IDEA and I'll DM you a free Claude skill you can install today 📩\n\nTired of re-explaining your style to AI every single time? Build a skill once:\n1. Make a folder with a Skill.md file\n2. Top of the file: a name and a description (\"use when I ask for captions\")\n3. Paste your 5 best captions + your rules (no emojis in line one, max 3 hashtags...)\n4. Zip the folder and upload it in Settings > Capabilities > Skills\n\nNow Claude loads it on its own whenever you ask for a caption. Code execution needs to be on.\n\nWant a ready-made one? Comment IDEA for my free Reel Idea Machine skill. Follow so the DM lands.\n\n#claudeai #aitools #contentcreator #captions #creatortips #aiforcreators",
+   "script": {
+    "id": "2026-10-30-r1",
+    "keyword": "IDEA",
+    "voice": "af_heart",
+    "speed": 1.1,
+    "seed": 2,
+    "highlight": [
+     "IDEA",
+     "once",
+     "skill"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Chat",
+       "title": "New chat",
+       "lines": [
+        "\"Write it in my style\"",
+        "...again"
+       ],
+       "pill": "Explained 40x"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "Skill.md",
+       "lines": [
+        "name: my-captions",
+        "description: use when",
+        "I ask for captions"
+       ]
+      }
+     },
+     "machine": {
+      "sign": "SKILL"
+     }
+    },
+    "beats": [
+     {
+      "banner": "STOP RE-EXPLAINING",
+      "vo": "Still explaining your caption style to AI every single time? Do it once.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "sad"
+      },
+      "props": [
+       "rain"
+      ],
+      "overlay": {
+       "type": "none"
+      }
+     },
+     {
+      "banner": "BUILD A CLAUDE SKILL",
+      "vo": "Build a Claude skill. It's a folder Claude reads when it needs it.",
+      "set": "machine",
+      "cam": "close",
+      "mascot": {
+       "action": "point"
+      },
+      "props": [
+       "bulb"
+      ],
+      "overlay": {
+       "type": "chips",
+       "items": [
+        "Folder",
+        "Skill.md",
+        "Upload"
+       ]
+      }
+     },
+     {
+      "banner": "1. NAME + DESCRIPTION",
+      "vo": "Step one. A file called Skill dot M D, with a name and a description.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "type"
+      },
+      "overlay": {
+       "type": "terminal",
+       "lines": [
+        {
+         "role": "you",
+         "text": "name: my-captions"
+        },
+        {
+         "role": "you",
+         "text": "description: use when I ask for captions"
+        }
+       ]
+      }
+     },
+     {
+      "banner": "2. YOUR BEST 5",
+      "vo": "Step two. Paste your five best captions, plus your rules.",
+      "set": "desk",
+      "cam": "side",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "checklist",
+       "items": [
+        "Five best captions",
+        "Hook in line one",
+        "Max 3 hashtags"
+       ]
+      }
+     },
+     {
+      "banner": "3. ZIP + UPLOAD",
+      "vo": "Step three. Zip the folder. Upload it in Settings, Capabilities, Skills.",
+      "set": "studio",
+      "cam": "side",
+      "mascot": {
+       "action": "press"
+      },
+      "overlay": {
+       "type": "card",
+       "title": "Upload here",
+       "items": [
+        "Settings",
+        "Capabilities",
+        "Skills"
+       ]
+      }
+     },
+     {
+      "banner": "IT LOADS ITSELF",
+      "vo": "Now ask for a caption. Claude spots the skill and uses it on its own.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "props": [
+       "confetti"
+      ],
+      "overlay": {
+       "type": "bigstat",
+       "value": "1x",
+       "label": "EXPLAIN ONCE, REUSE FOREVER"
+      }
+     },
+     {
+      "banner": "FREE: COMMENT IDEA",
+      "vo": "Want a ready-made skill? Comment IDEA and I'll DM you mine, free.",
+      "set": "machine",
+      "cam": "wide",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "cta",
+       "keyword": "IDEA"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "slot": 3,
+   "kind": "reel",
+   "publish_at": "2026-10-30T19:30:00+05:30",
+   "pillar": 3,
+   "topic": "Stop endless client revisions with a 3-line clause",
+   "keyword": null,
+   "sources": [],
+   "caption": "\"Just one more small change\" is how projects never end. Save this 👇\n\nAdd these 3 lines to every proposal:\n1. Includes 2 rounds of revisions.\n2. Extra rounds are billed per round.\n3. Feedback is due within 3 working days, or the timeline moves.\n\nSend it before you start, not after round six. Clients don't push back on rules they agreed to up front.\n\nFollow for daily AI + agency tips.\n\n#freelancetips #agencylife #clientwork #socialmediamanager #videoeditor #freelancer",
+   "script": {
+    "id": "2026-10-30-r2",
+    "keyword": null,
+    "voice": "am_fenrir",
+    "speed": 1.12,
+    "seed": 4,
+    "highlight": [
+     "three",
+     "two",
+     "billed"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Mail",
+       "title": "Re: Re: Re: final v7",
+       "lines": [
+        "\"One small change...\"",
+        "\"Last one, promise\""
+       ],
+       "pill": "Round 7"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "proposal.doc",
+       "lines": [
+        "Revisions: 2 rounds",
+        "Extra: billed per round",
+        "Feedback: 3 working days"
+       ]
+      }
+     },
+     "machine": {
+      "sign": "CLAUSE"
+     }
+    },
+    "beats": [
+     {
+      "banner": "REVISION ROUND 7?",
+      "vo": "Round seven of revisions? Your proposal is missing three lines.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "shock"
+      },
+      "props": [
+       "pile"
+      ],
+      "overlay": {
+       "type": "none"
+      }
+     },
+     {
+      "banner": "LINE 1: TWO ROUNDS",
+      "vo": "Line one. Includes two rounds of revisions. Not unlimited. Two.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "type"
+      },
+      "overlay": {
+       "type": "bigstat",
+       "value": "2",
+       "label": "ROUNDS INCLUDED"
+      }
+     },
+     {
+      "banner": "LINE 2: EXTRA = BILLED",
+      "vo": "Line two. Extra rounds are billed per round.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "props": [
+       "coins"
+      ],
+      "overlay": {
+       "type": "card",
+       "title": "Round 3+",
+       "items": [
+        "Billed per round"
+       ]
+      }
+     },
+     {
+      "banner": "LINE 3: FEEDBACK DEADLINE",
+      "vo": "Line three. Feedback within three working days, or the timeline moves.",
+      "set": "desk",
+      "cam": "side",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "checklist",
+       "items": [
+        "Three days to reply",
+        "Late? Timeline moves"
+       ]
+      }
+     },
+     {
+      "banner": "SEND IT FIRST",
+      "vo": "Send it before you start, not after round six.",
+      "set": "machine",
+      "cam": "close",
+      "mascot": {
+       "action": "press"
+      },
+      "props": [
+       "cards"
+      ],
+      "cards": [
+       "2|ROUNDS",
+       "EXTRA|BILLED",
+       "3-DAY|FEEDBACK"
+      ]
+     },
+     {
+      "banner": "RULES THEY AGREED TO",
+      "vo": "Clients rarely fight rules they agreed to up front. They fight surprises.",
+      "set": "studio",
+      "cam": "side",
+      "mascot": {
+       "action": "hop"
+      },
+      "overlay": {
+       "type": "compare",
+       "left": {
+        "name": "No clause",
+        "items": [
+         "Endless rounds",
+         "Unpaid hours"
+        ]
+       },
+       "right": {
+        "name": "3 lines",
+        "items": [
+         "Clear limit",
+         "Paid extras"
+        ]
+       },
+       "winner": "right"
+      }
+     },
+     {
+      "banner": "SAVE THIS",
+      "vo": "Save this for your next proposal, and follow for daily agency tips.",
+      "set": "stage",
+      "cam": "close",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "card",
+       "title": "Save this",
+       "items": [
+        "Follow for daily",
+        "AI + agency tips"
+       ]
+      }
+     }
+    ]
+   }
+  }
+ ]
+}
