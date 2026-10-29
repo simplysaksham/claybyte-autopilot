@@ -5,6 +5,8 @@ const sb = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SE
 Deno.serve(async (req) => {
   const { data: s } = await sb.from("config").select("value").eq("key", "cron_secret").single();
   if (!s || req.headers.get("x-cron-secret") !== s.value) return new Response("forbidden", { status: 403 });
+  const { data: h } = await sb.from("config").select("value").eq("key", "graph_host").single();
+  if (h?.value === "graph.facebook.com") return Response.json({ ok: true, skipped: "page tokens from long-lived user tokens do not expire" });
   const { data: a } = await sb.from("ig_auth").select("access_token").eq("id", 1).single();
   if (!a?.access_token) return Response.json({ error: "no token" });
   const u = new URL("https://graph.instagram.com/refresh_access_token");

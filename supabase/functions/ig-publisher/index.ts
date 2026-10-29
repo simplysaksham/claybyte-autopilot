@@ -14,8 +14,9 @@ async function cfg(key: string) {
 
 type Auth = { ig_user_id: string; access_token: string };
 
+let HOST = "graph.instagram.com";
 async function ig(auth: Auth, ver: string, path: string, method: "GET" | "POST", params: Record<string, string> = {}) {
-  const url = new URL(`https://graph.instagram.com/${ver}/${path}`);
+  const url = new URL(`https://${HOST}/${ver}/${path}`);
   const body = new URLSearchParams({ ...params, access_token: auth.access_token });
   let res: Response;
   if (method === "GET") {
@@ -59,6 +60,7 @@ Deno.serve(async (req) => {
   if ((await cfg("paused")) === "true") return Response.json({ paused: true });
 
   const ver = (await cfg("graph_version")) ?? "v26.0";
+  HOST = (await cfg("graph_host")) ?? "graph.instagram.com";
   const { data: a } = await sb.from("ig_auth").select("ig_user_id,access_token").eq("id", 1).single();
   if (!a?.access_token || !a?.ig_user_id) return Response.json({ error: "no instagram token yet" }, { status: 200 });
   const auth = a as Auth;
