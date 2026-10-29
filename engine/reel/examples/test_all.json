@@ -1,0 +1,22 @@
+{
+  "id": "test-all",
+  "keyword": "HOOK",
+  "voice": "am_puck",
+  "speed": 1.12,
+  "seed": 1,
+  "highlight": ["HOOK", "three", "ten"],
+  "sets": {
+    "machine": {"sign": "HOOKS"},
+    "desk": {"phone": {"app": "Reels", "title": "Views: 212", "lines": ["Posted 3 days ago", "Watch time: 1.4s"], "pill": "Low reach"}},
+    "studio": {"laptop": {"title": "claude", "lines": ["> rewrite my hook", "Stop scrolling if you edit reels at 2am."]}},
+    "conveyor": {"poster": {"title": "HOOK TEST", "big": "2s", "sub": "OR THEY SCROLL"}}
+  },
+  "beats": [
+    {"banner": "YOUR FIRST 2 SECONDS", "vo": "Your reel dies in the first two seconds.", "set": "desk", "cam": "wide", "mascot": {"action": "sad"}, "props": ["rain"], "overlay": {"type": "bigstat", "value": "1.4s", "label": "AVERAGE WATCH TIME"}},
+    {"banner": "3 HOOKS THAT WORK", "vo": "Use one of these three hooks instead. Callout, proof, or versus.", "set": "machine", "cam": "close", "mascot": {"action": "point"}, "props": ["bulbs"], "overlay": {"type": "chips", "items": ["Callout", "Proof", "Versus"]}},
+    {"banner": "ASK CLAUDE", "vo": "Paste your hook into Claude and ask for ten sharper versions.", "set": "studio", "cam": "close", "mascot": {"action": "type"}, "overlay": {"type": "terminal", "lines": [{"role": "you", "text": "10 sharper versions of my hook"}, {"role": "ai", "text": "1. Stop scrolling if you edit at 2am..."}]}},
+    {"banner": "SCORE EVERY HOOK", "vo": "Score each one. Anything under seven goes in the bin.", "set": "conveyor", "cam": "wide", "mascot": {"action": "wave"}, "props": ["belt"], "belt": [{"score": 9}, {"score": 4}, {"score": 8}, {"score": 3}]},
+    {"banner": "THE WINNER", "vo": "Post the winner, and watch your hold rate climb.", "set": "stage", "cam": "wide", "mascot": {"action": "celebrate"}, "props": ["confetti", "trophy"], "overlay": {"type": "counter", "label": "HOLD RATE", "from": 12, "to": 48, "suffix": "%"}},
+    {"banner": "FREE: COMMENT HOOK", "vo": "Want my hook grader skill for free? Comment HOOK and I'll DM it to you.", "set": "machine", "cam": "wide", "mascot": {"action": "wave"}, "overlay": {"type": "cta", "keyword": "HOOK"}}
+  ]
+}

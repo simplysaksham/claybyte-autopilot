@@ -1,0 +1,14 @@
+{
+  "id": "test-car",
+  "keyword": "HOOK",
+  "cover": {"kicker": "SAVE THIS", "title": "5 hooks that stop the scroll", "sub": "Steal them for your next reel.",
+            "scene": {"set": "machine", "cam": "low", "action": "celebrate", "props": ["pile"], "sets": {"machine": {"sign": "HOOKS"}}}},
+  "slides": [
+    {"type": "point", "n": "01", "title": "The callout", "body": "\"If you edit reels at 2am, stop scrolling.\" Name the exact person, and they stay."},
+    {"type": "list", "title": "Fill-in hooks", "items": ["Stop [habit]. Do this instead.", "[Number] [things] that [result].", "I wasted [money] so you don't have to."]},
+    {"type": "stat", "value": "2s", "label": "Your hook window", "body": "Most viewers decide to stay or scroll before the third second."},
+    {"type": "compare", "title": "Weak vs strong", "left": {"name": "Weak", "items": ["Hey guys!", "Today I'll show you..."]}, "right": {"name": "Strong", "items": ["Your reel dies in 2 seconds.", "Here's the fix."]}, "winner": "right"},
+    {"type": "quote", "text": "Write 10 hooks. Post the best one.", "by": "Every creator who grew"},
+    {"type": "cta", "title": "Want my hook grader skill?", "keyword": "HOOK"}
+  ]
+}

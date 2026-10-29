@@ -1,0 +1,7 @@
+node_modules/
+engine/reel/models/
+engine/reel/timing.js
+build/
+out_test/
+site/
+__pycache__/
