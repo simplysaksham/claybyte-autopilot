@@ -1,0 +1,51 @@
+{
+ "date": "2026-10-30",
+ "rows": [
+  {
+   "kind": "carousel",
+   "title": "Brand deal rate card: 5 things to price separately",
+   "caption": "Stop quoting one flat number for brand deals. Save this before your next one \ud83d\udcb8\n\nA flat fee hides 5 things that should each have a price:\n1. Deliverables: every reel, story and post listed\n2. Usage rights: can they run your content as ads? For how long?\n3. Exclusivity: are you blocked from working with competitors?\n4. Revisions: how many rounds are included\n5. Rush: a shorter deadline costs more\n\nPut each one on its own line. When a brand pushes back on price, you remove a line instead of cutting your rate.\n\nFollow for daily AI + creator business tips.\n\n#branddeals #ratecard #creatoreconomy #ugccreator #contentcreator #influencertips",
+   "media_urls": [
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-10-30/2026-10-30-c1_01.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-10-30/2026-10-30-c1_02.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-10-30/2026-10-30-c1_03.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-10-30/2026-10-30-c1_04.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-10-30/2026-10-30-c1_05.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-10-30/2026-10-30-c1_06.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-10-30/2026-10-30-c1_07.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-10-30/2026-10-30-c1_08.jpg"
+   ],
+   "cover_url": null,
+   "keyword": null,
+   "publish_at": "2026-10-30T10:00:00+05:30",
+   "topic": "Brand deal rate card: 5 things to price separately",
+   "pillar": 4
+  },
+  {
+   "kind": "reel",
+   "title": "Teach Claude your caption voice with a custom skill",
+   "caption": "Comment IDEA and I'll DM you a free Claude skill you can install today \ud83d\udce9\n\nTired of re-explaining your style to AI every single time? Build a skill once:\n1. Make a folder with a Skill.md file\n2. Top of the file: a name and a description (\"use when I ask for captions\")\n3. Paste your 5 best captions + your rules (no emojis in line one, max 3 hashtags...)\n4. Zip the folder and upload it in Settings > Capabilities > Skills\n\nNow Claude loads it on its own whenever you ask for a caption. Code execution needs to be on.\n\nWant a ready-made one? Comment IDEA for my free Reel Idea Machine skill. Follow so the DM lands.\n\n#claudeai #aitools #contentcreator #captions #creatortips #aiforcreators",
+   "media_urls": [
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-10-30/2026-10-30-r1.mp4"
+   ],
+   "cover_url": "https://simplysaksham.github.io/claybyte-autopilot/2026-10-30/2026-10-30-r1_cover.jpg",
+   "keyword": "IDEA",
+   "publish_at": "2026-10-30T13:30:00+05:30",
+   "topic": "Teach Claude your caption voice with a custom skill",
+   "pillar": 1
+  },
+  {
+   "kind": "reel",
+   "title": "Stop endless client revisions with a 3-line clause",
+   "caption": "\"Just one more small change\" is how projects never end. Save this \ud83d\udc47\n\nAdd these 3 lines to every proposal:\n1. Includes 2 rounds of revisions.\n2. Extra rounds are billed per round.\n3. Feedback is due within 3 working days, or the timeline moves.\n\nSend it before you start, not after round six. Clients don't push back on rules they agreed to up front.\n\nFollow for daily AI + agency tips.\n\n#freelancetips #agencylife #clientwork #socialmediamanager #videoeditor #freelancer",
+   "media_urls": [
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-10-30/2026-10-30-r2.mp4"
+   ],
+   "cover_url": "https://simplysaksham.github.io/claybyte-autopilot/2026-10-30/2026-10-30-r2_cover.jpg",
+   "keyword": null,
+   "publish_at": "2026-10-30T19:30:00+05:30",
+   "topic": "Stop endless client revisions with a 3-line clause",
+   "pillar": 3
+  }
+ ]
+}
