@@ -1,0 +1,429 @@
+{
+ "date": "2026-10-31",
+ "items": [
+  {
+   "slot": 1,
+   "kind": "carousel",
+   "publish_at": "2026-10-31T10:00:00+05:30",
+   "spec": {
+    "id": "2026-10-31-c1",
+    "keyword": null,
+    "cover": {
+     "style": "poster",
+     "theme": "ink",
+     "series": "AGENCY LIFE · FIRST CALL",
+     "kicker": "SAVE THIS",
+     "title": "5 client red flags to *ghost*",
+     "sub": "Spot them on the first call, before you quote.",
+     "badge": {
+      "big": "5",
+      "small": "RED FLAGS"
+     },
+     "scene": {
+      "set": "desk",
+      "cam": "wide",
+      "action": "shock",
+      "props": [],
+      "sets": {
+       "desk": {
+        "phone": {
+         "app": "Messages",
+         "title": "New client",
+         "lines": [
+          "\"Start today?\"",
+          "\"Paperwork later!\""
+         ],
+         "pill": "2 red flags"
+        }
+       }
+      }
+     }
+    },
+    "slides": [
+     {
+      "type": "flag",
+      "n": "01",
+      "title": "Vague *scope*",
+      "says": "\"We'll figure out the details as we go.\"",
+      "fix": "Send a 1-page brief: what does \"done\" look like, and what's out of scope?"
+     },
+     {
+      "type": "flag",
+      "n": "02",
+      "title": "Rush, no *plan*",
+      "says": "\"We need it by Friday. Can you start today?\"",
+      "fix": "Urgent is fine. Unplanned isn't. Brief first, and a rush fee on top."
+     },
+     {
+      "type": "flag",
+      "n": "03",
+      "title": "Skips the *contract*",
+      "says": "\"Let's just start and sort the paperwork later.\"",
+      "fix": "No signed scope, no start. A one-page agreement takes ten minutes."
+     },
+     {
+      "type": "flag",
+      "n": "04",
+      "title": "Price before *scope*",
+      "says": "\"What's your cheapest option?\" (before hearing what you do)",
+      "fix": "Give a range after the scope call, never before it."
+     },
+     {
+      "type": "flag",
+      "n": "05",
+      "title": "No *decision-maker*",
+      "says": "\"Looks great, I'll run it by my boss.\"",
+      "fix": "Ask who signs off, and get them on the next call before you quote."
+     },
+     {
+      "type": "stat",
+      "value": "2",
+      "label": "flags = politely pass",
+      "body": "One freelancer's simple rule: one flag, ask more questions. Two flags on the first call, walk away."
+     },
+     {
+      "type": "recap",
+      "title": "First-call *checklist*",
+      "items": [
+       "Is \"done\" defined?",
+       "Is there a real plan?",
+       "Will they sign first?",
+       "Scope before price?",
+       "Is the decision-maker here?"
+      ]
+     },
+     {
+      "type": "cta",
+      "title": "Send this to a *freelancer* friend",
+      "keyword": null,
+      "sub": "Follow @claybyte.in for daily AI + agency tips."
+     }
+    ]
+   },
+   "caption": "5 client red flags to ghost this Halloween 👻 Save this for your next discovery call.\n\n1. Vague scope: \"we'll figure it out as we go\" → send a 1-page brief first\n2. Rush with no plan: \"can you start today?\" → brief first, rush fee on top\n3. Skips the contract: \"paperwork later\" → no signed scope, no start\n4. Price before scope: \"what's your cheapest option?\" → give a range after the scope call\n5. No decision-maker: \"I'll run it by my boss\" → get the person who signs off on the next call\n\nOne simple rule: one flag, ask more questions. Two on the first call, politely pass.\n\nSend this to a freelancer friend who keeps saying yes to everyone.\n\n#freelancetips #agencylife #clientmanagement #socialmediamanager #freelancer #smallbusinesstips",
+   "keyword": null,
+   "topic": "5 client red flags to ghost on the first call",
+   "pillar": 3,
+   "sources": [
+    "https://expertfreelancing.com/freelance-client-onboarding",
+    "https://paperform.com/blog/client-onboarding-scope-creep/"
+   ]
+  },
+  {
+   "slot": 2,
+   "kind": "reel",
+   "publish_at": "2026-10-31T13:30:00+05:30",
+   "script": {
+    "id": "2026-10-31-r1",
+    "keyword": "IDEA",
+    "voice": "am_michael",
+    "speed": 1.1,
+    "seed": 5,
+    "highlight": [
+     "IDEA",
+     "thirty",
+     "comments",
+     "Claude"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Comments",
+       "title": "Your last 5 posts",
+       "lines": [
+        "\"How do you price this?\"",
+        "\"Which tool is that?\""
+       ],
+       "pill": "48 comments"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "claude",
+       "lines": [
+        "> group these comments",
+        "> by the question behind them",
+        "1. How do I price..."
+       ]
+      }
+     },
+     "conveyor": {
+      "poster": {
+       "title": "HOOK TEST",
+       "big": "STOP?",
+       "sub": "WOULD YOU STOP SCROLLING"
+      },
+      "keep": "KEEP"
+     }
+    },
+    "beats": [
+     {
+      "banner": "10 IDEAS FROM 1 PASTE",
+      "vo": "Ten reel ideas your audience already asked for. From one paste.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "props": [
+       "confetti"
+      ],
+      "overlay": {
+       "type": "beforeafter",
+       "before": {
+        "label": "BEFORE",
+        "text": "Blank notes app. Zero ideas."
+       },
+       "after": {
+        "label": "AFTER",
+        "text": "10 hooks from real questions"
+       },
+       "flip": 1.6
+      }
+     },
+     {
+      "banner": "YOUR COMMENTS = A PLAN",
+      "vo": "Your comments are full of questions. How, which tool, what price.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "chips",
+       "items": [
+        "How do you…?",
+        "Which tool?",
+        "What price?"
+       ]
+      }
+     },
+     {
+      "banner": "1. COPY 30 COMMENTS",
+      "vo": "Step one. Copy thirty comments from your last few posts.",
+      "set": "stage",
+      "cam": "side",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "bigstat",
+       "value": "30",
+       "label": "COMMENTS, COPIED"
+      }
+     },
+     {
+      "banner": "2. ASK CLAUDE TO GROUP",
+      "vo": "Step two. Paste them into Claude. Group them by the question behind them, then rank.",
+      "set": "studio",
+      "cam": "side",
+      "mascot": {
+       "action": "type"
+      },
+      "overlay": {
+       "type": "terminal",
+       "lines": [
+        {
+         "role": "you",
+         "text": "Group these comments by the question behind them."
+        },
+        {
+         "role": "you",
+         "text": "Rank by how often each is asked."
+        },
+        {
+         "role": "ai",
+         "text": "1. How do you price a reel? (9x)"
+        }
+       ]
+      }
+     },
+     {
+      "banner": "3. TWO HOOKS EACH",
+      "vo": "Step three. Two hooks for each top question. Keep only the ones you'd stop for.",
+      "set": "conveyor",
+      "cam": "side",
+      "mascot": {
+       "action": "throw"
+      },
+      "props": [
+       "belt"
+      ],
+      "belt": [
+       {
+        "score": 9
+       },
+       {
+        "score": 4
+       },
+       {
+        "score": 8
+       }
+      ],
+      "overlay": {
+       "type": "none"
+      }
+     },
+     {
+      "banner": "THEY ASKED FIRST",
+      "vo": "Ideas from real questions beat ideas from thin air. They already want the answer.",
+      "set": "desk",
+      "cam": "side",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "props": [],
+      "overlay": {
+       "type": "card",
+       "title": "Why it works",
+       "items": [
+        "They asked first",
+        "One answer, for everyone who asked"
+       ]
+      }
+     },
+     {
+      "banner": "WANT MORE IDEAS?",
+      "vo": "Want more? Comment IDEA and I'll send you my free Reel Idea Machine skill.",
+      "set": "stage",
+      "cam": "close",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "cta",
+       "keyword": "IDEA",
+       "follow": "Follow so the DM lands"
+      }
+     }
+    ]
+   },
+   "caption": "Comment IDEA and I'll DM you my free Reel Idea Machine (Claude skill + PDF guide) 📩\n\nYour audience already told you what to post. It's in your comments.\n1. Copy 30 comments from your last few posts\n2. Paste them into Claude: \"Group these by the question behind them. Rank by how often each is asked.\"\n3. Write two hooks for each top question. Keep only the ones you'd stop scrolling for.\n\nReal questions > ideas from thin air. They already want the answer.\n\n#contentcreator #claudeai #aitools #reelideas #contentstrategy #creatortips",
+   "keyword": "IDEA",
+   "topic": "Turn your comments into reel ideas with one Claude prompt",
+   "pillar": 1,
+   "sources": [
+    "https://socialbee.com/blog/latest-instagram-trends/"
+   ]
+  },
+  {
+   "slot": 3,
+   "kind": "reel",
+   "publish_at": "2026-10-31T19:30:00+05:30",
+   "script": {
+    "id": "2026-10-31-r2",
+    "keyword": null,
+    "voice": "af_bella",
+    "speed": 1.12,
+    "seed": 1,
+    "highlight": [
+     "three",
+     "once",
+     "one",
+     "Retention",
+     "Shares",
+     "Saves"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Insights",
+       "title": "Views",
+       "lines": [
+        "refresh...",
+        "refresh...",
+        "refresh..."
+       ],
+       "pill": "Checked 14x"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "next-post.txt",
+       "lines": [
+        "Change: the hook",
+        "Keep: everything else"
+       ]
+      }
+     }
+    },
+    "beats": [
+     {
+      "banner": "STOP REFRESHING VIEWS",
+      "vo": "Stop refreshing your views. After two days, check three things, once.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "sad"
+      },
+      "props": [
+       "rain"
+      ],
+      "overlay": {
+       "type": "bigstat",
+       "value": "48h",
+       "label": "THEN CHECK ONCE"
+      }
+     },
+     {
+      "banner": "THE ONLY 3 THAT MATTER",
+      "vo": "Retention: where do they drop? Shares: did they send it? Saves: did they keep it?",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "checklist",
+       "items": [
+        "Retention: where they drop",
+        "Shares: did they send it",
+        "Saves: did they keep it"
+       ]
+      }
+     },
+     {
+      "banner": "CHANGE ONE THING",
+      "vo": "Then change just one thing in your next post. One.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "type"
+      },
+      "props": [],
+      "overlay": {
+       "type": "bigstat",
+       "value": "1",
+       "label": "FIX PER POST"
+      }
+     },
+     {
+      "banner": "SEND THIS",
+      "vo": "Send this to the friend who checks their views every ten minutes.",
+      "set": "stage",
+      "cam": "close",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "send",
+       "title": "Send this to",
+       "who": "the friend who refreshes every 10 min",
+       "sub": "Their thumb needs a break."
+      }
+     }
+    ]
+   },
+   "caption": "Stop refreshing your views. Check 3 things, once, 48 hours after you post.\n\n1. Retention graph: where do people drop off? A big drop in the first seconds = fix the hook.\n2. Shares: did anyone send it to a friend?\n3. Saves: did anyone keep it for later?\n\nThen change ONE thing in your next post. Not five. One. That's how you actually learn what works.\n\nSend this to the friend who checks their views every 10 minutes.\n\n#contentcreator #instagramtips #creatortips #reelstips #socialmediatips #consistency",
+   "keyword": null,
+   "topic": "48-hour post review: check 3 numbers, change one thing",
+   "pillar": 5,
+   "sources": [
+    "https://www.inro.social/blog/instagram-reels-insights",
+    "https://metricool.com/instagram-reel-analytics/"
+   ]
+  }
+ ]
+}

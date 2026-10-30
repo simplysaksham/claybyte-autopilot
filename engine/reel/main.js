@@ -312,6 +312,16 @@ function overlay(B, lt, D) {
     const v = Math.round(lerp(0, o.value ?? 9, eout((lt - .2) / .6))); h = `<div class="score ${(o.value ?? 9) < 7 ? 'bad' : ''}" style="transform:translateX(-50%) scale(${back((lt - .1) / .3)})">${v}/${o.max || 10}</div>`;
   } else if (o.type === 'checklist') {
     h = `<div class="chk">${items.map((l, i) => { const tt = at(i, items.length); return `<p><i class="${lt > tt ? 'on' : ''}">${lt > tt ? '✓' : ''}</i>${esc(l)}</p>`; }).join('')}</div>`;
+  } else if (o.type === 'beforeafter') {
+    const bf = o.before || {}, af = o.after || {}; const e1 = back((lt - .15) / .3), e2 = back((lt - (o.flip ?? D * .45)) / .35);
+    h = `<div class="ba"><div class="bef" style="transform:scale(${e1}) rotate(-2deg);opacity:${e2 > .2 ? .55 : 1}"><span>${esc(bf.label || 'BEFORE')}</span><p>${esc(bf.text || '')}</p>${e2 > .2 ? '<em class="x"></em>' : ''}</div>
+      <div class="arr" style="opacity:${clamp(e2 * 2)}">↓</div>
+      <div class="aft" style="transform:scale(${e2}) rotate(1.5deg)"><span>${esc(af.label || 'AFTER')}</span><p>${esc(af.text || '')}</p></div></div>`;
+  } else if (o.type === 'send') {
+    const e = back((lt - .15) / .35), e2 = back((lt - .9) / .3), pp = clamp((lt - 1.6) / .5);
+    h = `<div class="send" style="transform:translateY(${(1 - e) * 80}px);opacity:${clamp(lt / .15)}"><div class="hd"><svg viewBox="0 0 48 48"><path d="M6 22 L42 6 L30 42 L23 27 Z" fill="none" stroke="#2A1F33" stroke-width="4.5" stroke-linejoin="round"/><path d="M23 27 L42 6" stroke="#2A1F33" stroke-width="4.5"/></svg>${esc(o.title || 'Send this to')}</div>
+      <div class="to" style="transform:scale(${e2})"><i></i><b>${esc(o.who || 'a friend who needs this')}</b><u style="background:${pp >= 1 ? '#3FAE6A' : '#E8664A'}">${pp >= 1 ? 'Sent ✓' : 'Send'}</u></div>
+      ${o.sub ? `<p style="opacity:${clamp((lt - 1.4) / .3)}">${esc(o.sub)}</p>` : ''}</div>`;
   } else if (o.type === 'cta') {
     const kw = String(o.keyword || T.keyword || 'LINK').toUpperCase(); const ty = clamp((lt - .5) / .8); const nch = Math.floor(ty * kw.length + .0001);
     const pp = clamp((lt - 1.5) / .15) - clamp((lt - 1.75) / .15); const eb = back((lt - 1.8) / .35);

@@ -5,6 +5,7 @@ JSON: {"id","keyword","cover":{"style":"poster|frame","theme":"coral|teal|lilac|
 *word* in any title renders as a highlighter mark.
 slide types: point{n,title,body} list{title,items} stat{value,label,body} compare{title,left{name,items},right{...},winner}
              quote{text,by} steps{title,items} cta{title,keyword,sub}
+             flag{n,label,title,says,fix,says_label,fix_label} recap{title,items,tag}
 """
 import sys, os, json, asyncio, subprocess, time, html, re
 ENG = os.path.dirname(os.path.abspath(__file__)); REEL = os.path.join(os.path.dirname(ENG), "reel")
@@ -60,6 +61,14 @@ def slide_html(s, i, n, kw):
     if t == "compare":
         def col(c, w): return f'<div class="col {"win" if w else ""}">{"<em>WINNER</em>" if w else ""}<h3>{E(c.get("name"))}</h3>' + "".join(f"<p>{E(x)}</p>" for x in c.get("items", [])) + '</div>'
         return f'<section class="s"><h2 class="sm">{H(s.get("title"))}</h2><div class="cmp">{col(s["left"], s.get("winner")=="left")}{col(s["right"], s.get("winner")=="right")}</div>{swipe}{foot}</section>'
+    if t == "flag":  # mistake/red-flag slide: label pill, title, what they say (bubble), your move (fix card)
+        lab = f'{E(s.get("label","RED FLAG"))} {E(s.get("n",""))}'.strip()
+        says = f'<div class="says"><span>{E(s.get("says_label","THEY SAY"))}</span><p>{E(s.get("says"))}</p></div>' if s.get("says") else ""
+        fix = f'<div class="fix"><span>{E(s.get("fix_label","YOUR MOVE"))}</span><p>{E(s.get("fix"))}</p></div>' if s.get("fix") else ""
+        return f'<section class="s flag" data-n="{E(s.get("n",""))}"><div class="flab"><i></i>{lab}</div><h2 class="sm">{H(s["title"])}</h2>{says}{fix}{swipe}{foot}</section>'
+    if t == "recap":  # cheat-sheet grid before the CTA
+        tiles = "".join(f'<div class="tile"><b>{k+1:02d}</b><p>{H(x)}</p></div>' for k, x in enumerate(s.get("items", [])))
+        return f'<section class="s dark recap"><div class="rtag">{E(s.get("tag","SCREENSHOT THIS"))}</div><h2 class="sm">{H(s.get("title","Cheat sheet"))}</h2><div class="grid">{tiles}</div>{swipe}{foot}</section>'
     if t == "quote":
         return f'<section class="s dark"><div class="q">“</div><h2 class="qt">{E(s["text"])}</h2><p class="by">{E(s.get("by"))}</p>{swipe}{foot}</section>'
     if t == "cta":
