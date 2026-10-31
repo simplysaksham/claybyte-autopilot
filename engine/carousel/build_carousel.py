@@ -6,6 +6,8 @@ JSON: {"id","keyword","cover":{"style":"poster|frame","theme":"coral|teal|lilac|
 slide types: point{n,title,body} list{title,items} stat{value,label,body} compare{title,left{name,items},right{...},winner}
              quote{text,by} steps{title,items} cta{title,keyword,sub}
              flag{n,label,title,says,fix,says_label,fix_label} recap{title,items,tag}
+             doc{title,tag,head,meta,lines:[{k,v,n}],foot}  (paper document mock; lines with "n" get a numbered marker)
+cta.scene{set,cam,action,props,sets} optional: renders the mascot in a window under the CTA text
 """
 import sys, os, json, asyncio, subprocess, time, html, re
 ENG = os.path.dirname(os.path.abspath(__file__)); REEL = os.path.join(os.path.dirname(ENG), "reel")
@@ -69,10 +71,18 @@ def slide_html(s, i, n, kw):
     if t == "recap":  # cheat-sheet grid before the CTA
         tiles = "".join(f'<div class="tile"><b>{k+1:02d}</b><p>{H(x)}</p></div>' for k, x in enumerate(s.get("items", [])))
         return f'<section class="s dark recap"><div class="rtag">{E(s.get("tag","SCREENSHOT THIS"))}</div><h2 class="sm">{H(s.get("title","Cheat sheet"))}</h2><div class="grid">{tiles}</div>{swipe}{foot}</section>'
+    if t == "doc":  # a sendable "screenshot this" document mock (invoice, brief, contract)
+        rows = "".join(f'<div class="dl{" hl" if l.get("n") else ""}">{f"<b>{E(l.get(chr(110)))}</b>" if l.get("n") else "<b class=nb></b>"}<span>{E(l.get("k"))}</span><em>{E(l.get("v"))}</em></div>' for l in s.get("lines", []))
+        meta = f'<div class="dmeta">{E(s.get("meta"))}</div>' if s.get("meta") else ""
+        df = f'<div class="dfoot">{E(s.get("foot"))}</div>' if s.get("foot") else ""
+        return f'<section class="s docs"><div class="rtag">{E(s.get("tag","SCREENSHOT THIS"))}</div><h2 class="sm">{H(s.get("title"))}</h2><div class="paper"><div class="dhead">{E(s.get("head","INVOICE"))}</div>{meta}{rows}{df}</div>{swipe}{foot}</section>'
     if t == "quote":
         return f'<section class="s dark"><div class="q">“</div><h2 class="qt">{E(s["text"])}</h2><p class="by">{E(s.get("by"))}</p>{swipe}{foot}</section>'
     if t == "cta":
         k = E(s.get("keyword", kw))
+        if s.get("scene"):
+            return f'''<section class="s cta withscene"><h2>{H(s.get("title","Want the free kit?"))}</h2>
+{f'<div class="cbox"><i></i><b>{k}</b><span>Post</span></div>' if k else ''}<p class="body">{E(s.get("sub", f"Comment {k} and I'll DM it to you. Follow so the DM lands."))}</p><div class="cwin"><img src="cta.png"></div>{foot}</section>'''
         return f'''<section class="s cta"><h2>{H(s.get("title","Want the free kit?"))}</h2>
 {f'<div class="cbox"><i></i><b>{k}</b><span>Post</span></div>' if k else ''}<p class="body">{E(s.get("sub", f"Comment {k} and I'll DM it to you. Follow so the DM lands."))}</p>{foot}</section>'''
     raise ValueError("unknown slide type " + str(t))
@@ -96,6 +106,9 @@ def main():
     cover = dict(spec["cover"]); cover["type"] = "cover"
     cover.setdefault("scene", {}).setdefault("cam", "close")
     asyncio.run(render_scene(cover.get("scene", {}), os.path.join(work, "cover.png")))
+    for sl in spec["slides"]:
+        if sl.get("type") == "cta" and sl.get("scene"):
+            asyncio.run(render_scene(sl["scene"], os.path.join(work, "cta.png")))
     import shutil; shutil.copy(os.path.join(ENG, "avatar.png"), os.path.join(work, "avatar.png"))
     slides = [cover] + spec["slides"]
     if slides[-1].get("type") != "cta": slides.append({"type": "cta", "keyword": spec.get("keyword", "")})

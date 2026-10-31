@@ -1,0 +1,623 @@
+{
+ "date": "2026-11-01",
+ "items": [
+  {
+   "slot": 1,
+   "kind": "carousel",
+   "publish_at": "2026-11-01T10:00:00+05:30",
+   "spec": {
+    "id": "2026-11-01-c1",
+    "keyword": null,
+    "cover": {
+     "style": "poster",
+     "theme": "sun",
+     "series": "CREATOR MONEY · INVOICES",
+     "kicker": "SAVE THIS",
+     "title": "Your invoice is why you're paid *late*",
+     "sub": "4 fixes to get paid on the due date.",
+     "scene": {
+      "set": "desk",
+      "cam": "wide",
+      "action": "shock",
+      "props": [],
+      "sets": {
+       "desk": {
+        "phone": {
+         "app": "Mail",
+         "title": "Invoice #024",
+         "lines": [
+          "Status: unpaid",
+          "\"Will check with accounts!\""
+         ],
+         "pill": "Overdue 23 days"
+        }
+       }
+      }
+     }
+    },
+    "slides": [
+     {
+      "type": "flag",
+      "n": "01",
+      "label": "FIX",
+      "title": "Write a real *due date*",
+      "says_label": "YOUR INVOICE SAYS",
+      "says": "\"Payment terms: Net 30.\"",
+      "fix_label": "WRITE THIS",
+      "fix": "\"Payment due by 15 November 2026.\" A date on the page beats a number of days nobody counts."
+     },
+     {
+      "type": "flag",
+      "n": "02",
+      "label": "FIX",
+      "title": "Take a *deposit* first",
+      "says_label": "YOUR INVOICE SAYS",
+      "says": "\"100% due on delivery.\"",
+      "fix_label": "WRITE THIS",
+      "fix": "50% before you start, 50% on delivery. Bigger projects: 25 / 50 / 25 by milestone."
+     },
+     {
+      "type": "flag",
+      "n": "03",
+      "label": "FIX",
+      "title": "Agree the *late fee* early",
+      "says_label": "YOUR INVOICE SAYS",
+      "says": "A late fee that appears for the first time on an overdue invoice.",
+      "fix_label": "DO THIS",
+      "fix": "Put it in the contract before work starts, then repeat it on every invoice. Same wording, both places."
+     },
+     {
+      "type": "flag",
+      "n": "04",
+      "label": "FIX",
+      "title": "Make paying *easy*",
+      "says_label": "YOUR INVOICE SAYS",
+      "says": "\"Please pay at your earliest convenience.\"",
+      "fix_label": "WRITE THIS",
+      "fix": "How to pay (bank, UPI or a payment link), the currency, and who to contact. Paying should take 30 seconds."
+     },
+     {
+      "type": "steps",
+      "title": "Then a *reminder* rhythm",
+      "items": [
+       "3 days before: friendly heads-up",
+       "Due date: invoice re-attached",
+       "1 week late: firm note + the agreed fee",
+       "Still unpaid? Pause new work"
+      ]
+     },
+     {
+      "type": "doc",
+      "tag": "SCREENSHOT THIS",
+      "title": "Copy this *invoice* layout",
+      "head": "INVOICE #024",
+      "meta": "Issued 1 Nov 2026 · 4 short-form reels",
+      "lines": [
+       {
+        "k": "Due by",
+        "v": "15 November 2026",
+        "n": "1"
+       },
+       {
+        "k": "Deposit",
+        "v": "50% paid on 20 Oct",
+        "n": "2"
+       },
+       {
+        "k": "Balance",
+        "v": "50% due now"
+       },
+       {
+        "k": "Late fee",
+        "v": "1.5%/month after due date, as agreed in our contract",
+        "n": "3"
+       },
+       {
+        "k": "Pay via",
+        "v": "Bank transfer · UPI · card link",
+        "n": "4"
+       },
+       {
+        "k": "Currency",
+        "v": "All amounts in INR"
+       }
+      ],
+      "foot": "Questions? Reply to this email. Thank you!"
+     },
+     {
+      "type": "cta",
+      "title": "Send this to a *freelancer* who's still waiting",
+      "keyword": null,
+      "sub": "Follow @claybyte.in for daily AI + creator business tips.",
+      "scene": {
+       "set": "studio",
+       "cam": "wide",
+       "action": "celebrate",
+       "props": [
+        "coins"
+       ],
+       "sets": {
+        "studio": {
+         "laptop": {
+          "title": "invoice-024",
+          "lines": [
+           "Status: PAID",
+           "Paid on: due date",
+           "Late fee: not needed"
+          ]
+         }
+        }
+       }
+      }
+     }
+    ]
+   },
+   "caption": "Your invoice might be the reason you get paid late. Save this before you send the next one.\n\n1. Write a real due date: \"Payment due by 15 November\", not just \"Net 30\"\n2. Take a deposit first: 50/50, or 25/50/25 by milestone on bigger projects\n3. Agree the late fee in the contract before work starts, then repeat it on every invoice (a fee that first shows up on an overdue invoice rarely sticks)\n4. Make paying easy: bank / UPI / payment link, currency, and who to contact\n\nThen follow a reminder rhythm: heads-up 3 days before, re-send on the due date, firm note a week late, pause new work if it's still unpaid.\n\nNot legal advice; check what's standard where you and your client are.\n\nSend this to a freelancer who's still waiting on a payment.\n\n#freelancetips #invoicing #creatorbusiness #agencylife #freelancer #smallbusinesstips",
+   "keyword": null,
+   "topic": "Invoice fixes to get paid on time: due date, deposit, late fee, easy pay",
+   "pillar": 4,
+   "sources": [
+    "https://ruul.io/blog/freelance-invoice-terms",
+    "https://hellobonsai.com/blog/discover-how-to-charge-late-fees-as-a-freelancer"
+   ]
+  },
+  {
+   "slot": 2,
+   "kind": "reel",
+   "publish_at": "2026-11-01T13:30:00+05:30",
+   "script": {
+    "id": "2026-11-01-r1",
+    "keyword": null,
+    "voice": "af_heart",
+    "speed": 1.1,
+    "seed": 7,
+    "highlight": [
+     "specific",
+     "number",
+     "time",
+     "who",
+     "three",
+     "four",
+     "twenty"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Drafts",
+       "title": "Hook ideas",
+       "lines": [
+        "\"Tips to grow your page\"",
+        "\"Some editing tips\""
+       ],
+       "pill": "0 saves"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "hooks.txt",
+       "lines": [
+        "vague:  quick editing tips",
+        "exact:  4 cuts in 20 minutes",
+        "for:    freelance video editors"
+       ]
+      }
+     }
+    },
+    "beats": [
+     {
+      "banner": "VAGUE HOOK = SCROLL",
+      "vo": "Vague hooks get scrolled. Make yours specific with three swaps.",
+      "set": "stage",
+      "cam": "close",
+      "mascot": {
+       "action": "shock"
+      },
+      "overlay": {
+       "type": "beforeafter",
+       "before": {
+        "label": "VAGUE",
+        "text": "Tips to grow your page"
+       },
+       "after": {
+        "label": "SPECIFIC",
+        "text": "3 fixes for reels stuck under 200 views"
+       },
+       "flip": 1.5
+      }
+     },
+     {
+      "banner": "SWAP 1: A NUMBER",
+      "vo": "Swap one. Replace some or tips with an exact number.",
+      "set": "desk",
+      "cam": "side",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "compare",
+       "left": {
+        "name": "Vague",
+        "items": [
+         "Some editing tips"
+        ]
+       },
+       "right": {
+        "name": "Specific",
+        "items": [
+         "4 editing cuts"
+        ]
+       },
+       "winner": "right"
+      }
+     },
+     {
+      "banner": "SWAP 2: A TIME",
+      "vo": "Swap two. Add a time. Twenty minutes beats quickly, every time.",
+      "set": "studio",
+      "cam": "side",
+      "mascot": {
+       "action": "type"
+      },
+      "overlay": {
+       "type": "counter",
+       "label": "MINUTES, NOT \"QUICKLY\"",
+       "from": 0,
+       "to": 20,
+       "suffix": " min"
+      }
+     },
+     {
+      "banner": "SWAP 3: A WHO",
+      "vo": "Swap three. Name who it's for. Freelance video editors, not everyone.",
+      "set": "stage",
+      "cam": "low",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "card",
+       "title": "Name the who",
+       "items": [
+        "Freelance video editors ✓",
+        "Not everyone ✗"
+       ]
+      }
+     },
+     {
+      "banner": "THE ONE-READ TEST",
+      "vo": "Then test it. If a friend can't repeat it after one read, cut it again.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "think"
+      },
+      "props": [],
+      "overlay": {
+       "type": "checklist",
+       "items": [
+        "Read it once",
+        "Say it back",
+        "Can't? Cut again"
+       ]
+      }
+     },
+     {
+      "banner": "ALL THREE TOGETHER",
+      "vo": "So editing tips becomes: four cuts editors make in twenty minutes.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "props": [
+       "confetti"
+      ],
+      "overlay": {
+       "type": "beforeafter",
+       "before": {
+        "label": "BEFORE",
+        "text": "Editing tips"
+       },
+       "after": {
+        "label": "AFTER",
+        "text": "4 cuts editors make in 20 minutes"
+       },
+       "flip": 1.2
+      }
+     },
+     {
+      "banner": "SEND THIS",
+      "vo": "Send this to the friend whose hooks still start with so, today.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "send",
+       "title": "Send this to",
+       "who": "the friend whose hooks start with \"so, today…\"",
+       "sub": "Three swaps. One rewrite."
+      }
+     }
+    ]
+   },
+   "caption": "Vague hooks get scrolled. Make yours specific with 3 swaps 👇\n\n1. A number: \"some editing tips\" → \"4 editing cuts\"\n2. A time: \"quickly\" → \"in 20 minutes\"\n3. A who: \"everyone\" → \"freelance video editors\"\n\nThen the one-read test: if a friend can't repeat your hook after reading it once, cut it again.\n\nBefore: \"Editing tips\"\nAfter: \"4 cuts editors make in 20 minutes\"\n\nSave this for your next script, and send it to the friend whose hooks start with \"so, today…\"\n\n#reelhooks #contentcreator #scriptwriting #instagramtips #creatortips #videoediting",
+   "keyword": null,
+   "topic": "Specific hooks: 3 swaps (number, time, who) + the one-read test",
+   "pillar": 2,
+   "sources": [
+    "https://newengen.com/insights/instagram-trends/"
+   ]
+  },
+  {
+   "slot": 3,
+   "kind": "reel",
+   "publish_at": "2026-11-01T19:30:00+05:30",
+   "script": {
+    "id": "2026-11-01-r2",
+    "keyword": "IDEA",
+    "style": "duet",
+    "caps": "bold",
+    "banner_style": "chip",
+    "voices": {
+     "pip": "am_michael:0.6+am_fenrir:0.4",
+     "byte": "af_heart"
+    },
+    "voice": "af_heart",
+    "speed": 1.08,
+    "seed": 4,
+    "highlight": [
+     "five",
+     "IDEA",
+     "one",
+     "old",
+     "angles",
+     "Claude",
+     "thirty"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "night": {}
+    },
+    "beats": [
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "11:48 PM",
+      "vo": "Byte... I have nothing to post tomorrow. Nothing.",
+      "pip": {
+       "action": "sad"
+      },
+      "speed": 0.98,
+      "overlay": {
+       "type": "pill",
+       "label": "TOMORROW'S POST",
+       "from": 0,
+       "to": 0,
+       "suffix": " ideas"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "BYTE FIXES · *EP 1*",
+      "vo": "Nothing? You've posted thirty times this year.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "grid",
+       "n": 12,
+       "cols": 6,
+       "label": "YOUR OLD POSTS"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "two",
+      "banner": "BYTE FIXES · *EP 1*",
+      "vo": "Old posts? People already saw those.",
+      "pip": {
+       "action": "think"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "THE *TRICK*",
+      "vo": "Same lesson, new angle. One old post hides five new reels.",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "bigcount",
+       "label": "NEW REEL IDEAS",
+       "from": 1,
+       "to": 5,
+       "sub": "from 1 old post"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "THE *TRICK*",
+      "vo": "Wait. Five? Okay, show me.",
+      "pip": {
+       "action": "shock"
+      },
+      "speed": 1.1
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "side",
+      "banner": "STEP 1 · *PICK*",
+      "vo": "Step one. Pick your most saved post.",
+      "step": [
+       1,
+       3
+      ],
+      "mascot": {
+       "action": "point"
+      },
+      "pip": {
+       "action": "type"
+      },
+      "overlay": {
+       "type": "card",
+       "title": "Pick the post with",
+       "items": [
+        "The most saves",
+        "Or the most shares"
+       ]
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "close",
+      "banner": "STEP 2 · *PASTE*",
+      "vo": "Step two. Paste it into Claude and ask for five angles.",
+      "step": [
+       2,
+       3
+      ],
+      "mascot": {
+       "action": "type"
+      },
+      "overlay": {
+       "type": "terminal",
+       "lines": [
+        {
+         "role": "you",
+         "text": "Here's my best post. Give me 5 new reel angles:"
+        },
+        {
+         "role": "you",
+         "text": "a mistake, a story, a myth, a how-to, a hot take."
+        },
+        {
+         "role": "ai",
+         "text": "1. The mistake I made before this worked…"
+        }
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "STEP 2 · *PASTE*",
+      "vo": "Huh. That's actually five different reels.",
+      "step": [
+       2,
+       3
+      ],
+      "pip": {
+       "action": "shock"
+      },
+      "overlay": {
+       "type": "chips",
+       "items": [
+        "Mistake",
+        "Story",
+        "Myth",
+        "How-to",
+        "Hot take"
+       ]
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "two",
+      "banner": "STEP 3 · *FILM*",
+      "vo": "Step three. Film the one you'd stop scrolling for. Tonight.",
+      "step": [
+       3,
+       3
+      ],
+      "mascot": {
+       "action": "hop"
+      },
+      "overlay": {
+       "type": "checklist",
+       "items": [
+        "Pick 1 angle",
+        "New hook",
+        "Film it tonight"
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "WAIT…",
+      "vo": "Isn't that just reposting?",
+      "pip": {
+       "action": "think"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "NOT A *REPOST*",
+      "vo": "No. Same lesson, new hook, new story. That's a new reel.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "stamp",
+       "text": "NEW REEL",
+       "mark": "check",
+       "at": 0.4
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "two",
+      "banner": "FIXED",
+      "vo": "Okay. Tomorrow's sorted. And the day after.",
+      "pip": {
+       "action": "celebrate"
+      },
+      "mascot": {
+       "action": "celebrate"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "FREE *TOOL*",
+      "vo": "Want my free Reel Idea Machine? Comment IDEA.",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "cta",
+       "keyword": "IDEA",
+       "follow": false
+      }
+     }
+    ]
+   },
+   "caption": "Comment IDEA and I'll DM you my free Reel Idea Machine (Claude skill + PDF guide) 📩\n\nNothing to post tomorrow? Your old posts are a library.\n1. Pick your most-saved post\n2. Paste it into Claude: \"Give me 5 new reel angles: a mistake, a story, a myth, a how-to, a hot take.\"\n3. Film the one you'd stop scrolling for, tonight\n\nIt's not a repost: same lesson, new hook, new story.\n\nByte fixes your content, episode 1.\n\n#contentcreator #claudeai #aitools #reelideas #contentrepurposing #creatortips",
+   "keyword": "IDEA",
+   "topic": "Repurpose one old post into 5 new reel angles with Claude",
+   "pillar": 1,
+   "sources": []
+  }
+ ]
+}

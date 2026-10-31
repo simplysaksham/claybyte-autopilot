@@ -99,7 +99,10 @@ Characters: **Pip** (original clay creator: teal hoodie, lilac beanie) and **Byt
            {"type":"compare","title":"…","left":{"name":"…","items":["…"]},"right":{…},"winner":"right"},
            {"type":"quote","text":"…","by":"…"},
            {"type":"steps","title":"…","items":["…"]},
-           {"type":"cta","title":"…","keyword":"IDEA"}]}
+           {"type":"flag","n":"01","label":"RED FLAG","title":"…","says":"…","fix":"…"},
+           {"type":"recap","title":"…","items":["…"]},
+           {"type":"doc","tag":"SCREENSHOT THIS","title":"…","head":"INVOICE #024","meta":"…","lines":[{"k":"Due by","v":"15 Nov","n":"1"}],"foot":"…"},
+           {"type":"cta","title":"…","keyword":"IDEA","scene":{"set":"studio","cam":"wide","action":"celebrate"}}]}
 ```
 ### Cover (slide 1): the most important slide
 ```json

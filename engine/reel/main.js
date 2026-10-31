@@ -446,7 +446,7 @@ function overlay(B, lt, D) {
     const pp = clamp((lt - 1.5) / .15) - clamp((lt - 1.75) / .15); const eb = back((lt - 1.8) / .35);
     h = `<div class="env" style="opacity:${clamp((lt - 1.8) / .1)};transform:translateY(${(1 - eb) * 40}px) scale(${.6 + .4 * eb})"><div class="bd" style="transform:scale(${back((lt - 2.3) / .3)})">1</div></div>
       <div class="cbox"><div class="av"></div>${nch ? `<b style="font-weight:800">${esc(kw.slice(0, nch))}</b>` : '<span class="ph">Add a comment…</span>'}<span class="cur" style="opacity:${lt > .4 && lt < 1.5 ? 1 : 0}"></span><span class="post" style="transform:scale(${1 - .15 * pp})">Post</span></div>
-      <div class="follow" style="opacity:${clamp((lt - 2.6) / .3)}"><span>${esc(o.follow || 'Follow so the DM lands')}</span></div>`;
+      ${o.follow === false ? '' : `<div class="follow" style="opacity:${clamp((lt - 2.6) / .3)}"><span>${esc(o.follow || 'Follow so the DM lands')}</span></div>`}`;
   }
   ovl.innerHTML = h;
 }
