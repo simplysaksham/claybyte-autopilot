@@ -1,6 +1,6 @@
 # ClayByte Autopilot — content spec
 
-Instagram page: **ClayByte**. Niche: **AI + creator/agency life**, English only, soft clay/toy 3D look, mascot **Byte** (teal clay blob with antenna). Global audience, Indian founder.
+Instagram page: **ClayByte**. Niche: **AI + creator/agency life**, English only, soft clay/toy 3D look, mascot **Byte** (orange clay blob with antenna; was teal until 2026-10-31). Global audience, Indian founder.
 
 Daily output (for the NEXT day, IST):
 | Slot | Kind | Time (IST) |
@@ -71,7 +71,7 @@ Rules of thumb:
 
 ## Duet reels (two-character story format) — preferred for at least one reel a day
 Modelled on a high-performing reference (analysed 2026-10-31): a struggling creator talks to an AI sidekick; pain → proof → "show me" → numbered steps → objection → payoff → CTA.
-Characters: **Pip** (original clay creator: coral hoodie, lilac beanie) and **Byte** (the AI helper). Set: `night` (navy void, bokeh, neon grid floor).
+Characters: **Pip** (original clay creator: teal hoodie, lilac beanie) and **Byte** (the AI helper). Set: `night` (navy void, bokeh, neon grid floor).
 ```json
 {"id":"…","style":"duet","caps":"bold","banner_style":"chip","voices":{"pip":"am_puck","byte":"af_heart"},"speed":1.12,"seed":2,
  "highlight":["six","IDEA"],"sets":{"night":{}},
@@ -79,6 +79,7 @@ Characters: **Pip** (original clay creator: coral hoodie, lilac beanie) and **By
            "overlay":{"type":"pill","label":"YOUR LAST REEL","from":6,"to":6,"suffix":" views"}},
           {"who":"byte","set":"night","cam":"byte","banner":"STEP 1 · *PASTE*","step":[1,3],"vo":"…","mascot":{"action":"point"}}]}
 ```
+- Voices: kokoro blends allowed ("am_michael:0.6+am_fenrir:0.4"); duet reels get a room/EQ/compression chain automatically. Write lines the way people talk: "Wait…", "Okay…", "Oof.", short sentences, question marks; set per-beat "speed" (0.95–1.1) for emotion. A beat can use a pre-made line with "audio_file" (e.g. ElevenLabs via Higgsfield once its CDN is reachable).
 - One line per beat (3–12 words), `who` = speaker (lip-synced from the audio). Alternate speakers; 12–16 beats, 35–50 s.
 - Cams on `night`: `pip` / `byte` (face close-ups for emotion), `two` (both, medium), `wide`, `close` (medium centre), `side` (over Pip's shoulder), `low`. Change cam every beat; use face close-ups for reactions.
 - Pip actions: talk (default when speaking), listen (default otherwise), sad, shock, think, point, wave, celebrate, facepalm, type (holds a laptop).

@@ -17,6 +17,8 @@ Research sources are in `research/<DATE>.md`. Stats below are second-hand from v
 - Soft CTA: use the `send` overlay ("Send this to … the friend who …") instead of a sparse card. Result-first hooks: `beforeafter` overlay with `flip` ≈ 1.5 s.
 - Stills gotcha: build_reel reuses existing stills files; delete `<out>/<id>_work/stills` before re-rendering stills.
 - DUET FORMAT (from a reference reel the owner shared, 2026-10-31): two characters talking (creator + AI helper), dark navy set with bokeh, face close-ups with a punch-in on every line, 2–3-word bold captions, a chapter chip with step dashes, and live UI widgets (views pill counting up, big counters with bars, stamps, terminal typing). Structure: specific-time pain hook ("3:12 AM… 6 views") → proof → "show me how" → 3–5 steps → cost objection → payoff → CTA. Use it for at least one reel a day; see SPEC "Duet reels".
+- 2026-10-31 owner feedback on the first duet: wants more realistic voices, more appealing visuals, and Byte in ORANGE (done: brand mascot is now orange, Pip wears teal). Visual upgrades that worked: bloom, a pink/cyan synthwave horizon glow, cyan back-rim light, eye catchlights, a nose on Pip so the mouth reads. Keep the floor matte; a glossy floor caused a white glare in the side cam.
+- Voice: kokoro's male voices are weak (C+), af_heart is the best. Pip uses a blend "am_michael:0.6+am_fenrir:0.4" plus the room chain. Best fix is ElevenLabs via Higgsfield (≈0.15 credits/line), blocked until cdn.higgsfield.ai and d1xarpci4ikg0w.cloudfront.net are on the allowed-domains list.
 - Recurring formats build habit: consider a named series ("Byte fixes your…", "60-second Claude skill").
 
 ### Carousels

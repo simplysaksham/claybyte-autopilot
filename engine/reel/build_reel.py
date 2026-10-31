@@ -19,15 +19,36 @@ def ensure_models():
             print("downloading", f, flush=True)
             subprocess.run(["curl", "-sSL", "-o", p, base + f], check=True)
 
+VOICE_FX = {  # light "recorded in a room" chain: rumble cut, warmth, presence, gentle compression, tiny room
+    "default": "highpass=f=75,equalizer=f=180:t=q:w=1:g=1.5,equalizer=f=3200:t=q:w=1.2:g=2,acompressor=threshold=-21dB:ratio=2.5:attack=6:release=80:makeup=2,aecho=0.85:0.6:23|41:0.07|0.04",
+    "byte": "highpass=f=90,equalizer=f=250:t=q:w=1:g=-1,equalizer=f=4200:t=q:w=1.2:g=2.5,acompressor=threshold=-21dB:ratio=2.5:attack=6:release=80:makeup=2,aecho=0.85:0.6:19|33:0.06|0.03",
+}
+
+def _voice(k, spec):
+    """'af_heart' or a blend like 'am_michael:0.6+am_fenrir:0.4'"""
+    if "+" not in spec and ":" not in spec: return spec
+    parts = [(p.split(":")[0], float(p.split(":")[1]) if ":" in p else 1.0) for p in spec.split("+")]
+    tot = sum(w for _, w in parts)
+    return sum(k.get_voice_style(n) * (w / tot) for n, w in parts).astype(np.float32)
+
 def tts(script, work):
     from kokoro_onnx import Kokoro
     k = Kokoro(os.path.join(MODELS, "kokoro.onnx"), os.path.join(MODELS, "voices.bin"))
     voice = script.get("voice", "am_puck"); speed = float(script.get("speed", 1.12))
     voices = script.get("voices", {})
+    fx_on = script.get("voice_fx", script.get("style") == "duet")
     for i, b in enumerate(script["beats"]):
-        v = b.get("voice") or voices.get(b.get("who", "")) or voice
-        s, sr = k.create(b["vo"], voice=v, speed=float(b.get("speed", speed)), lang="en-us")
-        sf.write(f"{work}/b{i}.wav", s, sr)
+        out = f"{work}/b{i}.wav"
+        if b.get("audio_file"):  # pre-generated line (e.g. ElevenLabs via Higgsfield)
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", b["audio_file"], "-ac", "1", "-ar", "24000", out], check=True)
+        else:
+            v = b.get("voice") or voices.get(b.get("who", "")) or voice
+            a, sr = k.create(b["vo"], voice=_voice(k, v), speed=float(b.get("speed", speed)), lang="en-us", sentence_pause=0.32, clause_pause=0.14)
+            sf.write(out, a, sr)
+        if fx_on:
+            fx = VOICE_FX.get(b.get("who", ""), VOICE_FX["default"])
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", out, "-af", fx + ",apad=pad_dur=0.05", f"{work}/fx.wav"], check=True)
+            shutil.move(f"{work}/fx.wav", out)
 
 def timing(script, work):
     t = 0.0; beats = []

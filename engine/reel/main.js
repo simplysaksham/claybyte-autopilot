@@ -13,6 +13,12 @@ renderer.outputColorSpace = THREE.SRGBColorSpace;
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(38, W / H, 0.1, 200);
 
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+const useBloom = T.style === 'duet' || T.bloom; let composer = null;
+if (useBloom) { composer = new EffectComposer(renderer); composer.setPixelRatio(renderer.getPixelRatio()); composer.setSize(W, H); composer.addPass(new RenderPass(scene, camera)); composer.addPass(new UnrealBloomPass(new THREE.Vector2(W / 2, H / 2), .5, .5, .86)); composer.addPass(new OutputPass()); }
 // ---------- utils ----------
 let seed = (T.seed || 7) | 0; const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
 const R = (a, b) => a + (b - a) * rnd();
@@ -51,6 +57,7 @@ key.shadow.mapSize.set(2048, 2048); key.shadow.radius = 6; key.shadow.bias = -0.
 Object.assign(key.shadow.camera, { left: -9, right: 9, top: 11, bottom: -6, near: .5, far: 60 });
 scene.add(key, key.target);
 const rim = new THREE.DirectionalLight('#ffd9f0', .6); scene.add(rim, rim.target);
+const rim2 = new THREE.DirectionalLight('#5fd8ff', 0); scene.add(rim2, rim2.target);
 const spot = new THREE.SpotLight('#fff1c9', 0, 30, .38, .6, 1); spot.castShadow = false; scene.add(spot, spot.target);
 const ground = mesh(new THREE.PlaneGeometry(600, 80), clay('#EADCC4'), 0, 0, 0); ground.rotation.x = -Math.PI / 2; ground.castShadow = false;
 
@@ -190,12 +197,15 @@ SETS.night = (() => {
   const bg = new THREE.Mesh(new THREE.PlaneGeometry(90, 46), new THREE.MeshBasicMaterial({ map: bgT, fog: false })); bg.position.set(X, 18, -16); scene.add(bg);
   const gT = textTex(256, 256, (g, w, h) => { g.fillStyle = '#0d1046'; g.fillRect(0, 0, w, h); g.strokeStyle = NP_.grid || '#4b4fd6'; g.lineWidth = 5; g.globalAlpha = .9; g.strokeRect(0, 0, w, h); g.globalAlpha = .25; g.lineWidth = 14; g.strokeRect(0, 0, w, h); });
   gT.wrapS = gT.wrapT = THREE.RepeatWrapping; gT.repeat.set(40, 30);
-  const fl = new THREE.Mesh(new THREE.PlaneGeometry(80, 60), new THREE.MeshStandardMaterial({ map: gT, emissive: '#ffffff', emissiveMap: gT, emissiveIntensity: .35, roughness: .55, metalness: .1 })); fl.rotation.x = -Math.PI / 2; fl.position.set(X, .012, 7); fl.receiveShadow = true; scene.add(fl);
+  const fl = new THREE.Mesh(new THREE.PlaneGeometry(80, 60), new THREE.MeshStandardMaterial({ map: gT, emissive: '#ffffff', emissiveMap: gT, emissiveIntensity: .45, roughness: .7, metalness: 0 })); fl.rotation.x = -Math.PI / 2; fl.position.set(X, .012, 7); fl.receiveShadow = true; scene.add(fl);
   const bT = textTex(128, 128, (g, w, h) => { const gr = g.createRadialGradient(64, 64, 0, 64, 64, 64); gr.addColorStop(0, 'rgba(255,255,255,1)'); gr.addColorStop(.35, 'rgba(255,255,255,.55)'); gr.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = gr; g.fillRect(0, 0, w, h); });
   const BC = ['#ff6b9a', '#ffd27a', '#7aa8ff', '#b98bff', '#6fe3d0', '#ff9a6b'];
   const bokeh = []; for (let i = 0; i < 90; i++) { const m = new THREE.SpriteMaterial({ map: bT, color: BC[i % BC.length], transparent: true, opacity: R(.18, .6), depthWrite: false, fog: false, blending: THREE.AdditiveBlending }); const sp = new THREE.Sprite(m); const z = R(-15, -5); sp.position.set(X + R(-16, 16), R(.5, 16), z); sp.scale.setScalar(R(.25, 1.4) * (1 + (-z - 5) * .08)); scene.add(sp); bokeh.push({ sp, o: m.opacity, ph: R(0, 6.28), y: sp.position.y }); }
+  const hT = textTex(8, 256, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, 'rgba(255,90,200,0)'); gr.addColorStop(.7, 'rgba(255,90,200,.42)'); gr.addColorStop(.92, 'rgba(120,200,255,.75)'); gr.addColorStop(1, 'rgba(120,200,255,0)'); g.fillStyle = gr; g.fillRect(0, 0, w, h); });
+  const hz = new THREE.Mesh(new THREE.PlaneGeometry(90, 7), new THREE.MeshBasicMaterial({ map: hT, transparent: true, depthWrite: false, fog: false, blending: THREE.AdditiveBlending })); hz.position.set(X, 2.6, -15.8); scene.add(hz);
+  const dust = []; for (let i = 0; i < 26; i++) { const m = new THREE.SpriteMaterial({ map: bT, color: '#ffe9c4', transparent: true, opacity: R(.15, .4), depthWrite: false, blending: THREE.AdditiveBlending }); const sp = new THREE.Sprite(m); sp.position.set(X + R(-4, 4), R(.3, 5), R(1.5, 6)); sp.scale.setScalar(R(.04, .1)); scene.add(sp); dust.push({ sp, y: sp.position.y, ph: R(0, 6.28) }); }
   const pos = { byte: [X + 1.3, 0, .9, -.45], pip: [X - 1.0, 0, .6, .38] };
-  return { X, night: true, bokeh, pip: pos.pip, slot: new THREE.Vector3(X, 3, 1), top: new THREE.Vector3(X, 5, 0), focusY: 2,
+  return { X, night: true, bokeh, dust, pip: pos.pip, slot: new THREE.Vector3(X, 3, 1), top: new THREE.Vector3(X, 5, 0), focusY: 2,
     cams: { wide: [[X, 3.4, 15.5], [X, 3.1, 14], [X, 1.9, 0]], two: [[X + .1, 2.7, 12], [X + .2, 2.55, 11], [X + .2, 1.5, .6]],
       pip: [[X - .45, 2.75, 7.0], [X - .55, 2.7, 6.2], [X - .95, 2.05, .6]], byte: [[X + .75, 1.5, 6.4], [X + .85, 1.45, 5.6], [X + 1.25, .85, .9]],
       low: [[X + 2.6, .7, 9.5], [X + 1.9, .9, 8.6], [X, 2.1, 0]], side: [[X - 2.7, 3.7, 4.6], [X - 2.4, 3.5, 4.0], [X + 1.2, 1.1, .9]], close: [[X + .1, 2.3, 8.8], [X + .15, 2.2, 8.0], [X + .15, 1.45, .7]] },
@@ -204,7 +214,7 @@ SETS.night = (() => {
 
 // ---------- Pip: original clay creator character (duet reels) ----------
 function makePip() {
-  const C = Object.assign({ hoodie: COL.coral, skin: '#E9B48C', hat: COL.lilac, pants: '#33305E' }, P.pip || {});
+  const C = Object.assign({ hoodie: '#2FB59B', skin: '#EBB58D', hat: '#B6A2E3', pants: '#2E2B57' }, P.pip || {});
   const root = new THREE.Group(); scene.add(root); const body = new THREE.Group(); root.add(body);
   const hood = clay(C.hoodie), skin = clay(C.skin), dark = new THREE.MeshStandardMaterial({ color: '#1d1424', roughness: .35 });
   const legs = [-1, 1].map(s => { const l = mesh(new THREE.CapsuleGeometry(.17, .42, 4, 10), clay(C.pants), s * .25, .5, 0, root); mesh(RB(.36, .2, .52, .09), clay('#F6EBD3'), s * .25, .1, .07, root); return l; });
@@ -221,11 +231,13 @@ function makePip() {
   for (const s of [-1, 1]) {
     const e = mesh(new THREE.SphereGeometry(.17, 20, 14), clay('#FFFFFF'), s * .28, .7, .53, head); e.scale.set(.9, 1.1, .5); eyes.push(e);
     const p = mesh(new THREE.SphereGeometry(.085, 14, 10), dark, s * .28, .69, .61, head); p.scale.set(1, 1.15, .5); pupils.push(p);
+    mesh(new THREE.SphereGeometry(.026, 10, 8), new THREE.MeshBasicMaterial({ color: '#ffffff' }), .03, .035, .07, p);
     const b = new THREE.Group(); b.position.set(s * .28, .93, .55); head.add(b); const bm = mesh(new THREE.CapsuleGeometry(.045, .2, 3, 8), clay('#3B2A22'), 0, 0, 0, b); bm.rotation.z = Math.PI / 2; brows.push(b);
     mesh(new THREE.SphereGeometry(.1, 12, 10), clay(COL.pink), s * .45, .45, .52, head).scale.set(1, .65, .3);
   }
-  const mouthO = mesh(new THREE.SphereGeometry(.16, 18, 12), new THREE.MeshStandardMaterial({ color: '#4a1a2c', roughness: .4 }), 0, .41, .57, head); mouthO.scale.set(1, .25, .35);
-  const smile = mesh(new THREE.TorusGeometry(.11, .03, 8, 20, Math.PI), dark, 0, .46, .575, head);
+  mesh(new THREE.SphereGeometry(.09, 14, 10), clay('#E09A72'), 0, .56, .6, head).scale.set(1.1, .8, .7);
+  const mouthO = mesh(new THREE.SphereGeometry(.16, 18, 12), new THREE.MeshStandardMaterial({ color: '#6a2238', roughness: .4 }), 0, .36, .55, head); mouthO.scale.set(1, .25, .35);
+  const smile = mesh(new THREE.TorusGeometry(.11, .03, 8, 20, Math.PI), dark, 0, .42, .565, head);
   const arms = [-1, 1].map(s => { const pv = new THREE.Group(); pv.position.set(s * .7, 1.68, 0); body.add(pv); mesh(new THREE.CapsuleGeometry(.14, .5, 4, 10), hood, 0, -.34, 0, pv); mesh(new THREE.SphereGeometry(.15, 14, 10), skin, 0, -.72, 0, pv); return pv; });
   const lap = new THREE.Group(); lap.position.set(0, 1.25, .75); body.add(lap); lap.visible = false;
   mesh(RB(1.1, .06, .75, .03), clay('#B9B3C2'), 0, 0, 0, lap); const ls = mesh(RB(1.1, .72, .05, .03), clay('#B9B3C2'), 0, .36, -.36, lap); ls.rotation.x = -.25;
@@ -305,16 +317,18 @@ function buildBelt(items) {
 }
 
 // ---------- mascot ----------
+const BYTEC = Object.assign({ body: '#FF7A2F', belly: '#FFE0C2', feet: '#D9561C', cheek: '#FF4F6E' }, T.byteColor || {});
 function makeByte() {
   const root = new THREE.Group(); const body = new THREE.Group(); root.add(body); scene.add(root);
-  const tealM = clay(COL.teal);
+  const tealM = clay(BYTEC.body, { roughness: .7 });
   mesh(RB(1.5, 1.35, 1.2, .5, 5), tealM, 0, .95, 0, body);
-  const belly = mesh(new THREE.SphereGeometry(.42, 24, 16), clay('#BFEDE3'), 0, .7, .5, body); belly.scale.set(1.1, .8, .3);
+  const belly = mesh(new THREE.SphereGeometry(.42, 24, 16), clay(BYTEC.belly), 0, .7, .5, body); belly.scale.set(1.1, .8, .3);
   const eyes = [], pupils = [];
   for (const s of [-1, 1]) {
     const e = mesh(new THREE.SphereGeometry(.24, 24, 16), clay('#FFFFFF', { bumpScale: .3 }), s * .32, 1.2, .55, body); e.scale.set(1, 1.15, .55); eyes.push(e);
     const p = mesh(new THREE.SphereGeometry(.12, 20, 14), new THREE.MeshStandardMaterial({ color: '#1d1424', roughness: .3 }), s * .32, 1.17, .66, body); p.scale.set(1, 1.2, .5); pupils.push(p);
-    mesh(new THREE.SphereGeometry(.11, 16, 12), clay(COL.pink), s * .55, .92, .55, body).scale.set(1, .7, .3);
+    mesh(new THREE.SphereGeometry(.11, 16, 12), clay(BYTEC.cheek), s * .55, .92, .55, body).scale.set(1, .7, .3);
+    mesh(new THREE.SphereGeometry(.035, 10, 8), new THREE.MeshBasicMaterial({ color: '#ffffff' }), .04, .05, .1, p);
   }
   const lids = [-1, 1].map(s => { const l = mesh(new THREE.SphereGeometry(.255, 24, 16, 0, Math.PI * 2, 0, Math.PI / 2), tealM, s * .32, 1.2, .55, body); l.scale.set(1.05, 1.2, .6); return l; });
   const mouth = mesh(new THREE.TorusGeometry(.12, .035, 8, 20, Math.PI), new THREE.MeshStandardMaterial({ color: '#1d1424' }), 0, .9, .6, body);
@@ -322,7 +336,7 @@ function makeByte() {
   mesh(new THREE.CylinderGeometry(.04, .04, .45, 8), clay('#2A1F33'), 0, 1.82, 0, body);
   const antBall = mesh(new THREE.SphereGeometry(.14, 16, 12), clay(COL.mustard, { emissive: COL.mustard, emissiveIntensity: .25 }), 0, 2.08, 0, body);
   const arms = [-1, 1].map(s => { const pv = new THREE.Group(); pv.position.set(s * .76, 1.0, 0); body.add(pv); mesh(new THREE.CapsuleGeometry(.12, .38, 4, 10), tealM, 0, -.25, 0, pv); return pv; });
-  [-1, 1].forEach(s => { const f = mesh(new THREE.CapsuleGeometry(.15, .22, 4, 10), clay('#2C8F80'), s * .35, .12, .15, root); f.rotation.x = Math.PI / 2; });
+  [-1, 1].forEach(s => { const f = mesh(new THREE.CapsuleGeometry(.15, .22, 4, 10), clay(BYTEC.feet), s * .35, .12, .15, root); f.rotation.x = Math.PI / 2; });
   return { root, body, pupils, lids, mouth, mouthO, arms, antBall };
 }
 const byte = makeByte();
@@ -482,8 +496,10 @@ window.renderAt = function (t) {
   camera.lookAt(l[0], l[1], l[2]);
   // mood lighting: night set is cool, dim and foggy
   if (S.night) { hemi.color.set('#9fb4ff'); hemi.groundColor.set('#1a1650'); hemi.intensity = .55; key.color.set('#e3e8ff'); key.intensity = 1.7; rim.color.set('#b28bff'); rim.intensity = 1.6; scene.fog = scene.fog || new THREE.Fog('#0b0f38', 16, 46); renderer.toneMappingExposure = 1.12;
-    S.bokeh.forEach((b, i) => { b.sp.material.opacity = b.o * (.65 + .35 * Math.sin(t * 1.2 + b.ph)); b.sp.position.y = b.y + Math.sin(t * .3 + b.ph) * .25; }); }
-  else { hemi.color.set('#fff4e6'); hemi.groundColor.set('#c9a98a'); hemi.intensity = .75; key.color.set('#fff1dc'); key.intensity = 2.1; rim.color.set('#ffd9f0'); rim.intensity = .6; scene.fog = null; renderer.toneMappingExposure = 1.05; }
+    S.bokeh.forEach((b, i) => { b.sp.material.opacity = b.o * (.65 + .35 * Math.sin(t * 1.2 + b.ph)); b.sp.position.y = b.y + Math.sin(t * .3 + b.ph) * .25; });
+    S.dust.forEach(d => { d.sp.position.y = d.y + Math.sin(t * .5 + d.ph) * .3; d.sp.position.x += Math.sin(t * .2 + d.ph) * .002; });
+    rim.position.set(S.X - 7, 6, -6); rim2.position.set(S.X + 8, 5, -5); rim2.target.position.set(S.X, 1.5, 1); rim2.intensity = 1.8; }
+  else { rim2.intensity = 0; hemi.color.set('#fff4e6'); hemi.groundColor.set('#c9a98a'); hemi.intensity = .75; key.color.set('#fff1dc'); key.intensity = 2.1; rim.color.set('#ffd9f0'); rim.intensity = .6; scene.fog = null; renderer.toneMappingExposure = 1.05; }
   key.position.set(S.X - 6, 14, 10); key.target.position.set(S.X, 1.5, 0); rim.position.set(S.X + 8, 6, -2); rim.target.position.set(S.X, 2, 0);
   spot.intensity = B.set === 'stage' ? 60 : 0; spot.position.set(S.X, 12, 6); spot.target.position.set(S.X, 1, 1);
   // mascot
@@ -508,7 +524,7 @@ window.renderAt = function (t) {
   setCaps(B.words, t, T.highlight);
   grain.style.backgroundPosition = `${(t * 997) % 256 | 0}px ${(t * 613) % 256 | 0}px`;
   if (T.still) { bannerEl.style.opacity = 0; capsEl.innerHTML = ''; ovl.innerHTML = ''; document.getElementById('brand').style.opacity = 0; grain.style.opacity = 0; }
-  renderer.render(scene, camera);
+  if (composer) composer.render(); else renderer.render(scene, camera);
   return true;
 };
 window.READY = Promise.resolve(true);
