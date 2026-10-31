@@ -69,6 +69,24 @@ Rules of thumb:
 - Last beat: `overlay.type = "cta"` if a keyword is used, else a `card` with the soft CTA.
 - `chips`/`checklist` items: put the spoken word first so the pop syncs with the voice.
 
+## Duet reels (two-character story format) — preferred for at least one reel a day
+Modelled on a high-performing reference (analysed 2026-10-31): a struggling creator talks to an AI sidekick; pain → proof → "show me" → numbered steps → objection → payoff → CTA.
+Characters: **Pip** (original clay creator: coral hoodie, lilac beanie) and **Byte** (the AI helper). Set: `night` (navy void, bokeh, neon grid floor).
+```json
+{"id":"…","style":"duet","caps":"bold","banner_style":"chip","voices":{"pip":"am_puck","byte":"af_heart"},"speed":1.12,"seed":2,
+ "highlight":["six","IDEA"],"sets":{"night":{}},
+ "beats":[{"who":"pip","set":"night","cam":"pip","banner":"3:12 AM","vo":"Byte. My last reel got six views.","pip":{"action":"sad"},
+           "overlay":{"type":"pill","label":"YOUR LAST REEL","from":6,"to":6,"suffix":" views"}},
+          {"who":"byte","set":"night","cam":"byte","banner":"STEP 1 · *PASTE*","step":[1,3],"vo":"…","mascot":{"action":"point"}}]}
+```
+- One line per beat (3–12 words), `who` = speaker (lip-synced from the audio). Alternate speakers; 12–16 beats, 35–50 s.
+- Cams on `night`: `pip` / `byte` (face close-ups for emotion), `two` (both, medium), `wide`, `close` (medium centre), `side` (over Pip's shoulder), `low`. Change cam every beat; use face close-ups for reactions.
+- Pip actions: talk (default when speaking), listen (default otherwise), sad, shock, think, point, wave, celebrate, facepalm, type (holds a laptop).
+- `banner_style:"chip"`: banner is a small header; `*word*` turns yellow; `step:[i,n]` adds progress dashes. Keep the same banner for a section ("STEP 2 · *SCORE*").
+- `caps:"bold"`: 3-word white captions with yellow keywords and numbers.
+- New overlays: `pill` {label,from,to,suffix,compact,log} (views pill that counts up) · `bigcount` {label,from,to,prefix,suffix,of,unit,bar,sub,log} · `grid` {n,cols,label} (thumbnails filling in) · `stamp` {text,mark:"x"|"check",at} · `phone` {text,pill,sub,bg}. Also `beforeafter`, `send` and all older overlays.
+- Proof beats must be honest: show a before → after rewrite or an illustrative character moment ("my last reel got 6 views"), never fake view counts presented as real results.
+
 ## Carousel JSON (engine/carousel/build_carousel.py)
 ```json
 {"id":"2026-10-31-c1","keyword":"IDEA",

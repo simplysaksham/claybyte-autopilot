@@ -23,8 +23,10 @@ def tts(script, work):
     from kokoro_onnx import Kokoro
     k = Kokoro(os.path.join(MODELS, "kokoro.onnx"), os.path.join(MODELS, "voices.bin"))
     voice = script.get("voice", "am_puck"); speed = float(script.get("speed", 1.12))
+    voices = script.get("voices", {})
     for i, b in enumerate(script["beats"]):
-        s, sr = k.create(b["vo"], voice=voice, speed=speed, lang="en-us")
+        v = b.get("voice") or voices.get(b.get("who", "")) or voice
+        s, sr = k.create(b["vo"], voice=v, speed=float(b.get("speed", speed)), lang="en-us")
         sf.write(f"{work}/b{i}.wav", s, sr)
 
 def timing(script, work):
@@ -35,7 +37,11 @@ def timing(script, work):
         env = np.abs(a); idx = np.where(env > 0.02 * env.max())[0]; s0, s1 = idx[0] / sr, idx[-1] / sr
         dur = len(a) / sr
         is_cta = (b.get("overlay") or {}).get("type") == "cta"
-        pad = 0.35 if i < n - 1 else (1.6 if is_cta else 0.8)
+        duet = script.get("style") == "duet"
+        pad = (float(b.get("pad", 0.12 if duet else 0.35))) if i < n - 1 else (1.6 if is_cta else 0.8)
+        # per-frame loudness envelope (30 fps) for lip sync
+        fr = sr // 30; rms = [float(np.sqrt(np.mean(a[j:j + fr] ** 2))) if j < len(a) else 0.0 for j in range(0, len(a), fr)]
+        mx = max(rms) or 1.0; env = [round(min(1.0, x / (mx * .7)), 2) for x in rms]
         if is_cta: dur = max(dur, 3.0)
         toks = b["vo"].split()
         wts = [len(w) + 1.5 + (5 if w[-1] in ".!?" else 2.5 if w[-1] == "," else 0) for w in toks]
@@ -44,10 +50,11 @@ def timing(script, work):
             d = (s1 - s0) * wt / tot; core = d * (len(w) + 1.5) / wt
             words.append({"w": w, "t0": round(t + c + .05, 3), "t1": round(t + c + .05 + core, 3)}); c += d
         beat = {k: v for k, v in b.items() if k != "vo"}
-        beat.update({"start": round(t, 3), "end": round(t + dur + pad, 3), "words": words, "audio": f"b{i}.wav"})
+        beat.update({"start": round(t, 3), "end": round(t + dur + pad, 3), "words": words, "audio": f"b{i}.wav", "env": env})
         beats.append(beat); t += dur + pad
     T = {"beats": beats, "total": round(t, 3), "keyword": script.get("keyword", ""), "sets": script.get("sets", {}),
-         "highlight": script.get("highlight", []), "seed": script.get("seed", 7)}
+         "highlight": script.get("highlight", []), "seed": script.get("seed", 7),
+         "style": script.get("style"), "caps": script.get("caps"), "bannerStyle": script.get("banner_style")}
     json.dump(T, open(f"{work}/timing.json", "w"))
     return T
 
@@ -133,6 +140,15 @@ def mix(T, work, out_wav, seed=0):
             n = len(o.get("items", []))
             for k in range(n): _add(sfx, ding(mid([72, 74, 76, 79, 81, 84, 86][k % 7])), s + .6 + k * (D - 1.2) / max(1, n), .2)
         if o.get("type") in ("bigstat", "score"): _add(sfx, pop(1200), s + .25, .4)
+        if o.get("type") in ("pill", "bigcount") and o.get("to", 0) != o.get("from", 0):
+            du = o.get("dur", max(.6, D * .55)); st = o.get("at", .25)
+            for k in range(int(du / .06)): _add(sfx, click(), s + st + k * .06, .18)
+            _add(sfx, ding(mid(91)), s + st + du, .3)
+        if o.get("type") == "grid":
+            n = o.get("n", 24); du = o.get("dur", D * .7)
+            for k in range(0, n, 2): _add(sfx, pop(900 + 40 * (k % 9)), s + .2 + k / n * du, .12)
+        if o.get("type") == "stamp": _add(sfx, thud(), s + o.get("at", .3) + .1, .7)
+        if o.get("type") == "phone": _add(sfx, whoosh(.3), s + .05, .3)
         if o.get("type") == "cta":
             for k in range(4): _add(sfx, click(), s + .5 + k * .2, .5)
             _add(sfx, pop(1100), s + 1.6, .4); _add(sfx, ding(mid(88)), s + 1.85, .3); _add(sfx, pop(1400), s + 2.3, .35)

@@ -45,7 +45,7 @@ const PCOL = ['#FFF6E3', '#FFE7A8', '#D7F2EA', '#FFD9DE', '#E6DDFF'];
 const BULBC = ['#FF6B6B', '#F2B33D', '#7ED957', '#36B5A0', '#6FA8FF', '#B98BFF', '#FF8FD1'];
 
 // ---------- lights & ground ----------
-scene.add(new THREE.HemisphereLight('#fff4e6', '#c9a98a', .75));
+const hemi = new THREE.HemisphereLight('#fff4e6', '#c9a98a', .75); scene.add(hemi);
 const key = new THREE.DirectionalLight('#fff1dc', 2.1); key.castShadow = true;
 key.shadow.mapSize.set(2048, 2048); key.shadow.radius = 6; key.shadow.bias = -0.0006; key.shadow.normalBias = .02;
 Object.assign(key.shadow.camera, { left: -9, right: 9, top: 11, bottom: -6, near: .5, far: 60 });
@@ -183,6 +183,91 @@ SETS.studio = (() => {
     mascot: { wide: [X - .6, 2.17, .4, .25], close: [X - .8, 2.17, .7, .35], low: [X - .6, 2.17, .4, .2], side: [X - .6, 2.17, .4, .5] } };
 })();
 
+// night (x=120): navy void with bokeh + neon grid floor, for two-character "duet" reels
+SETS.night = (() => {
+  const X = 120; const NP_ = P.night || {};
+  const bgT = textTex(64, 512, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, NP_.top || '#070a26'); gr.addColorStop(.55, NP_.mid || '#141a5e'); gr.addColorStop(1, NP_.bottom || '#1d2378'); g.fillStyle = gr; g.fillRect(0, 0, w, h); });
+  const bg = new THREE.Mesh(new THREE.PlaneGeometry(90, 46), new THREE.MeshBasicMaterial({ map: bgT, fog: false })); bg.position.set(X, 18, -16); scene.add(bg);
+  const gT = textTex(256, 256, (g, w, h) => { g.fillStyle = '#0d1046'; g.fillRect(0, 0, w, h); g.strokeStyle = NP_.grid || '#4b4fd6'; g.lineWidth = 5; g.globalAlpha = .9; g.strokeRect(0, 0, w, h); g.globalAlpha = .25; g.lineWidth = 14; g.strokeRect(0, 0, w, h); });
+  gT.wrapS = gT.wrapT = THREE.RepeatWrapping; gT.repeat.set(40, 30);
+  const fl = new THREE.Mesh(new THREE.PlaneGeometry(80, 60), new THREE.MeshStandardMaterial({ map: gT, emissive: '#ffffff', emissiveMap: gT, emissiveIntensity: .35, roughness: .55, metalness: .1 })); fl.rotation.x = -Math.PI / 2; fl.position.set(X, .012, 7); fl.receiveShadow = true; scene.add(fl);
+  const bT = textTex(128, 128, (g, w, h) => { const gr = g.createRadialGradient(64, 64, 0, 64, 64, 64); gr.addColorStop(0, 'rgba(255,255,255,1)'); gr.addColorStop(.35, 'rgba(255,255,255,.55)'); gr.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = gr; g.fillRect(0, 0, w, h); });
+  const BC = ['#ff6b9a', '#ffd27a', '#7aa8ff', '#b98bff', '#6fe3d0', '#ff9a6b'];
+  const bokeh = []; for (let i = 0; i < 90; i++) { const m = new THREE.SpriteMaterial({ map: bT, color: BC[i % BC.length], transparent: true, opacity: R(.18, .6), depthWrite: false, fog: false, blending: THREE.AdditiveBlending }); const sp = new THREE.Sprite(m); const z = R(-15, -5); sp.position.set(X + R(-16, 16), R(.5, 16), z); sp.scale.setScalar(R(.25, 1.4) * (1 + (-z - 5) * .08)); scene.add(sp); bokeh.push({ sp, o: m.opacity, ph: R(0, 6.28), y: sp.position.y }); }
+  const pos = { byte: [X + 1.3, 0, .9, -.45], pip: [X - 1.0, 0, .6, .38] };
+  return { X, night: true, bokeh, pip: pos.pip, slot: new THREE.Vector3(X, 3, 1), top: new THREE.Vector3(X, 5, 0), focusY: 2,
+    cams: { wide: [[X, 3.4, 15.5], [X, 3.1, 14], [X, 1.9, 0]], two: [[X + .1, 2.7, 12], [X + .2, 2.55, 11], [X + .2, 1.5, .6]],
+      pip: [[X - .45, 2.75, 7.0], [X - .55, 2.7, 6.2], [X - .95, 2.05, .6]], byte: [[X + .75, 1.5, 6.4], [X + .85, 1.45, 5.6], [X + 1.25, .85, .9]],
+      low: [[X + 2.6, .7, 9.5], [X + 1.9, .9, 8.6], [X, 2.1, 0]], side: [[X - 2.7, 3.7, 4.6], [X - 2.4, 3.5, 4.0], [X + 1.2, 1.1, .9]], close: [[X + .1, 2.3, 8.8], [X + .15, 2.2, 8.0], [X + .15, 1.45, .7]] },
+    mascot: { wide: pos.byte, two: pos.byte, pip: pos.byte, byte: pos.byte, low: pos.byte, side: pos.byte, close: pos.byte } };
+})();
+
+// ---------- Pip: original clay creator character (duet reels) ----------
+function makePip() {
+  const C = Object.assign({ hoodie: COL.coral, skin: '#E9B48C', hat: COL.lilac, pants: '#33305E' }, P.pip || {});
+  const root = new THREE.Group(); scene.add(root); const body = new THREE.Group(); root.add(body);
+  const hood = clay(C.hoodie), skin = clay(C.skin), dark = new THREE.MeshStandardMaterial({ color: '#1d1424', roughness: .35 });
+  const legs = [-1, 1].map(s => { const l = mesh(new THREE.CapsuleGeometry(.17, .42, 4, 10), clay(C.pants), s * .25, .5, 0, root); mesh(RB(.36, .2, .52, .09), clay('#F6EBD3'), s * .25, .1, .07, root); return l; });
+  mesh(RB(1.3, 1.15, .9, .38, 4), hood, 0, 1.3, 0, body);
+  mesh(RB(.6, .28, .1, .1), clay(new THREE.Color(C.hoodie).offsetHSL(0, 0, -.1)), 0, 1.0, .45, body);
+  for (const s of [-1, 1]) mesh(new THREE.CapsuleGeometry(.025, .22, 3, 6), clay('#FFF3DC'), s * .14, 1.55, .47, body);
+  const head = new THREE.Group(); head.position.set(0, 1.85, 0); body.add(head);
+  mesh(RB(1.32, 1.18, 1.1, .46, 5), skin, 0, .62, 0, head);
+  for (const s of [-1, 1]) mesh(new THREE.SphereGeometry(.13, 12, 10), skin, s * .67, .6, 0, head).scale.set(.5, 1, .8);
+  const hat = mesh(new THREE.SphereGeometry(.7, 28, 16, 0, Math.PI * 2, 0, Math.PI / 2), clay(C.hat), 0, 1.08, 0, head); hat.scale.set(1.02, .72, .9);
+  mesh(new THREE.TorusGeometry(.66, .1, 10, 32), clay(new THREE.Color(C.hat).offsetHSL(0, 0, -.08)), 0, 1.1, 0, head).rotation.x = Math.PI / 2;
+  mesh(new THREE.SphereGeometry(.15, 14, 10), clay(COL.mustard), 0, 1.62, 0, head);
+  const eyes = [], pupils = [], brows = [];
+  for (const s of [-1, 1]) {
+    const e = mesh(new THREE.SphereGeometry(.17, 20, 14), clay('#FFFFFF'), s * .28, .7, .53, head); e.scale.set(.9, 1.1, .5); eyes.push(e);
+    const p = mesh(new THREE.SphereGeometry(.085, 14, 10), dark, s * .28, .69, .61, head); p.scale.set(1, 1.15, .5); pupils.push(p);
+    const b = new THREE.Group(); b.position.set(s * .28, .93, .55); head.add(b); const bm = mesh(new THREE.CapsuleGeometry(.045, .2, 3, 8), clay('#3B2A22'), 0, 0, 0, b); bm.rotation.z = Math.PI / 2; brows.push(b);
+    mesh(new THREE.SphereGeometry(.1, 12, 10), clay(COL.pink), s * .45, .45, .52, head).scale.set(1, .65, .3);
+  }
+  const mouthO = mesh(new THREE.SphereGeometry(.16, 18, 12), new THREE.MeshStandardMaterial({ color: '#4a1a2c', roughness: .4 }), 0, .41, .57, head); mouthO.scale.set(1, .25, .35);
+  const smile = mesh(new THREE.TorusGeometry(.11, .03, 8, 20, Math.PI), dark, 0, .46, .575, head);
+  const arms = [-1, 1].map(s => { const pv = new THREE.Group(); pv.position.set(s * .7, 1.68, 0); body.add(pv); mesh(new THREE.CapsuleGeometry(.14, .5, 4, 10), hood, 0, -.34, 0, pv); mesh(new THREE.SphereGeometry(.15, 14, 10), skin, 0, -.72, 0, pv); return pv; });
+  const lap = new THREE.Group(); lap.position.set(0, 1.25, .75); body.add(lap); lap.visible = false;
+  mesh(RB(1.1, .06, .75, .03), clay('#B9B3C2'), 0, 0, 0, lap); const ls = mesh(RB(1.1, .72, .05, .03), clay('#B9B3C2'), 0, .36, -.36, lap); ls.rotation.x = -.25;
+  const lsc = mesh(new THREE.PlaneGeometry(1.0, .62), new THREE.MeshStandardMaterial({ color: '#221A2C', emissive: '#6fe3d0', emissiveIntensity: .25 }), 0, .37, -.33, lap); lsc.rotation.x = -.25;
+  return { root, body, head, eyes, pupils, brows, mouthO, smile, arms, legs, lap };
+}
+const pip = makePip(); pip.root.visible = false;
+function posePip(o) {
+  const { x = 0, y = 0, z = 0, ry = 0, hop = 0, squash = 0, lean = 0, arm = [0, 0], fwd = [0, 0], brow = 0, open = 0, happy = 1, look = [0, 0], tilt = 0, nod = 0, blink = 0, laptop = false, scale = 1 } = o;
+  pip.root.position.set(x, y + Math.max(0, hop), z); pip.root.rotation.y = ry; pip.root.scale.setScalar(scale);
+  pip.body.scale.set(1 + squash * .2, 1 - squash * .25, 1 + squash * .2); pip.body.rotation.set(lean, 0, tilt * .4);
+  pip.head.rotation.set(nod, look[0] * .25, tilt);
+  pip.arms.forEach((a, i) => { a.rotation.z = (i ? 1 : -1) * (.12 + arm[i]); a.rotation.x = -fwd[i]; });
+  pip.brows.forEach((b, i) => { b.rotation.z = (i ? -1 : 1) * brow * .5; b.position.y = .93 + Math.abs(brow) * .04 * (brow < 0 ? 1.6 : -1); });
+  pip.eyes.forEach(e => e.scale.y = 1.1 * (1 - blink * .9));
+  pip.pupils.forEach((p, i) => { p.position.x = (i ? .28 : -.28) + look[0] * .05; p.position.y = .69 + look[1] * .05; p.scale.y = 1.15 * (1 - blink * .9); });
+  const op = clamp(open); pip.mouthO.visible = op > .06 || happy < .5; pip.smile.visible = !pip.mouthO.visible;
+  pip.mouthO.scale.set(happy < .5 && op < .06 ? .55 : .8 + op * .25, happy < .5 && op < .06 ? .12 : .14 + op * .75, .35);
+  pip.lap.visible = laptop;
+}
+function pipPose(action, lt, t, talk) {
+  const blink = (Math.sin(t * 2.1 + 1) > .985 || ((t + 1.3) % 4.1) < .1) ? 1 : 0; const g = talk ? Math.sin(t * 7) : 0;
+  const base = { t, blink, open: talk, look: [.4, .2] };
+  switch (action) {
+    case 'sad': return { ...base, brow: -1, happy: 0, arm: [-.05, -.05], nod: .18, lean: .06, look: [.2, -.6] };
+    case 'shock': return { ...base, brow: 1.2, happy: 0, arm: [1.1, 1.1], fwd: [.4, .4], hop: lt < .3 ? Math.sin(lt / .3 * Math.PI) * .35 : 0, squash: -.12 * clamp(1 - lt / .3), open: Math.max(talk, .7) };
+    case 'think': return { ...base, brow: .5, happy: 0, arm: [.1, .2], fwd: [0, 1.9], tilt: .12, look: [.7, .8] };
+    case 'point': return { ...base, brow: .3, arm: [.15, 1.35 + .05 * g], fwd: [0, .3], look: [1, .1] };
+    case 'wave': return { ...base, arm: [0, 2.3 + .4 * Math.sin(t * 8)], look: [0, 0] };
+    case 'celebrate': return { ...base, brow: .6, arm: [2.4 + .25 * Math.sin(t * 9), 2.4 + .25 * Math.sin(t * 9 + 1)], hop: Math.abs(Math.sin(lt * 6)) * .3, open: Math.max(talk, .4) };
+    case 'facepalm': return { ...base, brow: -.8, happy: 0, arm: [.1, -.55], fwd: [0, 2.75], nod: .28, look: [0, -.8] };
+    case 'type': return { ...base, brow: .2, arm: [.25, .25], fwd: [1.0 + .08 * Math.sin(t * 20), 1.0 + .08 * Math.sin(t * 20 + 2)], nod: .2, look: [0, -1], laptop: true };
+    case 'listen': return { ...base, brow: .2, arm: [0, 0], nod: .06 * Math.sin(t * 2), look: [1, .1], tilt: .06 };
+    default: return { ...base, brow: talk ? .25 * g : 0, arm: [.1 + .25 * Math.max(0, g), .1 + .25 * Math.max(0, -g)], fwd: [.35 * Math.max(0, g), .35 * Math.max(0, -g)], squash: .03 * Math.sin(t * 3) };
+  }
+}
+// mouth level from the beat's audio envelope (30 fps), 0 when this beat's speaker is someone else
+function talkLevel(B, lt, who) {
+  if ((B.who || 'byte') !== who || !B.env) return 0;
+  const i = Math.floor((lt - .05) * 30); const v = B.env[i] || 0; const v2 = B.env[i + 1] || 0; return clamp((v + v2) * .5 * 1.4);
+}
+
 // ---------- props ----------
 const paperTex = textTex(128, 168, (g, w, h) => { g.fillStyle = '#FFFFFF'; g.fillRect(0, 0, w, h); g.fillStyle = '#2A1F33'; g.fillRect(14, 18, 76, 12); g.fillStyle = '#c8bfcf'; for (let i = 0; i < 6; i++) g.fillRect(14, 46 + i * 18, i % 2 ? 84 : 100, 7); g.fillStyle = '#E8664A'; g.beginPath(); g.arc(104, 24, 9, 0, 7); g.fill(); });
 const NP = 230; const papers = new THREE.InstancedMesh(RB(.62, .035, .8, .015, 1), new THREE.MeshStandardMaterial({ map: paperTex, roughness: .85 }), NP); papers.castShadow = papers.receiveShadow = true; scene.add(papers);
@@ -233,15 +318,16 @@ function makeByte() {
   }
   const lids = [-1, 1].map(s => { const l = mesh(new THREE.SphereGeometry(.255, 24, 16, 0, Math.PI * 2, 0, Math.PI / 2), tealM, s * .32, 1.2, .55, body); l.scale.set(1.05, 1.2, .6); return l; });
   const mouth = mesh(new THREE.TorusGeometry(.12, .035, 8, 20, Math.PI), new THREE.MeshStandardMaterial({ color: '#1d1424' }), 0, .9, .6, body);
+  const mouthO = mesh(new THREE.SphereGeometry(.13, 16, 12), new THREE.MeshStandardMaterial({ color: '#1d1424', roughness: .35 }), 0, .86, .56, body); mouthO.scale.set(1, .3, .35); mouthO.visible = false;
   mesh(new THREE.CylinderGeometry(.04, .04, .45, 8), clay('#2A1F33'), 0, 1.82, 0, body);
   const antBall = mesh(new THREE.SphereGeometry(.14, 16, 12), clay(COL.mustard, { emissive: COL.mustard, emissiveIntensity: .25 }), 0, 2.08, 0, body);
   const arms = [-1, 1].map(s => { const pv = new THREE.Group(); pv.position.set(s * .76, 1.0, 0); body.add(pv); mesh(new THREE.CapsuleGeometry(.12, .38, 4, 10), tealM, 0, -.25, 0, pv); return pv; });
   [-1, 1].forEach(s => { const f = mesh(new THREE.CapsuleGeometry(.15, .22, 4, 10), clay('#2C8F80'), s * .35, .12, .15, root); f.rotation.x = Math.PI / 2; });
-  return { root, body, pupils, lids, mouth, arms, antBall };
+  return { root, body, pupils, lids, mouth, mouthO, arms, antBall };
 }
 const byte = makeByte();
 function poseByte(o) {
-  const b = byte; const { x = 0, y = 0, z = 0, ry = 0, hop = 0, squash = 0, lean = 0, arm = [0, 0], blink = 0, sad = 0, scale = 1, look = [0, 0], happy = 1, tilt = 0, glow = 0, t = 0 } = o;
+  const b = byte; const { x = 0, y = 0, z = 0, ry = 0, hop = 0, squash = 0, lean = 0, arm = [0, 0], blink = 0, sad = 0, scale = 1, look = [0, 0], happy = 1, tilt = 0, glow = 0, t = 0, open = 0 } = o;
   b.root.position.set(x, y + Math.max(0, hop), z); b.root.rotation.y = ry; b.root.scale.setScalar(scale);
   b.body.scale.set(1 + squash * .25, 1 - squash * .3, 1 + squash * .25); b.body.rotation.set(lean, 0, tilt);
   b.arms.forEach((a, i) => { a.rotation.z = (i ? 1 : -1) * (.15 + arm[i]); });
@@ -249,6 +335,7 @@ function poseByte(o) {
   b.lids.forEach(l => { l.visible = lid > .02; l.scale.y = 1.2 * lid; l.position.y = 1.2 + (1 - lid) * .1; });
   b.pupils.forEach((p, i) => { p.position.x = (i ? .32 : -.32) + look[0] * .06; p.position.y = 1.17 + look[1] * .06 - sad * .05; });
   b.mouth.rotation.z = happy > .5 ? Math.PI : 0; b.mouth.position.y = happy > .5 ? .9 : .82;
+  b.mouthO.visible = open > .06; b.mouth.visible = !b.mouthO.visible; b.mouthO.scale.set(.8 + open * .3, .12 + open * .6, .35);
   b.antBall.position.y = 2.08 + Math.sin(t * 9) * .03; b.antBall.material.emissiveIntensity = .25 + glow;
 }
 function actionPose(action, lt, t) {
@@ -283,6 +370,8 @@ T.beats.forEach(B => {
 const wordTime = (B, pre, fb) => { const w = B.words.find(w => w.w.toLowerCase().replace(/[^a-z0-9]/g, '').startsWith(String(pre).toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 5))); return w ? w.t0 - B.start : fb; };
 
 function setCaps(words, t, kw) {
+  if (T.caps === 'bold') { capsEl.className = 'bold'; const idx = words.findIndex(w => t >= w.t0 && t < w.t1 + .08); if (idx < 0) { capsEl.innerHTML = ''; return; } const s = idx - (idx % 3);
+    capsEl.innerHTML = words.slice(s, s + 3).map(w => { if (t < w.t0) return ''; const clean = w.w.replace(/[,;:"]/g, ''); const c2 = clean.replace(/[.!?]/g, ''); const isK = (kw || []).some(x => c2.toLowerCase() === String(x).toLowerCase()) || /^[\d$]/.test(c2); return `<span class="${isK ? 'k' : ''}" style="transform:scale(${.8 + .2 * back((t - w.t0) / .12)})">${esc(clean)}</span>`; }).join(' '); return; }
   const idx = words.findIndex(w => t >= w.t0 && t < w.t1 + .05); let html = '';
   if (idx >= 0) { const s = idx - (idx % 2); html = words.slice(s, s + 2).map((w, k) => { if (t < w.t0) return ''; const clean = w.w.replace(/[.,!?;:"]/g, ''); const isK = (kw || []).some(x => clean.toLowerCase() === String(x).toLowerCase()) || /^\d/.test(clean); return `<span class="w${isK ? ' k' : ''}" style="transform:rotate(${((s + k) % 3 - 1) * 2}deg) scale(${.85 + .15 * back((t - w.t0) / .12)})">${esc(clean)}</span>`; }).join(''); }
   capsEl.innerHTML = html;
@@ -322,6 +411,22 @@ function overlay(B, lt, D) {
     h = `<div class="send" style="transform:translateY(${(1 - e) * 80}px);opacity:${clamp(lt / .15)}"><div class="hd"><svg viewBox="0 0 48 48"><path d="M6 22 L42 6 L30 42 L23 27 Z" fill="none" stroke="#2A1F33" stroke-width="4.5" stroke-linejoin="round"/><path d="M23 27 L42 6" stroke="#2A1F33" stroke-width="4.5"/></svg>${esc(o.title || 'Send this to')}</div>
       <div class="to" style="transform:scale(${e2})"><i></i><b>${esc(o.who || 'a friend who needs this')}</b><u style="background:${pp >= 1 ? '#3FAE6A' : '#E8664A'}">${pp >= 1 ? 'Sent ✓' : 'Send'}</u></div>
       ${o.sub ? `<p style="opacity:${clamp((lt - 1.4) / .3)}">${esc(o.sub)}</p>` : ''}</div>`;
+  } else if (o.type === 'pill' || o.type === 'bigcount') {
+    const f = o.from ?? 0, to = o.to ?? f, st = o.at ?? .25, du = o.dur ?? Math.max(.6, D * .55); const k = eout((lt - st) / du);
+    const v = (o.log !== false && f > 0 && to > f) ? f * Math.pow(to / f, k) : lerp(f, to, k);
+    const fmt = x => { if (o.compact && x >= 1e6) return (x / 1e6).toFixed(x >= 1e7 ? 0 : 1) + 'M'; if (o.compact && x >= 1e4) return Math.round(x / 1e3) + 'K'; return Math.round(x).toLocaleString('en-US'); };
+    const txt = (o.prefix || '') + fmt(v) + (o.suffix || ''); const e = back((lt - .05) / .3); const done = k >= 1 && to !== f;
+    if (o.type === 'pill') h = `<div class="pill" style="transform:translateX(-50%) scale(${e * (done ? 1 + .06 * Math.max(0, 1 - (lt - st - du) / .25) : 1)})">${o.label ? `<small>${esc(o.label)}</small>` : ''}<b><i></i>${esc(txt)}</b></div>`;
+    else { const pr = o.of ? clamp(v / o.of) : k; h = `<div class="bigc" style="transform:scale(${e})">${o.label ? `<small>${esc(o.label)}</small>` : ''}<div><b>${esc(txt)}</b>${o.of ? `<span>/ ${esc(fmt(o.of))} ${esc(o.unit || '')}</span>` : ''}</div>${o.bar ? `<u><i style="width:${(pr * 100).toFixed(1)}%"></i></u>` : ''}${o.sub ? `<em>${esc(o.sub)}</em>` : ''}</div>`; }
+  } else if (o.type === 'grid') {
+    const n = o.n || 24, cols = o.cols || 6, du = o.dur ?? D * .7; const TC = ['#36B5A0', '#E8664A', '#F2B33D', '#B6A2E3', '#8DB2DA', '#F49AA6', '#A6C796'];
+    let tiles = ''; for (let i = 0; i < n; i++) { const tt = .2 + i / n * du; if (lt < tt) { tiles += '<i class="off"></i>'; continue; } const e = back((lt - tt) / .2); tiles += `<i style="background:${TC[(i * 5 + 3) % 7]};transform:scale(${e})"><b></b></i>`; }
+    h = `<div class="grid" style="grid-template-columns:repeat(${cols},1fr)">${o.label ? `<small style="grid-column:1/-1">${esc(o.label)}</small>` : ''}${tiles}</div>`;
+  } else if (o.type === 'stamp') {
+    const st = o.at ?? .3; if (lt >= st) { const k = clamp((lt - st) / .18); const sc = lerp(2.4, 1, eout(k)); h = `<div class="stamp ${o.mark === 'check' ? 'ok' : ''}" style="opacity:${k};transform:translateX(-50%) rotate(${o.rot ?? -8}deg) scale(${sc})">${esc(o.text || '')}<span>${o.mark === 'check' ? '✓' : '✕'}</span></div>`; }
+  } else if (o.type === 'phone') {
+    const e = back((lt - .1) / .4);
+    h = `<div class="phn" style="transform:translateY(${(1 - e) * 120}px) rotate(${o.rot ?? -3}deg);opacity:${clamp(lt / .15)}"><div class="scr" style="background:${o.bg || 'linear-gradient(160deg,#36B5A0,#2A1F33)'}">${o.pill ? `<div class="vp"><i></i>${esc(o.pill)}</div>` : ''}<p>${esc(o.text || '')}</p>${o.sub ? `<span>${esc(o.sub)}</span>` : ''}</div></div>`;
   } else if (o.type === 'cta') {
     const kw = String(o.keyword || T.keyword || 'LINK').toUpperCase(); const ty = clamp((lt - .5) / .8); const nch = Math.floor(ty * kw.length + .0001);
     const pp = clamp((lt - 1.5) / .15) - clamp((lt - 1.75) / .15); const eb = back((lt - 1.8) / .35);
@@ -369,7 +474,16 @@ window.renderAt = function (t) {
   Object.values(SETS).forEach(s => { if (s.bulbs) s.bulbs.forEach(b => b.material.emissiveIntensity = .05); if (s.g) s.g.scale.set(1, 1, 1); if (s.button) { s.button.position.z = 1.3; s.button.material.emissiveIntensity = 0; } });
   // camera + light
   const [p0, p1, l] = S.cams[camKey]; const e = ease(u);
-  camera.position.set(lerp(p0[0], p1[0], e), lerp(p0[1], p1[1], e), lerp(p0[2], p1[2], e)); camera.lookAt(l[0], l[1], l[2]);
+  camera.position.set(lerp(p0[0], p1[0], e), lerp(p0[1], p1[1], e), lerp(p0[2], p1[2], e));
+  if (T.style === 'duet') { // handheld drift + quick punch-in on every line
+    const hx = Math.sin(t * 1.3) * .05 + Math.sin(t * 2.9) * .02, hy = Math.cos(t * 1.7) * .035; camera.position.x += hx; camera.position.y += hy;
+    const pin = B.punch === false ? 0 : 1; camera.fov = 38 * (1 + .09 * pin * (1 - eout(lt / .38))); camera.updateProjectionMatrix();
+  } else if (camera.fov !== 38) { camera.fov = 38; camera.updateProjectionMatrix(); }
+  camera.lookAt(l[0], l[1], l[2]);
+  // mood lighting: night set is cool, dim and foggy
+  if (S.night) { hemi.color.set('#9fb4ff'); hemi.groundColor.set('#1a1650'); hemi.intensity = .55; key.color.set('#e3e8ff'); key.intensity = 1.7; rim.color.set('#b28bff'); rim.intensity = 1.6; scene.fog = scene.fog || new THREE.Fog('#0b0f38', 16, 46); renderer.toneMappingExposure = 1.12;
+    S.bokeh.forEach((b, i) => { b.sp.material.opacity = b.o * (.65 + .35 * Math.sin(t * 1.2 + b.ph)); b.sp.position.y = b.y + Math.sin(t * .3 + b.ph) * .25; }); }
+  else { hemi.color.set('#fff4e6'); hemi.groundColor.set('#c9a98a'); hemi.intensity = .75; key.color.set('#fff1dc'); key.intensity = 2.1; rim.color.set('#ffd9f0'); rim.intensity = .6; scene.fog = null; renderer.toneMappingExposure = 1.05; }
   key.position.set(S.X - 6, 14, 10); key.target.position.set(S.X, 1.5, 0); rim.position.set(S.X + 8, 6, -2); rim.target.position.set(S.X, 2, 0);
   spot.intensity = B.set === 'stage' ? 60 : 0; spot.position.set(S.X, 12, 6); spot.target.position.set(S.X, 1, 1);
   // mascot
@@ -377,12 +491,17 @@ window.renderAt = function (t) {
   const pileTop = doProps(B, S, lt, D, t, m);
   const act = (B.mascot && B.mascot.action) || 'idle';
   const pose = actionPose(act, lt, t);
-  poseByte({ ...pose, x: m[0], y: m[1] + pileTop * .95, z: m[2], ry: m[3], scale: (B.mascot && B.mascot.scale) || (camKey === 'close' ? .9 : 1) });
+  poseByte({ ...pose, open: talkLevel(B, lt, 'byte'), x: m[0], y: m[1] + pileTop * .95, z: m[2], ry: m[3], scale: (B.mascot && B.mascot.scale) || (camKey === 'close' && !S.night ? .9 : 1) });
+  // Pip appears on the night set (or any beat that sets "pip")
+  const pp = (B.pip && B.pip.at) || S.pip; pip.root.visible = !!pp && !(B.pip && B.pip.hide);
+  if (pip.root.visible) { const tl = talkLevel(B, lt, 'pip'); const pa = (B.pip && B.pip.action) || (B.who === 'pip' ? 'talk' : 'listen'); posePip({ ...pipPose(pa, lt, t, tl), x: pp[0], y: pp[1], z: pp[2], ry: pp[3] }); }
   byte.root.visible = !(B.mascot && B.mascot.hide);
   papers.instanceMatrix.needsUpdate = true;
   // DOM
-  bannerEl.textContent = B.banner || ''; const bin = back(lt / .35);
-  bannerEl.style.transform = `translateX(-50%) translateY(${(1 - bin) * -60}px) rotate(${-1.2 + (bi % 2) * 2.2}deg) scale(${.9 + .1 * bin})`; bannerEl.style.opacity = B.banner ? clamp(lt / .12) : 0;
+  if (T.bannerStyle === 'chip') { bannerEl.className = 'hchip'; const st = B.step; bannerEl.innerHTML = esc(B.banner || '').replace(/\*(.+?)\*/g, '<em>$1</em>') + (st ? `<span class="dash">${Array.from({ length: st[1] }, (_, k) => `<i class="${k < st[0] ? 'on' : ''}"></i>`).join('')}</span>` : ''); }
+  else bannerEl.textContent = B.banner || '';
+  const bin = back(lt / .35);
+  bannerEl.style.transform = T.bannerStyle === 'chip' ? `translateX(-50%) scale(${.92 + .08 * bin})` : `translateX(-50%) translateY(${(1 - bin) * -60}px) rotate(${-1.2 + (bi % 2) * 2.2}deg) scale(${.9 + .1 * bin})`; bannerEl.style.opacity = B.banner ? clamp(lt / .12) : 0;
   const isCta = B.overlay && B.overlay.type === 'cta';
   dim.style.background = `rgba(28,18,40,${isCta ? .62 * clamp(lt / .3) : (B.dim || 0)})`;
   overlay(B, lt, D);

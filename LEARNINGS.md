@@ -16,6 +16,7 @@ Research sources are in `research/<DATE>.md`. Stats below are second-hand from v
 - Machine-set signs get clipped by the banner and clash with top overlays; avoid machine/wide when the beat has a bigstat/counter overlay. Desk/close hides Byte behind the phone; use desk/side or desk/wide. (stills 2026-10-31)
 - Soft CTA: use the `send` overlay ("Send this to … the friend who …") instead of a sparse card. Result-first hooks: `beforeafter` overlay with `flip` ≈ 1.5 s.
 - Stills gotcha: build_reel reuses existing stills files; delete `<out>/<id>_work/stills` before re-rendering stills.
+- DUET FORMAT (from a reference reel the owner shared, 2026-10-31): two characters talking (creator + AI helper), dark navy set with bokeh, face close-ups with a punch-in on every line, 2–3-word bold captions, a chapter chip with step dashes, and live UI widgets (views pill counting up, big counters with bars, stamps, terminal typing). Structure: specific-time pain hook ("3:12 AM… 6 views") → proof → "show me how" → 3–5 steps → cost objection → payoff → CTA. Use it for at least one reel a day; see SPEC "Duet reels".
 - Recurring formats build habit: consider a named series ("Byte fixes your…", "60-second Claude skill").
 
 ### Carousels
