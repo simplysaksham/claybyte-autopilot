@@ -1,0 +1,624 @@
+{
+ "date": "2026-11-02",
+ "items": [
+  {
+   "slot": 1,
+   "kind": "carousel",
+   "publish_at": "2026-11-02T10:00:00+05:30",
+   "spec": {
+    "id": "2026-11-02-c1",
+    "keyword": null,
+    "cover": {
+     "style": "frame",
+     "theme": "lilac",
+     "series": "AGENCY LIFE · SCOPE CREEP",
+     "kicker": "COPY-PASTE THIS",
+     "title": "“One small *change?*” Reply like this",
+     "sub": "3 replies that keep the client and your weekend.",
+     "scene": {
+      "set": "desk",
+      "cam": "side",
+      "action": "shock",
+      "props": [],
+      "sets": {
+       "desk": {
+        "phone": {
+         "app": "Messages",
+         "title": "Client",
+         "lines": [
+          "Love it!! One small change…",
+          "Can we also add a 2nd version?"
+         ],
+         "pill": "3rd \"small\" change"
+        }
+       }
+      }
+     }
+    },
+    "slides": [
+     {
+      "type": "compare",
+      "title": "Don't say no. Say *yes, and*",
+      "left": {
+       "name": "Free yes",
+       "items": [
+        "Unpaid hours",
+        "Deadline slips",
+        "Next ask is bigger"
+       ]
+      },
+      "right": {
+       "name": "Priced yes",
+       "items": [
+        "Client chooses",
+        "You get paid",
+        "Scope stays clear"
+       ]
+      },
+      "winner": "right"
+     },
+     {
+      "type": "chat",
+      "n": "01",
+      "label": "REPLY",
+      "title": "Name it, *kindly*",
+      "who": "Client",
+      "msgs": [
+       {
+        "from": "them",
+        "text": "Can you also make a vertical cut for Stories? Quick one!"
+       },
+       {
+        "from": "you",
+        "text": "Happy to! That one sits outside our agreed scope, so I'll send a quick quote today."
+       }
+      ],
+      "note": "You stay friendly, and the word \"scope\" makes the extra work visible."
+     },
+     {
+      "type": "chat",
+      "n": "02",
+      "label": "REPLY",
+      "title": "Offer *two* options",
+      "who": "Client",
+      "msgs": [
+       {
+        "from": "them",
+        "text": "Can we squeeze in one more reel this month?"
+       },
+       {
+        "from": "you",
+        "text": "Sure! A: add it at my usual rate. B: swap it for one of the 4 we planned. Which works?"
+       }
+      ],
+      "note": "A choice keeps you the helpful one, not the blocker."
+     },
+     {
+      "type": "chat",
+      "n": "03",
+      "label": "REPLY",
+      "title": "Confirm in *writing*",
+      "who": "Client",
+      "msgs": [
+       {
+        "from": "them",
+        "text": "Like we said on the call, go ahead with the new intro!"
+       },
+       {
+        "from": "you",
+        "text": "Great! Confirming: new intro, +1 day, extra fee as quoted. Reply \"approved\" and I'll start."
+       }
+      ],
+      "note": "No work starts on a verbal yes."
+     },
+     {
+      "type": "doc",
+      "tag": "SCREENSHOT THIS",
+      "title": "Send a 1-page *change request*",
+      "head": "CHANGE REQUEST #03",
+      "meta": "Project: 4 reels/month · sent the same day",
+      "lines": [
+       {
+        "k": "Requested",
+        "v": "Vertical cut for Stories",
+        "n": "1"
+       },
+       {
+        "k": "Not in",
+        "v": "Scope section 2 (4 reels, 16:9)"
+       },
+       {
+        "k": "Effort",
+        "v": "2 hours",
+        "n": "2"
+       },
+       {
+        "k": "Price",
+        "v": "At the hourly rate in our contract",
+        "n": "3"
+       },
+       {
+        "k": "Timeline",
+        "v": "+1 working day"
+       },
+       {
+        "k": "Approve by",
+        "v": "Friday, 7 November",
+        "n": "4"
+       }
+      ],
+      "foot": "Reply \"approved\" to start. Not approved = not started."
+     },
+     {
+      "type": "steps",
+      "title": "Stop it *before* it starts",
+      "items": [
+       "Count deliverables: \"4 reels\", not \"content\"",
+       "Add a \"Not included\" list",
+       "2 revision rounds, 1 feedback doc",
+       "Put your extra-work rate in the contract"
+      ]
+     },
+     {
+      "type": "cta",
+      "title": "Send this to a *freelancer* who always says yes",
+      "keyword": null,
+      "sub": "Follow @claybyte.in for daily AI + creator business tips.",
+      "scene": {
+       "set": "studio",
+       "cam": "wide",
+       "action": "wave",
+       "props": [],
+       "sets": {
+        "studio": {
+         "laptop": {
+          "title": "change-request-03",
+          "lines": [
+           "Status: APPROVED",
+           "+1 day, paid",
+           "Scope: still clear"
+          ]
+         }
+        }
+       }
+      }
+     }
+    ]
+   },
+   "caption": "\"Just one small change?\" Here's what to reply, word for word. Save this for the next one.\n\n1. Name it, kindly: \"Happy to! That sits outside our agreed scope, so I'll send a quick quote today.\"\n2. Offer two options: add it at your usual rate, or swap it for something already planned.\n3. Confirm in writing: \"New intro, +1 day, extra fee as quoted. Reply 'approved' and I'll start.\"\n\nThen send a 1-page change request the same day: what was asked, effort, price, timeline, approve-by date.\n\nStop it before it starts: count deliverables, add a \"not included\" list, cap revisions, and put your extra-work rate in the contract.\n\nSend this to a freelancer who always says yes.\n\n#freelancetips #scopecreep #agencylife #clientmanagement #freelancer #creatorbusiness",
+   "keyword": null,
+   "topic": "Scope creep: 3 replies to 'one small change' + change request",
+   "pillar": 3,
+   "sources": [
+    "https://grey.co/blog/freelance-scope-creep",
+    "https://www.9am.works/freelancer-academy/blog/scope-creep-freelancers-change-request-process"
+   ]
+  },
+  {
+   "slot": 2,
+   "kind": "reel",
+   "publish_at": "2026-11-02T13:30:00+05:30",
+   "script": {
+    "id": "2026-11-02-r1",
+    "keyword": null,
+    "voice": "af_heart:0.7+af_bella:0.3",
+    "speed": 1.1,
+    "seed": 5,
+    "caps": "bold",
+    "highlight": [
+     "twenty",
+     "bad-day",
+     "tool",
+     "fuel",
+     "work",
+     "ten",
+     "three",
+     "done"
+    ],
+    "cover_beat": 1,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Notes",
+       "title": "Bad-day fuel",
+       "lines": [
+        "Q: how long per reel?",
+        "Q: what mic?",
+        "Q: best hook length?"
+       ],
+       "pill": "10 saved"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "bad-day.txt",
+       "lines": [
+        "Q: what mic do you use?",
+        "A: the one in your phone.",
+        "Tip: film near a window."
+       ]
+      }
+     },
+     "machine": {
+      "sign": "DONE",
+      "wall": "#B6A2E3"
+     }
+    },
+    "beats": [
+     {
+      "banner": "CONFESSION",
+      "vo": "Confession. I used to skip posting every time I felt tired.",
+      "set": "desk",
+      "cam": "side",
+      "mascot": {
+       "action": "sad"
+      },
+      "overlay": {
+       "type": "pill",
+       "label": "POSTS THIS WEEK",
+       "from": 0,
+       "to": 0,
+       "suffix": " posts"
+      }
+     },
+     {
+      "banner": "THE FIX: A BAD-DAY POST",
+      "vo": "Now I keep a bad-day post. One format I can make in twenty minutes.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "counter",
+       "label": "BAD-DAY POST",
+       "from": 0,
+       "to": 20,
+       "suffix": " min"
+      }
+     },
+     {
+      "banner": "1 · THE TOOL",
+      "vo": "First, the tool. One fixed template. Same layout, same font, same set.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "card",
+       "title": "The tool",
+       "items": [
+        "Same layout",
+        "Same font",
+        "Same set"
+       ]
+      }
+     },
+     {
+      "banner": "2 · THE FUEL",
+      "vo": "Second, the fuel. A note with ten questions your followers already asked.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "type"
+      },
+      "overlay": {
+       "type": "none"
+      }
+     },
+     {
+      "banner": "3 · THE WORK",
+      "vo": "Third, the work. Pick one question, answer it in three lines, post.",
+      "set": "studio",
+      "cam": "side",
+      "mascot": {
+       "action": "type"
+      },
+      "overlay": {
+       "type": "checklist",
+       "items": [
+        "Pick one question",
+        "Answer in three lines",
+        "Post it"
+       ]
+      }
+     },
+     {
+      "banner": "THE RULE",
+      "vo": "On a bad day, done beats perfect. Good days can stay ambitious.",
+      "set": "stage",
+      "cam": "low",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "props": [
+       "confetti"
+      ],
+      "overlay": {
+       "type": "beforeafter",
+       "before": {
+        "label": "TIRED DAY",
+        "text": "Skip posting"
+       },
+       "after": {
+        "label": "TIRED DAY",
+        "text": "Post the 20-minute version"
+       },
+       "flip": 1.3
+      }
+     },
+     {
+      "banner": "SEND THIS",
+      "vo": "Send this to the friend who vanishes every time they're tired.",
+      "set": "machine",
+      "cam": "low",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "send",
+       "title": "Send this to",
+       "who": "the friend who vanishes on tired days",
+       "sub": "Tool. Fuel. Work. 20 minutes."
+      }
+     }
+    ]
+   },
+   "caption": "Tired days don't have to mean zero posts. Build a bad-day post you can make in 20 minutes.\n\n1. The tool: one fixed template (same layout, same font, same set)\n2. The fuel: a note with 10 questions your followers already asked\n3. The work: pick one question, answer it in 3 lines, post\n\nOn a bad day, done beats perfect. Keep the ambitious posts for good days.\n\nSave this, and send it to the friend who vanishes every time they're tired.\n\n#contentcreator #creatortips #consistency #contentstrategy #burnout #instagramtips",
+   "keyword": null,
+   "topic": "Bad-day post: a 20-minute backup format (tool, fuel, work)",
+   "pillar": 5,
+   "sources": [
+    "https://socialbee.com/blog/latest-instagram-trends/"
+   ]
+  },
+  {
+   "slot": 3,
+   "kind": "reel",
+   "publish_at": "2026-11-02T19:30:00+05:30",
+   "script": {
+    "id": "2026-11-02-r2",
+    "keyword": "IDEA",
+    "style": "duet",
+    "caps": "bold",
+    "banner_style": "chip",
+    "voices": {
+     "pip": "am_michael:0.6+am_fenrir:0.4",
+     "byte": "af_heart"
+    },
+    "voice": "af_heart",
+    "speed": 1.08,
+    "seed": 6,
+    "highlight": [
+     "four",
+     "IDEA",
+     "Claude",
+     "hook",
+     "three",
+     "CTA",
+     "words"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "night": {}
+    },
+    "beats": [
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "7:40 PM",
+      "vo": "Byte... I had a great idea on my walk. And it's gone.",
+      "pip": {
+       "action": "sad"
+      },
+      "speed": 0.98,
+      "overlay": {
+       "type": "pill",
+       "label": "IDEAS SAVED",
+       "from": 0,
+       "to": 0,
+       "suffix": " ideas"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "low",
+      "banner": "BYTE FIXES · *EP 2*",
+      "vo": "Gone? Did you record a voice note?",
+      "mascot": {
+       "action": "point"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "BYTE FIXES · *EP 2*",
+      "vo": "I mean... I rambled for four minutes.",
+      "pip": {
+       "action": "facepalm"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "THE *TRICK*",
+      "vo": "Perfect. Rambling is your first draft.",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "pill",
+       "label": "VOICE MEMO · WALK IDEA",
+       "from": 4,
+       "to": 4,
+       "suffix": " min"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "two",
+      "banner": "THE *TRICK*",
+      "vo": "Okay... so what do I do with it?",
+      "pip": {
+       "action": "think"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 1 · *TRANSCRIBE*",
+      "step": [
+       1,
+       3
+      ],
+      "vo": "Step one. Get the transcript. Phone dictation is fine.",
+      "mascot": {
+       "action": "type"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "two",
+      "banner": "STEP 1 · *TRANSCRIBE*",
+      "step": [
+       1,
+       3
+      ],
+      "vo": "Got it. It's a total mess.",
+      "pip": {
+       "action": "type"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 2 · *PROMPT*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Paste the mess into Claude. Ask for a hook, three beats, a CTA.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "terminal",
+       "lines": [
+        {
+         "role": "you",
+         "text": "Turn this voice note into a 30-second reel: hook, 3 beats, CTA."
+        },
+        {
+         "role": "you",
+         "text": "Keep my phrases."
+        }
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "STEP 2 · *PROMPT*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Wait. Isn't that cheating?",
+      "pip": {
+       "action": "shock"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 2 · *PROMPT*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "They're your words. Claude just puts them in order.",
+      "mascot": {
+       "action": "wave"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "two",
+      "banner": "STEP 3 · *CUT*",
+      "step": [
+       3,
+       3
+      ],
+      "vo": "Then read it aloud. Cut anything you wouldn't say.",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "checklist",
+       "items": [
+        "Read it aloud",
+        "Cut stiff lines",
+        "Film tonight"
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "wide",
+      "banner": "*PAYOFF*",
+      "vo": "Four minutes of rambling... one script. Okay!",
+      "pip": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "beforeafter",
+       "before": {
+        "label": "VOICE NOTE",
+        "text": "4 minutes of rambling"
+       },
+       "after": {
+        "label": "SCRIPT",
+        "text": "Hook + 3 beats + CTA"
+       },
+       "flip": 1.4
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "two",
+      "banner": "FREE *TOOL*",
+      "vo": "Want ideas faster than walks? Comment IDEA.",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "cta",
+       "keyword": "IDEA",
+       "follow": false
+      }
+     }
+    ]
+   },
+   "caption": "Comment IDEA and I'll DM you the free Reel Idea Machine (a Claude skill + PDF guide).\n\nYour best ideas show up on walks, then disappear. Here's how to turn a rambling voice note into a script:\n\n1. Transcribe: record the voice note, get the transcript (phone dictation is fine)\n2. Prompt: paste it into Claude: \"Turn this voice note into a 30-second reel: hook, 3 beats, CTA. Keep my phrases.\"\n3. Cut: read it aloud and delete anything you wouldn't actually say\n\nThey're still your words. Claude just puts them in order.\n\nByte fixes · EP 2. Follow for EP 3.\n\n#claudeai #aitools #contentcreator #reelscript #creatortips #aiforcreators",
+   "keyword": "IDEA",
+   "topic": "Voice note to reel script with one Claude prompt (Byte fixes EP 2)",
+   "pillar": 1,
+   "sources": []
+  }
+ ]
+}
