@@ -8,6 +8,7 @@ slide types: point{n,title,body} list{title,items} stat{value,label,body} compar
              flag{n,label,title,says,fix,says_label,fix_label} recap{title,items,tag}
              doc{title,tag,head,meta,lines:[{k,v,n}],foot}  (paper document mock; lines with "n" get a numbered marker)
              chat{n,label,title,who,status,msgs:[{from:"them"|"you",text}],note}  (DM thread mock: client bubble + your reply script)
+             bars{tag,title,rows:[{k,v,pct,note}],foot}  (stage -> value meter rows with big bars)
 cta.scene{set,cam,action,props,sets} optional: renders the mascot in a window under the CTA text
 """
 import sys, os, json, asyncio, subprocess, time, html, re
@@ -83,6 +84,11 @@ def slide_html(s, i, n, kw):
         note = f'<div class="cnote"><b>WHY IT WORKS</b> {E(s.get("note"))}</div>' if s.get("note") else ""
         return f'''<section class="s chat" data-n="{E(s.get("n",""))}"><div class="clab">{lab}</div><h2 class="sm">{H(s["title"])}</h2>
 <div class="phone"><div class="ph"><i>{E((s.get("who","Client") or "C")[0])}</i><div><b>{E(s.get("who","Client"))}</b><span>{E(s.get("status","online"))}</span></div></div>{bub}<div class="seen">Seen ✓✓</div></div>{note}{swipe}{foot}</section>'''
+    if t == "bars":  # stage -> value meter rows (e.g. kill fee by project stage); fills the slide with big bars
+        rows = "".join(f'<div class="br"><div class="bk"><span>{E(r.get("k"))}</span><b>{E(r.get("v"))}</b></div><div class="bt"><i style="width:{max(4,min(100,float(r.get("pct",0)))):.0f}%"></i></div>{f"<p>{E(r.get(chr(110)+chr(111)+chr(116)+chr(101)))}</p>" if r.get("note") else ""}</div>' for r in s.get("rows", []))
+        tag = f'<div class="rtag">{E(s.get("tag"))}</div>' if s.get("tag") else ""
+        bf = f'<div class="bfoot">{E(s.get("foot"))}</div>' if s.get("foot") else ""
+        return f'<section class="s bars">{tag}<h2 class="sm">{H(s.get("title"))}</h2><div class="brs">{rows}</div>{bf}{swipe}{foot}</section>'
     if t == "quote":
         return f'<section class="s dark"><div class="q">“</div><h2 class="qt">{E(s["text"])}</h2><p class="by">{E(s.get("by"))}</p>{swipe}{foot}</section>'
     if t == "cta":

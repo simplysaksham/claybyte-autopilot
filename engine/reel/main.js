@@ -408,9 +408,9 @@ function overlay(B, lt, D) {
     const lines = o.lines || []; let used = .3; const per = (D - .8) / Math.max(1, lines.length);
     h = `<div class="term"><div class="bar"><i></i><i></i><i></i></div>${lines.map((l, i) => { const st = .3 + i * per; if (lt < st) return ''; const txt = String(l.text); const n = Math.floor(txt.length * clamp((lt - st) / (per * .7))); return `<div class="${l.role === 'you' ? 'you' : 'ai'}">${l.role === 'you' ? '&gt; ' : ''}${esc(txt.slice(0, n))}</div>`; }).join('')}</div>`;
   } else if (o.type === 'compare') {
-    const L = o.left || {}, Rr = o.right || {}; const e1 = back((lt - .2) / .3), e2 = back((lt - .6) / .3), win = lt > D * .6;
-    const col = (s, e, w) => `<div style="transform:scale(${e})">${w && win ? '<span class="win">WINNER</span>' : ''}<h5>${esc(s.name || '')}</h5>${(s.items || []).map(x => `<p>${esc(x)}</p>`).join('')}</div>`;
-    h = `<div class="cmp">${col(L, e1, o.winner === 'left')}${col(Rr, e2, o.winner === 'right')}</div>`;
+    const L = o.left || {}, Rr = o.right || {}; const e1 = back((lt - .2) / .3), e2 = back((lt - .6) / .3), win = lt > D * (o.reveal ?? .6);
+    const col = (s, e, w) => `<div style="transform:scale(${e});opacity:${win && o.winner && !w ? .45 : 1}">${w && win ? '<span class="win">WINNER</span>' : ''}<h5>${esc(s.name || '')}</h5>${(s.items || []).map(x => `<p>${esc(x)}</p>`).join('')}</div>`;
+    h = `<div class="cmp${(L.items || []).length <= 1 && (Rr.items || []).length <= 1 ? ' big' : ''}">${col(L, e1, o.winner === 'left')}${col(Rr, e2, o.winner === 'right')}</div>`;
   } else if (o.type === 'score') {
     const v = Math.round(lerp(0, o.value ?? 9, eout((lt - .2) / .6))); h = `<div class="score ${(o.value ?? 9) < 7 ? 'bad' : ''}" style="transform:translateX(-50%) scale(${back((lt - .1) / .3)})">${v}/${o.max || 10}</div>`;
   } else if (o.type === 'checklist') {
@@ -521,6 +521,7 @@ window.renderAt = function (t) {
   const isCta = B.overlay && B.overlay.type === 'cta';
   dim.style.background = `rgba(28,18,40,${isCta ? .62 * clamp(lt / .3) : (B.dim || 0)})`;
   overlay(B, lt, D);
+  { const cy = B.caps_y != null ? B.caps_y : T.caps_y; capsEl.style.top = (T.caps === 'bold' && cy != null) ? cy + 'px' : ''; }
   setCaps(B.words, t, T.highlight);
   grain.style.backgroundPosition = `${(t * 997) % 256 | 0}px ${(t * 613) % 256 | 0}px`;
   if (T.still) { bannerEl.style.opacity = 0; capsEl.innerHTML = ''; ovl.innerHTML = ''; document.getElementById('brand').style.opacity = 0; grain.style.opacity = 0; }

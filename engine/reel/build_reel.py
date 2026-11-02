@@ -75,7 +75,7 @@ def timing(script, work):
         beats.append(beat); t += dur + pad
     T = {"beats": beats, "total": round(t, 3), "keyword": script.get("keyword", ""), "sets": script.get("sets", {}),
          "highlight": script.get("highlight", []), "seed": script.get("seed", 7),
-         "style": script.get("style"), "caps": script.get("caps"), "bannerStyle": script.get("banner_style")}
+         "style": script.get("style"), "caps": script.get("caps"), "caps_y": script.get("caps_y"), "bannerStyle": script.get("banner_style")}
     json.dump(T, open(f"{work}/timing.json", "w"))
     return T
 

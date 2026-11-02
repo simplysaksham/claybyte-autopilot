@@ -1,0 +1,641 @@
+{
+ "date": "2026-11-03",
+ "items": [
+  {
+   "slot": 1,
+   "kind": "carousel",
+   "publish_at": "2026-11-03T10:00:00+05:30",
+   "spec": {
+    "id": "2026-11-03-c1",
+    "keyword": null,
+    "cover": {
+     "style": "poster",
+     "theme": "teal",
+     "series": "AGENCY LIFE · KILL FEE",
+     "kicker": "SAVE THIS",
+     "title": "Cancelled? You still get *paid*",
+     "sub": "Add a kill fee before you start.",
+     "scene": {
+      "set": "desk",
+      "cam": "side",
+      "action": "shock",
+      "props": [],
+      "sets": {
+       "desk": {
+        "phone": {
+         "app": "Messages",
+         "title": "Client",
+         "lines": [
+          "Budget got cut :(",
+          "We're pausing the project."
+         ],
+         "pill": "Day 12 of 20"
+        }
+       }
+      }
+     }
+    },
+    "slides": [
+     {
+      "type": "compare",
+      "title": "No clause vs a *kill fee*",
+      "left": {
+       "name": "No clause",
+       "items": [
+        "12 days of work, unpaid",
+        "Deposit becomes a fight",
+        "You turned other clients down"
+       ]
+      },
+      "right": {
+       "name": "Kill fee",
+       "items": [
+        "Completed work paid",
+        "Deposit credited, not argued",
+        "Cancellation priced in"
+       ]
+      },
+      "winner": "right"
+     },
+     {
+      "type": "flag",
+      "n": "",
+      "label": "IT HAPPENS",
+      "title": "They cancel *halfway*",
+      "says_label": "CLIENT SAYS",
+      "says": "Budget got cut, we're pausing. Can you send over what you have?",
+      "fix_label": "YOU REPLY",
+      "fix": "Sure! Per clause 7: completed work plus the kill fee, deposit credited. Invoice today, files once it's paid."
+     },
+     {
+      "type": "bars",
+      "tag": "ONE COMMON STARTING POINT",
+      "title": "Price it by *stage*",
+      "rows": [
+       {
+        "k": "Cancelled before work starts",
+        "v": "25%",
+        "pct": 25,
+        "note": "of the project total"
+       },
+       {
+        "k": "Cancelled mid-project",
+        "v": "+25–50%",
+        "pct": 50,
+        "note": "completed work, plus 25–50% of what's left"
+       },
+       {
+        "k": "Short job, cancelled late",
+        "v": "up to 100%",
+        "pct": 100,
+        "note": "of the remaining value"
+       }
+      ],
+      "foot": "Ranges from one freelancer contract guide. Pick numbers that fit your work."
+     },
+     {
+      "type": "doc",
+      "tag": "SCREENSHOT THIS",
+      "title": "Put this in your *contract*",
+      "head": "7 · CANCELLATION (KILL FEE)",
+      "meta": "Plain-English version · not legal advice",
+      "lines": [
+       {
+        "k": "Trigger",
+        "v": "Client cancels in writing, any reason",
+        "n": "1"
+       },
+       {
+        "k": "Done work",
+        "v": "Paid in full at the agreed rate",
+        "n": "2"
+       },
+       {
+        "k": "Kill fee",
+        "v": "25% before kickoff, 40% after",
+        "n": "3"
+       },
+       {
+        "k": "Expenses",
+        "v": "Non-refundable costs repaid"
+       },
+       {
+        "k": "Deposit",
+        "v": "Credited against the kill fee",
+        "n": "4"
+       },
+       {
+        "k": "Files",
+        "v": "Released once fees are paid"
+       }
+      ],
+      "foot": "Get a local lawyer to check the final wording."
+     },
+     {
+      "type": "steps",
+      "title": "Make it *stick*",
+      "items": [
+       "Take a 25–50% deposit to book the slot",
+       "Say if the deposit is refundable",
+       "Show the clause in your proposal",
+       "Invoice the same day they cancel"
+      ]
+     },
+     {
+      "type": "cta",
+      "title": "Send this to a *freelancer* who works on a handshake",
+      "keyword": null,
+      "sub": "Follow @claybyte.in for daily AI + creator business tips.",
+      "scene": {
+       "set": "studio",
+       "cam": "wide",
+       "action": "celebrate",
+       "props": [],
+       "sets": {
+        "studio": {
+         "laptop": {
+          "title": "invoice-031",
+          "lines": [
+           "Project cancelled: day 12",
+           "Completed work: PAID",
+           "Kill fee: PAID"
+          ]
+         }
+        }
+       }
+      }
+     }
+    ]
+   },
+   "caption": "Client cancelled halfway? You can still get paid. Save this before your next contract.\n\nA kill fee is what the client pays if they cancel after booking you. It covers the work you did and the slot you held for them.\n\nOne common starting point (from a freelancer contract guide):\n• Cancelled before work starts: 25% of the project total\n• Mid-project: completed work + 25–50% of what's left\n• Short job, cancelled late: up to 100% of the remaining value\n\nPut it in your contract: trigger, completed work paid, kill fee %, expenses, deposit credited, files released once paid.\n\nMake it stick: take a 25–50% deposit, say if it's refundable, show the clause in your proposal, invoice the day they cancel.\n\nNot legal advice, so have a local lawyer check your final wording.\n\nSend this to a freelancer who works on a handshake.\n\n#freelancetips #freelancecontract #agencylife #clientmanagement #freelancer #creatorbusiness",
+   "keyword": null,
+   "topic": "Kill fee clause: get paid when a client cancels mid-project",
+   "pillar": 3,
+   "sources": [
+    "https://beancount.io/blog/2026/09/23/freelancer-kill-fee-clause-cancellation-deposits-schedule-c-guide",
+    "https://crunch.co.uk/knowledge/article/kill-fees-explained"
+   ]
+  },
+  {
+   "slot": 2,
+   "kind": "reel",
+   "publish_at": "2026-11-03T13:30:00+05:30",
+   "script": {
+    "id": "2026-11-03-r1",
+    "keyword": null,
+    "voice": "af_bella:0.6+af_heart:0.4",
+    "speed": 1.1,
+    "seed": 8,
+    "caps": "bold",
+    "caps_y": 985,
+    "highlight": [
+     "three",
+     "B",
+     "A",
+     "specific",
+     "you",
+     "warning",
+     "wins"
+    ],
+    "cover_beat": 1,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Drafts",
+       "title": "Hook A or B?",
+       "lines": [
+        "A: Tips to grow",
+        "B: 30 days, what flopped"
+       ],
+       "pill": "pick one"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "hook-game.txt",
+       "lines": [
+        "Round 1: B",
+        "Round 2: B",
+        "Round 3: A"
+       ]
+      }
+     },
+     "machine": {
+      "sign": "A or B",
+      "wall": "#8DB2DA"
+     }
+    },
+    "beats": [
+     {
+      "banner": "HOOK GAME · 3 ROUNDS",
+      "vo": "Pick the hook that stops the scroll. Three rounds. Keep score.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "score",
+       "value": 0,
+       "max": 3
+      }
+     },
+     {
+      "banner": "ROUND 1 · A OR B?",
+      "vo": "A: tips to grow faster. B: I posted thirty days straight. Here's what flopped.",
+      "set": "desk",
+      "cam": "side",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "compare",
+       "left": {
+        "name": "A",
+        "items": [
+         "Tips to grow faster"
+        ]
+       },
+       "right": {
+        "name": "B",
+        "items": [
+         "I posted 30 days straight. Here's what flopped."
+        ]
+       }
+      }
+     },
+     {
+      "banner": "B WINS",
+      "vo": "B wins. A specific story beats a vague promise.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "compare",
+       "left": {
+        "name": "A",
+        "items": [
+         "Tips to grow faster"
+        ]
+       },
+       "right": {
+        "name": "B",
+        "items": [
+         "I posted 30 days straight. Here's what flopped."
+        ]
+       },
+       "winner": "right",
+       "reveal": 0.12
+      }
+     },
+     {
+      "banner": "ROUND 2 · A OR B?",
+      "vo": "A: how to write better captions. B: your first line is hiding your post.",
+      "set": "machine",
+      "cam": "low",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "compare",
+       "left": {
+        "name": "A",
+        "items": [
+         "How to write better captions"
+        ]
+       },
+       "right": {
+        "name": "B",
+        "items": [
+         "Your first line is hiding your post"
+        ]
+       }
+      },
+      "caps_y": 760
+     },
+     {
+      "banner": "B WINS AGAIN",
+      "vo": "B again. Say you, and name the problem they already have.",
+      "set": "stage",
+      "cam": "low",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "props": [
+       "confetti"
+      ],
+      "overlay": {
+       "type": "card",
+       "title": "Why B wins",
+       "items": [
+        "Say \"you\"",
+        "Name their problem"
+       ]
+      }
+     },
+     {
+      "banner": "ROUND 3 · A OR B?",
+      "vo": "Last one. A: stop using this hook. B: some hook ideas for you.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "compare",
+       "left": {
+        "name": "A",
+        "items": [
+         "Stop using this hook"
+        ]
+       },
+       "right": {
+        "name": "B",
+        "items": [
+         "Some hook ideas for you"
+        ]
+       }
+      }
+     },
+     {
+      "banner": "TWIST: A WINS",
+      "vo": "A wins. A warning makes people check if it's them.",
+      "set": "studio",
+      "cam": "side",
+      "mascot": {
+       "action": "shock"
+      },
+      "overlay": {
+       "type": "compare",
+       "left": {
+        "name": "A",
+        "items": [
+         "Stop using this hook"
+        ]
+       },
+       "right": {
+        "name": "B",
+        "items": [
+         "Some hook ideas for you"
+        ]
+       },
+       "winner": "left",
+       "reveal": 0.12
+      }
+     },
+     {
+      "banner": "SEND THIS",
+      "vo": "How many did you get? Send this to a friend and compare scores.",
+      "set": "machine",
+      "cam": "low",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "send",
+       "title": "Send this to",
+       "who": "a friend, then compare scores",
+       "sub": "Specific. Say you. A warning."
+      },
+      "caps_y": 760
+     }
+    ]
+   },
+   "caption": "Hook game: pick A or B before the answer shows. 3 rounds. How many did you get?\n\nRound 1: \"Tips to grow faster\" vs \"I posted 30 days straight. Here's what flopped.\" B wins: a specific story beats a vague promise.\nRound 2: \"How to write better captions\" vs \"Your first line is hiding your post.\" B wins: say \"you\" and name a problem they already have.\nRound 3: \"Stop using this hook\" vs \"Some hook ideas for you.\" A wins: a warning makes people check if it's them.\n\nSave this for your next script, and send it to a friend to compare scores.\n\n#hooks #contentcreator #reelstips #copywriting #creatortips #instagramtips",
+   "keyword": null,
+   "topic": "Hook game: A or B, 3 rounds (specific, you, warning)",
+   "pillar": 2,
+   "sources": [
+    "https://manychat.com/blog/instagram-trends-for-creators-2026/"
+   ]
+  },
+  {
+   "slot": 3,
+   "kind": "reel",
+   "publish_at": "2026-11-03T19:30:00+05:30",
+   "script": {
+    "id": "2026-11-03-r2",
+    "keyword": "IDEA",
+    "style": "duet",
+    "caps": "bold",
+    "banner_style": "chip",
+    "voices": {
+     "pip": "am_michael:0.6+am_fenrir:0.4",
+     "byte": "af_heart"
+    },
+    "voice": "af_heart",
+    "speed": 1.08,
+    "seed": 9,
+    "highlight": [
+     "shot",
+     "list",
+     "Claude",
+     "IDEA",
+     "twelve",
+     "two",
+     "three"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "night": {}
+    },
+    "beats": [
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "6:05 PM",
+      "vo": "Byte... I'm filming for a client tomorrow. I have no plan.",
+      "pip": {
+       "action": "sad"
+      },
+      "speed": 0.98
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "low",
+      "banner": "BYTE FIXES · *EP 3*",
+      "vo": "You don't need a plan. You need a shot list.",
+      "mascot": {
+       "action": "point"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "BYTE FIXES · *EP 3*",
+      "vo": "A shot list? All I have is their brief.",
+      "pip": {
+       "action": "think"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "THE *TRICK*",
+      "vo": "That's enough. The brief already says what to film.",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "pill",
+       "label": "CLIENT BRIEF",
+       "from": 2,
+       "to": 2,
+       "suffix": " pages"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 1 · *PASTE*",
+      "step": [
+       1,
+       3
+      ],
+      "vo": "Step one. Paste the whole brief into Claude.",
+      "mascot": {
+       "action": "type"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 2 · *PROMPT*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Then ask for a shot list. Shot, angle, line, seconds.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "terminal",
+       "lines": [
+        {
+         "role": "you",
+         "text": "Turn this brief into a shot list for a 30-second reel."
+        },
+        {
+         "role": "you",
+         "text": "Columns: shot, angle, line, seconds. Flag every must-have."
+        }
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "STEP 2 · *PROMPT*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Wait... it finds what the client actually asked for?",
+      "pip": {
+       "action": "shock"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 2 · *PROMPT*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "It flags the must-haves. You double-check them.",
+      "mascot": {
+       "action": "wave"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "low",
+      "banner": "STEP 3 · *GROUP*",
+      "step": [
+       3,
+       3
+      ],
+      "vo": "Step three. Group shots by location, so you set up once.",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "checklist",
+       "items": [
+        "Group by location",
+        "Hook shot first",
+        "B-roll last"
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "wide",
+      "banner": "*PAYOFF*",
+      "vo": "Okay... twelve shots, two locations. I can do this.",
+      "pip": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "beforeafter",
+       "before": {
+        "label": "CLIENT BRIEF",
+        "text": "2 pages of notes"
+       },
+       "after": {
+        "label": "SHOT LIST",
+        "text": "12 shots · 2 locations"
+       },
+       "flip": 1.4
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "*PAYOFF*",
+      "vo": "Where was this last month?",
+      "pip": {
+       "action": "facepalm"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "two",
+      "banner": "FREE *TOOL*",
+      "vo": "Want reel ideas that fast too? Comment IDEA.",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "cta",
+       "keyword": "IDEA",
+       "follow": false
+      }
+     }
+    ]
+   },
+   "caption": "Comment IDEA and I'll DM you the free Reel Idea Machine (a Claude skill + PDF guide).\n\nShoot tomorrow, no plan? You don't need a plan. You need a shot list, and the client's brief already has one inside it.\n\n1. Paste: drop the whole brief into Claude\n2. Prompt: \"Turn this brief into a shot list for a 30-second reel. Columns: shot, angle, line, seconds. Flag every must-have.\" Then double-check the must-haves yourself.\n3. Group: sort shots by location so you set up once. Hook shot first, B-roll last.\n\nByte fixes · EP 3. Follow for EP 4.\n\n#claudeai #aitools #contentcreator #shotlist #videoproduction #aiforcreators",
+   "keyword": "IDEA",
+   "topic": "Client brief to shot list with one Claude prompt (Byte fixes EP 3)",
+   "pillar": 1,
+   "sources": []
+  }
+ ]
+}
