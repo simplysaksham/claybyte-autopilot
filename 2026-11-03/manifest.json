@@ -1,0 +1,50 @@
+{
+ "date": "2026-11-03",
+ "rows": [
+  {
+   "kind": "carousel",
+   "title": "Kill fee clause: get paid when a client cancels mid-project",
+   "caption": "Client cancelled halfway? You can still get paid. Save this before your next contract.\n\nA kill fee is what the client pays if they cancel after booking you. It covers the work you did and the slot you held for them.\n\nOne common starting point (from a freelancer contract guide):\n\u2022 Cancelled before work starts: 25% of the project total\n\u2022 Mid-project: completed work + 25\u201350% of what's left\n\u2022 Short job, cancelled late: up to 100% of the remaining value\n\nPut it in your contract: trigger, completed work paid, kill fee %, expenses, deposit credited, files released once paid.\n\nMake it stick: take a 25\u201350% deposit, say if it's refundable, show the clause in your proposal, invoice the day they cancel.\n\nNot legal advice, so have a local lawyer check your final wording.\n\nSend this to a freelancer who works on a handshake.\n\n#freelancetips #freelancecontract #agencylife #clientmanagement #freelancer #creatorbusiness",
+   "media_urls": [
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-03/2026-11-03-c1_01.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-03/2026-11-03-c1_02.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-03/2026-11-03-c1_03.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-03/2026-11-03-c1_04.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-03/2026-11-03-c1_05.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-03/2026-11-03-c1_06.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-03/2026-11-03-c1_07.jpg"
+   ],
+   "cover_url": null,
+   "keyword": null,
+   "publish_at": "2026-11-03T10:00:00+05:30",
+   "topic": "Kill fee clause: get paid when a client cancels mid-project",
+   "pillar": 3
+  },
+  {
+   "kind": "reel",
+   "title": "Hook game: A or B, 3 rounds (specific, you, warning)",
+   "caption": "Hook game: pick A or B before the answer shows. 3 rounds. How many did you get?\n\nRound 1: \"Tips to grow faster\" vs \"I posted 30 days straight. Here's what flopped.\" B wins: a specific story beats a vague promise.\nRound 2: \"How to write better captions\" vs \"Your first line is hiding your post.\" B wins: say \"you\" and name a problem they already have.\nRound 3: \"Stop using this hook\" vs \"Some hook ideas for you.\" A wins: a warning makes people check if it's them.\n\nSave this for your next script, and send it to a friend to compare scores.\n\n#hooks #contentcreator #reelstips #copywriting #creatortips #instagramtips",
+   "media_urls": [
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-03/2026-11-03-r1.mp4"
+   ],
+   "cover_url": "https://simplysaksham.github.io/claybyte-autopilot/2026-11-03/2026-11-03-r1_cover.jpg",
+   "keyword": null,
+   "publish_at": "2026-11-03T13:30:00+05:30",
+   "topic": "Hook game: A or B, 3 rounds (specific, you, warning)",
+   "pillar": 2
+  },
+  {
+   "kind": "reel",
+   "title": "Client brief to shot list with one Claude prompt (Byte fixes EP 3)",
+   "caption": "Comment IDEA and I'll DM you the free Reel Idea Machine (a Claude skill + PDF guide).\n\nShoot tomorrow, no plan? You don't need a plan. You need a shot list, and the client's brief already has one inside it.\n\n1. Paste: drop the whole brief into Claude\n2. Prompt: \"Turn this brief into a shot list for a 30-second reel. Columns: shot, angle, line, seconds. Flag every must-have.\" Then double-check the must-haves yourself.\n3. Group: sort shots by location so you set up once. Hook shot first, B-roll last.\n\nByte fixes \u00b7 EP 3. Follow for EP 4.\n\n#claudeai #aitools #contentcreator #shotlist #videoproduction #aiforcreators",
+   "media_urls": [
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-03/2026-11-03-r2.mp4"
+   ],
+   "cover_url": "https://simplysaksham.github.io/claybyte-autopilot/2026-11-03/2026-11-03-r2_cover.jpg",
+   "keyword": "IDEA",
+   "publish_at": "2026-11-03T19:30:00+05:30",
+   "topic": "Client brief to shot list with one Claude prompt (Byte fixes EP 3)",
+   "pillar": 1
+  }
+ ]
+}

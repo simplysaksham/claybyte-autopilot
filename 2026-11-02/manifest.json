@@ -1,0 +1,51 @@
+{
+ "date": "2026-11-02",
+ "rows": [
+  {
+   "kind": "carousel",
+   "title": "Scope creep: 3 replies to 'one small change' + change request",
+   "caption": "\"Just one small change?\" Here's what to reply, word for word. Save this for the next one.\n\n1. Name it, kindly: \"Happy to! That sits outside our agreed scope, so I'll send a quick quote today.\"\n2. Offer two options: add it at your usual rate, or swap it for something already planned.\n3. Confirm in writing: \"New intro, +1 day, extra fee as quoted. Reply 'approved' and I'll start.\"\n\nThen send a 1-page change request the same day: what was asked, effort, price, timeline, approve-by date.\n\nStop it before it starts: count deliverables, add a \"not included\" list, cap revisions, and put your extra-work rate in the contract.\n\nSend this to a freelancer who always says yes.\n\n#freelancetips #scopecreep #agencylife #clientmanagement #freelancer #creatorbusiness",
+   "media_urls": [
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-02/2026-11-02-c1_01.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-02/2026-11-02-c1_02.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-02/2026-11-02-c1_03.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-02/2026-11-02-c1_04.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-02/2026-11-02-c1_05.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-02/2026-11-02-c1_06.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-02/2026-11-02-c1_07.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-02/2026-11-02-c1_08.jpg"
+   ],
+   "cover_url": null,
+   "keyword": null,
+   "publish_at": "2026-11-02T10:00:00+05:30",
+   "topic": "Scope creep: 3 replies to 'one small change' + change request",
+   "pillar": 3
+  },
+  {
+   "kind": "reel",
+   "title": "Bad-day post: a 20-minute backup format (tool, fuel, work)",
+   "caption": "Tired days don't have to mean zero posts. Build a bad-day post you can make in 20 minutes.\n\n1. The tool: one fixed template (same layout, same font, same set)\n2. The fuel: a note with 10 questions your followers already asked\n3. The work: pick one question, answer it in 3 lines, post\n\nOn a bad day, done beats perfect. Keep the ambitious posts for good days.\n\nSave this, and send it to the friend who vanishes every time they're tired.\n\n#contentcreator #creatortips #consistency #contentstrategy #burnout #instagramtips",
+   "media_urls": [
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-02/2026-11-02-r1.mp4"
+   ],
+   "cover_url": "https://simplysaksham.github.io/claybyte-autopilot/2026-11-02/2026-11-02-r1_cover.jpg",
+   "keyword": null,
+   "publish_at": "2026-11-02T13:30:00+05:30",
+   "topic": "Bad-day post: a 20-minute backup format (tool, fuel, work)",
+   "pillar": 5
+  },
+  {
+   "kind": "reel",
+   "title": "Voice note to reel script with one Claude prompt (Byte fixes EP 2)",
+   "caption": "Comment IDEA and I'll DM you the free Reel Idea Machine (a Claude skill + PDF guide).\n\nYour best ideas show up on walks, then disappear. Here's how to turn a rambling voice note into a script:\n\n1. Transcribe: record the voice note, get the transcript (phone dictation is fine)\n2. Prompt: paste it into Claude: \"Turn this voice note into a 30-second reel: hook, 3 beats, CTA. Keep my phrases.\"\n3. Cut: read it aloud and delete anything you wouldn't actually say\n\nThey're still your words. Claude just puts them in order.\n\nByte fixes \u00b7 EP 2. Follow for EP 3.\n\n#claudeai #aitools #contentcreator #reelscript #creatortips #aiforcreators",
+   "media_urls": [
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-02/2026-11-02-r2.mp4"
+   ],
+   "cover_url": "https://simplysaksham.github.io/claybyte-autopilot/2026-11-02/2026-11-02-r2_cover.jpg",
+   "keyword": "IDEA",
+   "publish_at": "2026-11-02T19:30:00+05:30",
+   "topic": "Voice note to reel script with one Claude prompt (Byte fixes EP 2)",
+   "pillar": 1
+  }
+ ]
+}
