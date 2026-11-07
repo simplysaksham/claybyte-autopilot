@@ -89,6 +89,13 @@ def slide_html(s, i, n, kw):
         tag = f'<div class="rtag">{E(s.get("tag"))}</div>' if s.get("tag") else ""
         bf = f'<div class="bfoot">{E(s.get("foot"))}</div>' if s.get("foot") else ""
         return f'<section class="s bars">{tag}<h2 class="sm">{H(s.get("title"))}</h2><div class="brs">{rows}</div>{bf}{swipe}{foot}</section>'
+    if t == "check":  # decision scorecard: yes/no questions + a verdict stamp (fit check, "take it or pass")
+        def pill(a): a = (a or "").lower(); return f'<em class="{"y" if a=="yes" else "n"}">{"YES" if a=="yes" else "NO"}</em>' if a in ("yes","no") else '<em class="q">?</em>'
+        rows = "".join(f'<div class="ck"><b>{k+1}</b><div><span>{H(r.get("q"))}</span>{f"<p>{E(r.get(chr(110)+chr(111)+chr(116)+chr(101)))}</p>" if r.get("note") else ""}</div>{pill(r.get("a"))}</div>' for k, r in enumerate(s.get("rows", [])))
+        tag = f'<div class="rtag">{E(s.get("tag"))}</div>' if s.get("tag") else ""
+        v = s.get("verdict")
+        vd = f'<div class="verdict {E(v.get("mark","pass"))}"><i>{E(v.get("label","VERDICT"))}</i>{H(v.get("text"))}</div>' if v else ""
+        return f'<section class="s check">{tag}<h2 class="sm">{H(s.get("title"))}</h2><div class="cks">{rows}</div>{vd}{swipe}{foot}</section>'
     if t == "quote":
         return f'<section class="s dark"><div class="q">“</div><h2 class="qt">{E(s["text"])}</h2><p class="by">{E(s.get("by"))}</p>{swipe}{foot}</section>'
     if t == "cta":

@@ -1,0 +1,638 @@
+{
+ "date": "2026-11-08",
+ "items": [
+  {
+   "slot": 1,
+   "kind": "carousel",
+   "publish_at": "2026-11-08T10:00:00+05:30",
+   "spec": {
+    "id": "2026-11-08-c1",
+    "keyword": null,
+    "cover": {
+     "style": "frame",
+     "theme": "ink",
+     "series": "CREATOR MONEY · MINIMUM FEE",
+     "kicker": "SAVE THIS",
+     "title": "Tiny job: *take it* or pass?",
+     "sub": "Run this 4-question check first.",
+     "scene": {
+      "set": "desk",
+      "cam": "wide",
+      "action": "shock",
+      "props": [],
+      "sets": {
+       "desk": {
+        "phone": {
+         "app": "Messages",
+         "title": "New client",
+         "lines": [
+          "Just 1 quick reel?",
+          "Budget is small :)"
+         ],
+         "pill": "10 mins, right?"
+        }
+       }
+      }
+     }
+    },
+    "slides": [
+     {
+      "type": "flag",
+      "n": "",
+      "label": "IT HAPPENS",
+      "title": "The *quick* little job",
+      "says_label": "CLIENT SAYS",
+      "says": "Can you do one quick reel? Small budget, but it's only 10 minutes for you!",
+      "fix_label": "YOUR MOVE",
+      "fix": "Before you say yes, count the hours. Then check it against your minimum fee."
+     },
+     {
+      "type": "bars",
+      "tag": "EXAMPLE · ONE \"QUICK\" REEL",
+      "title": "Where the *10 minutes* go",
+      "rows": [
+       {
+        "k": "Brief + a call to clarify it",
+        "v": "1.5 h",
+        "pct": 25
+       },
+       {
+        "k": "Script, shoot and edit",
+        "v": "3 h",
+        "pct": 50
+       },
+       {
+        "k": "Two rounds of changes",
+        "v": "1 h",
+        "pct": 17
+       },
+       {
+        "k": "Invoice, then chasing it",
+        "v": "0.5 h",
+        "pct": 8
+       }
+      ],
+      "foot": "Example hours: 6 in total. Track yours for a month and use your real number."
+     },
+     {
+      "type": "doc",
+      "tag": "SCREENSHOT THIS",
+      "title": "Set your *minimum* fee",
+      "head": "MINIMUM FEE · WORKSHEET",
+      "meta": "Example numbers · swap in yours",
+      "lines": [
+       {
+        "k": "Your rate",
+        "v": "$40 an hour",
+        "n": "1"
+       },
+       {
+        "k": "Hours any job costs",
+        "v": "6 (brief, call, edits, invoice)",
+        "n": "2"
+       },
+       {
+        "k": "Rate × hours",
+        "v": "$240",
+        "n": "3"
+       },
+       {
+        "k": "Round up",
+        "v": "$250 = your minimum",
+        "n": "4"
+       }
+      ],
+      "foot": "Formula from a freelance pricing guide: rate × the hours every project costs, rounded up."
+     },
+     {
+      "type": "check",
+      "tag": "WORKED EXAMPLE",
+      "title": "The *4-question* check",
+      "rows": [
+       {
+        "q": "Does it pay your minimum?",
+        "note": "Offer: $90 for one reel",
+        "a": "no"
+       },
+       {
+        "q": "Is the scope written down?",
+        "note": "\"Just a quick one\" isn't scope",
+        "a": "no"
+       },
+       {
+        "q": "Is there real work after it?",
+        "note": "A next project, not \"exposure\"",
+        "a": "no"
+       },
+       {
+        "q": "Does it fit without bumping a bigger client?",
+        "a": "yes"
+       }
+      ],
+      "verdict": {
+       "label": "VERDICT",
+       "mark": "pass",
+       "text": "1 of 4. Pass, or shrink the scope."
+      }
+     },
+     {
+      "type": "chat",
+      "label": "COPY THIS",
+      "n": "",
+      "title": "Say no without *burning* it",
+      "who": "New client",
+      "status": "online",
+      "msgs": [
+       {
+        "from": "them",
+        "text": "Can you do one quick reel for $90?"
+       },
+       {
+        "from": "you",
+        "text": "Thanks for thinking of me! My minimum is $250. For that I can do 2 reels + 1 round of changes. Want the scope?"
+       }
+      ],
+      "note": "Hold the price. Flex the scope."
+     },
+     {
+      "type": "recap",
+      "tag": "SCREENSHOT THIS",
+      "title": "Minimum fee *cheat sheet*",
+      "items": [
+       "Rate × hours *every* job costs",
+       "Round it *up*",
+       "Never discount the minimum",
+       "Offer less *scope*, not less price"
+      ]
+     },
+     {
+      "type": "cta",
+      "title": "Send this to a *freelancer* who says yes to every quick job",
+      "keyword": null,
+      "sub": "Follow @claybyte.in for daily AI + creator business tips.",
+      "scene": {
+       "set": "studio",
+       "cam": "wide",
+       "action": "celebrate",
+       "props": [],
+       "sets": {
+        "studio": {
+         "laptop": {
+          "title": "minimum.txt",
+          "lines": [
+           "Rate x 6 hours",
+           "Rounded up: $250",
+           "Scope flexes. Price doesn't."
+          ]
+         }
+        }
+       }
+      }
+     }
+    ]
+   },
+   "caption": "Tiny job, tiny budget: take it or pass? Run this check first (save it).\n\n\"It's only 10 minutes for you\" is never 10 minutes. A brief, a call, the edit, two rounds of changes, the invoice, the chasing.\n\nSet a minimum fee:\n1. Your hourly rate (say $40)\n2. × the hours ANY job costs you, however small (say 6)\n3. = $240. Round up: $250.\n\nThen ask 4 questions:\n• Does it pay my minimum?\n• Is the scope written down?\n• Is there real work after it?\n• Does it fit without bumping a bigger client?\n\nMostly no? Pass, or offer less scope for your minimum. Hold the price, flex the scope.\n\nSend this to a freelancer who says yes to every \"quick\" job.\n\n#freelancetips #creatorbusiness #freelancepricing #socialmediamanager #agencylife #smallbusinesstips",
+   "keyword": null,
+   "topic": "Minimum project fee: rate × hours, round up, 4-question take-it-or-pass check",
+   "pillar": 4,
+   "sources": [
+    "https://earnifyhub.com/blog/freelancing/freelance-project-minimum-pricing-strategy",
+    "https://www.truefuturemedia.com/articles/instagram-carousel-strategy-2026"
+   ]
+  },
+  {
+   "slot": 2,
+   "kind": "reel",
+   "publish_at": "2026-11-08T13:30:00+05:30",
+   "script": {
+    "id": "2026-11-08-r1",
+    "keyword": null,
+    "voice": "af_bella",
+    "speed": 1.1,
+    "seed": 12,
+    "caps": "bold",
+    "caps_y": 985,
+    "highlight": [
+     "three",
+     "top",
+     "half",
+     "ten",
+     "nobody",
+     "new"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Drafts",
+       "title": "Reel text",
+       "lines": [
+        "MY 3 TIPS",
+        "(behind the caption)"
+       ],
+       "pill": "draft"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "text-rules.txt",
+       "lines": [
+        "1. Top half",
+        "2. Under 10 words",
+        "3. New scene, new text"
+       ]
+      }
+     },
+     "machine": {
+      "sign": "1 READ",
+      "wall": "#A6C796"
+     }
+    },
+    "beats": [
+     {
+      "banner": "3 TEXT RULES",
+      "vo": "Three rules for on-screen text. Rule three is the one nobody follows.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "bigstat",
+       "value": "3",
+       "label": "TEXT RULES"
+      }
+     },
+     {
+      "banner": "RULE 1 · TOP HALF",
+      "vo": "Rule one. Text low on the screen gets hidden by your caption and buttons.",
+      "set": "desk",
+      "cam": "side",
+      "mascot": {
+       "action": "shock"
+      },
+      "overlay": {
+       "type": "safezone",
+       "mode": "bad",
+       "text": "MY 3 TIPS",
+       "top": "SAFE",
+       "bottom": "CAPTION + BUTTONS",
+       "at": 0.9,
+       "x": "76%",
+       "scale": 0.85
+      }
+     },
+     {
+      "banner": "RULE 1 · TOP HALF",
+      "vo": "Move it into the top half, and everyone can read it.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "safezone",
+       "mode": "good",
+       "text": "MY 3 TIPS",
+       "top": "SAFE",
+       "bottom": "CAPTION + BUTTONS",
+       "at": 0.4,
+       "x": "77%",
+       "scale": 0.85,
+       "rot": 2
+      }
+     },
+     {
+      "banner": "RULE 2 · ONE READ",
+      "vo": "Rule two. If it needs two reads, it's too long. Keep it under ten words.",
+      "set": "machine",
+      "cam": "low",
+      "caps_y": 760,
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "beforeafter",
+       "before": {
+        "label": "TWO READS",
+        "text": "Here are some of the tips I learned about growing this year"
+       },
+       "after": {
+        "label": "ONE READ",
+        "text": "3 growth tips I wish I knew"
+       },
+       "flip": 2.0
+      }
+     },
+     {
+      "banner": "RULE 3 · NOBODY DOES IT",
+      "vo": "Rule three, the one nobody follows. New scene, new text.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "hop"
+      },
+      "overlay": {
+       "type": "card",
+       "sync": false,
+       "title": "New scene = new text",
+       "items": [
+        "Scene 1: the problem",
+        "Scene 2: the fix",
+        "Scene 3: the result"
+       ]
+      }
+     },
+     {
+      "banner": "WHY IT WORKS",
+      "vo": "Same text for ten seconds feels frozen. New text tells them the story moved.",
+      "set": "stage",
+      "cam": "low",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "stamp",
+       "text": "FROZEN?",
+       "mark": "x",
+       "at": 0.6
+      }
+     },
+     {
+      "banner": "SEND THIS",
+      "vo": "Top half. Under ten words. New scene, new text. Send this to a friend who needs it.",
+      "set": "studio",
+      "cam": "side",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "send",
+       "title": "Send this to",
+       "who": "the friend whose text hides behind the buttons",
+       "sub": "Top half · under 10 words · new scene, new text"
+      }
+     }
+    ]
+   },
+   "caption": "Rule 3 is the one nobody follows. 3 rules for on-screen text that people actually read:\n\n1. Top half. Text low on the screen gets covered by your caption and the buttons. Move it up.\n2. One read. If it needs two reads, it's too long. Keep each screen under 10 words.\n3. New scene, new text. The same line sitting there for 10 seconds feels frozen. Change it when the scene changes so sound-off viewers see the story move.\n\nSave this for your next edit, and send it to the friend whose text hides behind the buttons.\n\n#reelstips #contentcreator #videoediting #instagramtips #creatortips",
+   "keyword": null,
+   "topic": "3 on-screen text rules: top half, under 10 words, new scene new text",
+   "pillar": 2,
+   "sources": [
+    "https://www.trymypost.com/blog/instagram-reels-safe-zones-text-placement-2026"
+   ]
+  },
+  {
+   "slot": 3,
+   "kind": "reel",
+   "publish_at": "2026-11-08T19:30:00+05:30",
+   "script": {
+    "id": "2026-11-08-r2",
+    "keyword": "IDEA",
+    "style": "duet",
+    "caps": "bold",
+    "banner_style": "chip",
+    "voices": {
+     "pip": "am_michael:0.6+am_fenrir:0.4",
+     "byte": "af_heart"
+    },
+    "voice": "af_heart",
+    "speed": 1.08,
+    "seed": 13,
+    "highlight": [
+     "forty",
+     "zero",
+     "bio",
+     "150",
+     "Claude",
+     "IDEA",
+     "three"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "night": {}
+    },
+    "beats": [
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "11:20 PM",
+      "vo": "Byte! Forty people opened my profile today!",
+      "pip": {
+       "action": "celebrate"
+      },
+      "speed": 1.05
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "BYTE FIXES · *EP 5*",
+      "vo": "Nice! And how many followed?",
+      "mascot": {
+       "action": "think"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "BYTE FIXES · *EP 5*",
+      "vo": "Zero.",
+      "pip": {
+       "action": "facepalm"
+      },
+      "speed": 0.95
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "THE *PROBLEM*",
+      "vo": "Then it's your bio. Read it to me.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "pill",
+       "label": "PROFILE VISITS → FOLLOWS",
+       "from": 40,
+       "to": 40,
+       "suffix": " → 0"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "THE *PROBLEM*",
+      "vo": "Creator. Coffee lover. Dreamer.",
+      "pip": {
+       "action": "think"
+      },
+      "speed": 0.98
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "THE *PROBLEM*",
+      "vo": "That's who you are. Not what they get.",
+      "mascot": {
+       "action": "point"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 1 · *PASTE*",
+      "step": [
+       1,
+       3
+      ],
+      "vo": "Step one. Paste your bio and your three best posts into Claude.",
+      "mascot": {
+       "action": "type"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "side",
+      "banner": "STEP 2 · *PROMPT*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Ask for three bios. Who you help, what they get, why follow.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "terminal",
+       "lines": [
+        {
+         "role": "you",
+         "text": "Write 3 Instagram bios under 150 characters."
+        },
+        {
+         "role": "you",
+         "text": "Line 1: who I help. Line 2: what they get. Line 3: why follow."
+        }
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "STEP 2 · *PROMPT*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Wait... it all has to fit in 150 characters?",
+      "pip": {
+       "action": "shock"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 2 · *PROMPT*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Yep. So every word has to earn its spot.",
+      "mascot": {
+       "action": "wave"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "low",
+      "banner": "STEP 3 · *PICK*",
+      "step": [
+       3,
+       3
+      ],
+      "vo": "Step three. Pick the one a stranger gets in two seconds.",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "checklist",
+       "sync": false,
+       "items": [
+        "Who you help",
+        "What they get",
+        "Why follow"
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "wide",
+      "banner": "*PAYOFF*",
+      "vo": "Okay... now a stranger knows why to follow.",
+      "pip": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "beforeafter",
+       "before": {
+        "label": "OLD BIO",
+        "text": "Creator. Coffee lover. Dreamer."
+       },
+       "after": {
+        "label": "NEW BIO",
+        "text": "Reel scripts for coaches · 3 hooks a week · free guide"
+       },
+       "flip": 1.4
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "*PAYOFF*",
+      "vo": "Changing it. Right now.",
+      "pip": {
+       "action": "type"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "low",
+      "banner": "FREE *TOOL*",
+      "vo": "Want reel ideas that land like that? Comment IDEA.",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "cta",
+       "keyword": "IDEA",
+       "follow": false
+      }
+     }
+    ]
+   },
+   "caption": "Comment IDEA and I'll DM you the free Reel Idea Machine (a Claude skill + PDF guide).\n\n40 profile visits, 0 follows? People opened your profile and didn't see a reason to stay. That's a bio problem.\n\nByte fixes · EP 5:\n1. Paste: your current bio + your 3 best posts into Claude\n2. Prompt: \"Write 3 Instagram bios under 150 characters. Line 1: who I help. Line 2: what they get. Line 3: why follow.\"\n3. Pick: the one a stranger understands in 2 seconds. Read it out loud before you save it.\n\nYour bio has 150 characters. Make every word earn its spot.\n\n#claudeai #aitools #instagrambio #contentcreator #creatortips #aiforcreators",
+   "keyword": "IDEA",
+   "topic": "Rewrite your Instagram bio with one Claude prompt (Byte fixes EP 5)",
+   "pillar": 1,
+   "sources": [
+    "https://www.sendible.com/insights/instagram-character-limit"
+   ]
+  }
+ ]
+}

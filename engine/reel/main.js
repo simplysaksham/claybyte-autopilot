@@ -207,7 +207,7 @@ SETS.night = (() => {
   const pos = { byte: [X + 1.3, 0, .9, -.45], pip: [X - 1.0, 0, .6, .38] };
   return { X, night: true, bokeh, dust, pip: pos.pip, slot: new THREE.Vector3(X, 3, 1), top: new THREE.Vector3(X, 5, 0), focusY: 2,
     cams: { wide: [[X, 3.4, 15.5], [X, 3.1, 14], [X, 1.9, 0]], two: [[X + .1, 2.7, 12], [X + .2, 2.55, 11], [X + .2, 1.5, .6]],
-      pip: [[X - .45, 2.75, 7.0], [X - .55, 2.7, 6.2], [X - .95, 2.05, .6]], byte: [[X + .75, 1.5, 6.4], [X + .85, 1.45, 5.6], [X + 1.25, .85, .9]],
+      pip: [[X - .45, 2.75, 7.0], [X - .55, 2.7, 6.2], [X - .95, 2.05, .6]], byte: [[X + .8, 1.75, 7.9], [X + .9, 1.7, 7.1], [X + 1.25, 1.0, .9]],
       low: [[X + 2.6, .7, 9.5], [X + 1.9, .9, 8.6], [X, 2.1, 0]], side: [[X - 2.7, 3.7, 4.6], [X - 2.4, 3.5, 4.0], [X + 1.2, 1.1, .9]], close: [[X + .1, 2.3, 8.8], [X + .15, 2.2, 8.0], [X + .15, 1.45, .7]] },
     mascot: { wide: pos.byte, two: pos.byte, pip: pos.byte, byte: pos.byte, low: pos.byte, side: pos.byte, close: pos.byte } };
 })();
@@ -441,6 +441,15 @@ function overlay(B, lt, D) {
   } else if (o.type === 'phone') {
     const e = back((lt - .1) / .4);
     h = `<div class="phn" style="transform:translateY(${(1 - e) * 120}px) rotate(${o.rot ?? -3}deg);opacity:${clamp(lt / .15)}"><div class="scr" style="background:${o.bg || 'linear-gradient(160deg,#36B5A0,#2A1F33)'}">${o.pill ? `<div class="vp"><i></i>${esc(o.pill)}</div>` : ''}<p>${esc(o.text || '')}</p>${o.sub ? `<span>${esc(o.sub)}</span>` : ''}</div></div>`;
+  } else if (o.type === 'safezone') {
+    // mini phone: safe top zone (green) vs bottom zone covered by caption + buttons (red); mode "bad" puts the text block low and stamps it
+    const e = back((lt - .1) / .35), z = clamp((lt - (o.at ?? .7)) / .35), bad = o.mode === 'bad';
+    const blk = `<div class="sz-t ${bad ? 'low' : ''}" style="transform:scale(${back((lt - .35) / .3)})">${esc(o.text || 'YOUR TEXT')}</div>`;
+    h = `<div class="sz" style="left:${o.x ?? '50%'};transform:translateX(-50%) translateY(${(1 - e) * 90}px) rotate(${o.rot ?? 2}deg) scale(${o.scale ?? 1});opacity:${clamp(lt / .15)}">
+      <div class="sz-ok" style="opacity:${z}"><span>${esc(o.top || 'SAFE')}</span></div>${blk}
+      <div class="sz-ui" style="opacity:${z}"><i></i><i></i><i></i></div>
+      <div class="sz-bad" style="opacity:${z}"><u></u><u></u><span>${esc(o.bottom || 'CAPTION + BUTTONS')}</span></div>
+      ${bad && z >= 1 ? '<em class="sz-x">✕</em>' : ''}${!bad && z >= 1 ? '<em class="sz-v">✓</em>' : ''}</div>`;
   } else if (o.type === 'cta') {
     const kw = String(o.keyword || T.keyword || 'LINK').toUpperCase(); const ty = clamp((lt - .5) / .8); const nch = Math.floor(ty * kw.length + .0001);
     const pp = clamp((lt - 1.5) / .15) - clamp((lt - 1.75) / .15); const eb = back((lt - 1.8) / .35);
