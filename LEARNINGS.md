@@ -24,6 +24,9 @@ Research sources are in `research/<DATE>.md`. Stats below are second-hand from v
 - Bold captions default to y=780 (of 1280), right over Byte's face in classic sets. Set `caps_y: 985` in classic reels (below Byte) and per-beat `caps_y: 760` on machine/low beats (Byte stands low there). Duet reels keep the default. (stills 2026-11-03)
 - Game format (this-or-that): question beat = `compare` with no winner; answer beat = same `compare` with `winner` + `reveal: 0.12` (loser dims). One item per side switches to big 31 px text. Put a twist in the last round. Overlays on Pip's opening face close-up hit his beanie; leave the first close-up clean. (2026-11-03)
 - Duet `close` cam frames Pip, not Byte; use the `byte` cam for Byte's lines (pulled back on 2026-11-08 so the antenna and whole body fit). `safezone` overlay (mini phone) needs `x`/`scale` to sit beside Byte: desk/side → x 76%, studio/wide → x 77% (Byte stands left-centre in both). (stills 2026-11-08)
+- `rank` overlay (blind ranking): rows persist beat to beat, the `new:true` row slides in at `at`; keep `at` ≈ 0.8 so the slot lands on the spoken "slot two". The compact card ends ≈ y 470, so desk/wide, studio/wide and stage/wide keep Byte's head clear; desk/side half-hides Byte. Machine sign shows "IDEAS" when `sign` is empty; give it a real word. (stills 2026-11-10)
+- Duet CTA: `cta` overlay takes `y` (comment box top, default 610). Use `y: 960` in duet reels so the box sits under both faces on `wide`. (2026-11-10)
+- Classic reels must set `caps:"bold"` + `caps_y: 985`; 11-09's classic reel shipped with 1-word chips. `card`/`send` overlays on desk/wide, desk/side and studio/side sit on Byte's head; end soft-CTA beats on stage/wide. (review 2026-11-10)
 - Recurring formats build habit: consider a named series ("Byte fixes your…", "60-second Claude skill").
 
 ### Carousels
@@ -37,6 +40,7 @@ Research sources are in `research/<DATE>.md`. Stats below are second-hand from v
 - `chat` slide (DM thread: client bubble → your copy-paste reply + "why it works") is the reply-script layout; use it for "what to say" carousels. Cover highlight pill now sits lower (top .22em) with h1 line-height 1.0, so it no longer overlaps the line above. Avoid a closing quote mark right after a highlighted word (it dangles). Frame-style window is 660 px tall so the sub line stays clear. Desk/side cover scene shows Byte bigger than desk/wide. (2026-11-02)
 - `bars` slide (stage → value meter rows) fills the slide for tiered numbers (pricing by stage, fees by tier). Teal/poster: a 6-word title wrapped to 4 lines and hit the window; keep teal/poster titles ≤ 5 short words. (2026-11-03)
 - `check` slide (yes/no scorecard + verdict stamp) = the "worked example" slide for decision carousels (question → criteria → worked example → script → recap). Number every doc row or none; partial numbering looks broken. desk/side cover scenes let the phone fill the window and crop Byte (11-06); desk/wide with action shock shows Byte whole. (2026-11-08)
+- `seam: true` (carousel spec): a disc split across each inner slide boundary (right half + arrow, left half on the next slide) = swipe cue that "bleeds" into the next slide (PostNitro). Kept to the 96 px side padding. Sun/frame + desk/wide put the phone over Byte and cropped him at the left edge; studio/wide with laptop text showed Byte whole. (2026-11-10)
 - Cover scenes: desk/wide with a custom phone message tied to the topic reads best; stage/close and stage/wide hide Byte's body behind the stage lip in the poster window. (tested 2026-10-31)
 
 ### Cover rotation (never repeat yesterday's combo)
@@ -47,13 +51,13 @@ Research sources are in `research/<DATE>.md`. Stats below are second-hand from v
 ## Ideas to try next
 - (started 11-01) Named series "Byte fixes · EP n" in duet reels; continue with EP 2 next time.
 - Publishing is blocked (OAuth code 200 since 10-31; still failing on 11-06). Until fixed, nothing is getting real data.
-- Runs for 11-04, 11-05 and 11-07 did not happen (11-06 built but never committed to main). Always commit + push at the end.
+- Runs for 11-04, 11-05 and 11-07 did not happen; 11-06 and 11-09 built and queued but never committed to main. Always commit + push at the end.
 - (tried 10-31) Short ~16 s reel, recap slide, "send this to" CTA, before→after overlay. Judge once insights exist.
 - Trend formats to adapt next: "Yes… but" split (needs a split overlay), a 0→100% "loading" build using the counter overlay, "the tool, the fuel, the work" 3-beat reel.
-- Hook formulas tried: Specificity bait (11-01), Before State (11-01), Confession (11-02), Reframe + game (11-03). List tease + bait-and-switch two-beat (11-08). Not yet: "No, no, no… yes" (wrong way ×3 → right way), blind ranking.
+- Hook formulas tried: Specificity bait (11-01), Before State (11-01), Confession (11-02), Reframe + game (11-03). List tease + bait-and-switch two-beat (11-08). "No, no, no… yes" (11-09). Blind ranking with a forced-slot twist + repeat-count hook (11-10). Not yet: "My reaction to ___" escalating numbers, tier list (S/A/B), myth-vs-fact carousel with seam.
 - Timely AI-tool reel on the Oct 8 Claude Docs/Slides/Design GA, after reading Anthropic's own article.
-- Cover combos not used yet: teal/frame, sun/frame (coral/frame 11-06, ink/frame 11-08).
-- Next duet: Byte fixes · EP 6. Untried: "My reaction to ___" escalating numbers, blind-ranking game (rank 4 hooks), myth-vs-fact carousel.
+- Cover combos not used yet: teal/frame, lilac/poster (coral/frame 11-06, ink/frame 11-08, teal/poster 11-09, sun/frame 11-10).
+- Next duet: Byte fixes · EP 8. Untried: "My reaction to ___" escalating numbers, blind-ranking game (rank 4 hooks), myth-vs-fact carousel.
 - GitHub Pages (github.io) is blocked from the sandbox: review yesterday's media by cloning the `media` branch instead.
 - Track performance: the publisher stores no likes/saves/reach yet. Pulling Instagram insights into Supabase would let this loop learn from real numbers.
 
@@ -68,3 +72,5 @@ Research sources are in `research/<DATE>.md`. Stats below are second-hand from v
 | 2026-11-03 | teal/poster, question + promise ("Cancelled? You still get *paid*"), no badge, desk/side phone "We're pausing the project" | game: "Pick the hook that stops the scroll. 3 rounds" (A or B, twist A wins in round 3) | duet EP 3, reframe: "You don't need a plan. You need a shot list." (brief → shot list, IDEA) | caps_y (captions below Byte), compare reveal/dim/big, bars slide, kill-fee doc clause | publishing still failing (OAuth 200); owner notified |
 | 2026-11-06 | coral/frame, number + promise ("New client? Nail the first *5 days*"), badge 5, desk/side phone (Byte cropped) | "15-minute weekly reset" (3 moves, classic) | duet EP 4: first-line score + rewrite (IDEA) | (not logged that day; reconstructed from media) | run never committed to main; all posts failed (OAuth 200) |
 | 2026-11-08 | ink/frame, decision question ("Tiny job: *take it* or pass?"), no badge, desk/wide phone "Just 1 quick reel?" | list tease: "Three rules for on-screen text. Rule three is the one nobody follows." (safezone overlay) | duet EP 5, bait-and-switch: "Forty people opened my profile!" → "How many followed?" → "Zero." (bio rewrite, IDEA) | check slide, safezone overlay, duet byte cam pulled back, all doc rows numbered, bars for example hours | publishing still failing (OAuth 200); owner notified |
+| 2026-11-09 | teal/poster, myth/mistake ("Retainer *myths* costing you money"), badge 4, studio laptop scene | "No, no, no… yes": idea inbox (classic) | duet EP 6: pre-mortem your script with Claude (IDEA) | (reconstructed from media; run not committed) | 1-word captions in the classic reel; CTA covered faces; all posts failed (OAuth 200) |
+| 2026-11-10 | sun/frame, contrarian claim ("Your fee doesn't cover *ad rights*"), no badge, studio/wide laptop "Usage: unlimited?" | blind ranking 4 reel openers, forced-slot twist (rank overlay, bold caps) | duet EP 7, repeat-count hook: "Four. Same question. Four times." (DMs → FAQ carousel, IDEA) | rank overlay, cta `y`, carousel seam swipe cue, payoff-early slide 2, sourced % ranges on bars | Claude release notes + Dribbble/Behance blocked; publishing still failing (OAuth 200); owner notified |

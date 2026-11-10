@@ -134,7 +134,12 @@ def main():
     if slides[-1].get("type") != "cta": slides.append({"type": "cta", "keyword": spec.get("keyword", "")})
     slides = slides[:10]
     fontdir = "file://" + os.path.join(REEL, "node_modules/@fontsource")
-    body = "".join(slide_html(s, i + 1, len(slides), spec.get("keyword", "")) for i, s in enumerate(slides))
+    parts = [slide_html(s, i + 1, len(slides), spec.get("keyword", "")) for i, s in enumerate(slides)]
+    if spec.get("seam"):  # one disc split across each slide boundary, so the swipe feels continuous (right half here, left half on the next slide)
+        for i in range(1, len(parts) - 1):  # inner slides only (cover and CTA keep their own layout)
+            seam = ('<div class="seam l"></div>' if i > 1 else '') + ('<div class="seam r"><span>→</span></div>' if i < len(parts) - 2 else '')
+            k = parts[i].rfind("</section>"); parts[i] = parts[i][:k] + seam + parts[i][k:]
+    body = "".join(parts)
     page = f'<!doctype html><html><head><meta charset="utf-8"><style>{CSS.replace("FONTDIR", fontdir)}</style></head><body>{body}</body></html>'
     files = asyncio.run(shoot(page, out, cid, len(slides)))
     print(json.dumps({"slides": [os.path.basename(f) for f in files]}))

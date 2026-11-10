@@ -450,11 +450,17 @@ function overlay(B, lt, D) {
       <div class="sz-ui" style="opacity:${z}"><i></i><i></i><i></i></div>
       <div class="sz-bad" style="opacity:${z}"><u></u><u></u><span>${esc(o.bottom || 'CAPTION + BUTTONS')}</span></div>
       ${bad && z >= 1 ? '<em class="sz-x">✕</em>' : ''}${!bad && z >= 1 ? '<em class="sz-v">✓</em>' : ''}</div>`;
+  } else if (o.type === 'rank') {
+    // blind-ranking board: slots #1..#n; rows already placed show at once, the row with new:true drops in at o.at (fraction of beat)
+    const n = o.n || 4, rows = o.rows || [], st = (o.at ?? .45) * D, e = back((lt - .05) / .3);
+    let sl = ''; for (let k = 1; k <= n; k++) { const r = rows.find(x => x.n === k); const fresh = r && r.new; const show = r && (!fresh || lt >= st); const pe = fresh ? back((lt - st) / .3) : 1;
+      sl += `<div class="rk-r${k === 1 ? ' top' : ''}${fresh && show ? ' fresh' : ''}"><b>#${k}</b>${show ? `<p style="transform:translateX(${(1 - pe) * 260}px) scale(${.7 + .3 * pe});opacity:${clamp(pe * 2)}">${esc(r.text)}</p>` : '<p class="emp">?</p>'}</div>`; }
+    h = `<div class="rk" style="transform:translateY(${(1 - e) * 60}px);opacity:${clamp(lt / .12)}">${o.title ? `<h4>${esc(o.title)}</h4>` : ''}${sl}</div>`;
   } else if (o.type === 'cta') {
     const kw = String(o.keyword || T.keyword || 'LINK').toUpperCase(); const ty = clamp((lt - .5) / .8); const nch = Math.floor(ty * kw.length + .0001);
     const pp = clamp((lt - 1.5) / .15) - clamp((lt - 1.75) / .15); const eb = back((lt - 1.8) / .35);
     h = `<div class="env" style="opacity:${clamp((lt - 1.8) / .1)};transform:translateY(${(1 - eb) * 40}px) scale(${.6 + .4 * eb})"><div class="bd" style="transform:scale(${back((lt - 2.3) / .3)})">1</div></div>
-      <div class="cbox"><div class="av"></div>${nch ? `<b style="font-weight:800">${esc(kw.slice(0, nch))}</b>` : '<span class="ph">Add a comment…</span>'}<span class="cur" style="opacity:${lt > .4 && lt < 1.5 ? 1 : 0}"></span><span class="post" style="transform:scale(${1 - .15 * pp})">Post</span></div>
+      <div class="cbox"${o.y != null ? ` style="top:${o.y}px"` : ''}><div class="av"></div>${nch ? `<b style="font-weight:800">${esc(kw.slice(0, nch))}</b>` : '<span class="ph">Add a comment…</span>'}<span class="cur" style="opacity:${lt > .4 && lt < 1.5 ? 1 : 0}"></span><span class="post" style="transform:scale(${1 - .15 * pp})">Post</span></div>
       ${o.follow === false ? '' : `<div class="follow" style="opacity:${clamp((lt - 2.6) / .3)}"><span>${esc(o.follow || 'Follow so the DM lands')}</span></div>`}`;
   }
   ovl.innerHTML = h;

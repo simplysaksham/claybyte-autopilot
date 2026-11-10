@@ -155,3 +155,8 @@ mark:after{content:"";position:absolute;left:-.08em;right:-.08em;bottom:.04em;he
 .verdict{align-self:flex-start;margin-top:40px;font:900 50px/1.1 Fraunces;color:#2A1F33;background:#F2B33D;padding:20px 30px 22px;border-radius:22px;transform:rotate(-2deg);box-shadow:0 8px 0 rgba(0,0,0,.15);max-width:880px}
 .verdict i{display:block;font:800 22px Brico;font-style:normal;letter-spacing:4px;margin-bottom:6px;opacity:.75}
 .verdict.pass{background:#E5484D;color:#fff}.verdict.take{background:#3FAE6A;color:#fff}
+
+/* seam: a disc cut by the slide edge; right half on slide i, left half on slide i+1 (spec "seam": true) */
+.seam{position:absolute!important;top:610px;width:124px;height:124px;border-radius:50%;background:#E8664A;box-shadow:0 8px 0 rgba(0,0,0,.18);z-index:5}
+.seam.r{right:-62px}.seam.l{left:-62px}
+.seam span{position:absolute;left:9px;top:33px;font:900 46px/1 Brico;color:#FFF3DC}

@@ -1,0 +1,665 @@
+{
+ "date": "2026-11-10",
+ "items": [
+  {
+   "slot": 1,
+   "kind": "carousel",
+   "publish_at": "2026-11-10T10:00:00+05:30",
+   "spec": {
+    "id": "2026-11-10-c1",
+    "keyword": null,
+    "seam": true,
+    "cover": {
+     "style": "frame",
+     "theme": "sun",
+     "series": "CREATOR MONEY · AD RIGHTS",
+     "kicker": "SAVE THIS",
+     "title": "Your fee doesn't cover *ad rights*",
+     "sub": "Price them by the month.",
+     "scene": {
+      "set": "studio",
+      "cam": "wide",
+      "action": "shock",
+      "props": [],
+      "sets": {
+       "studio": {
+        "laptop": {
+         "title": "brand-deal.pdf",
+         "lines": [
+          "Fee: 1 reel",
+          "Usage: unlimited?",
+          "Ads: forever?"
+         ]
+        }
+       }
+      }
+     }
+    },
+    "slides": [
+     {
+      "type": "flag",
+      "n": "",
+      "label": "IT HAPPENS",
+      "title": "The *\"for a bit\"* line",
+      "says_label": "BRAND SAYS",
+      "says": "Love it! We'll also run it as an ad for a bit.",
+      "fix_label": "YOUR MOVE",
+      "fix": "\"For a bit\" is a second job. Say yes, then price ad rights separately, by the month."
+     },
+     {
+      "type": "compare",
+      "title": "Organic post vs *ad rights*",
+      "left": {
+       "name": "Organic post",
+       "items": [
+        "Lives on your page",
+        "Shown to your audience",
+        "Covered by your base fee"
+       ]
+      },
+      "right": {
+       "name": "Ad rights",
+       "items": [
+        "Brand pays to push it",
+        "Shown to people who never followed you",
+        "Extra fee for every month it runs"
+       ]
+      },
+      "winner": null
+     },
+     {
+      "type": "bars",
+      "tag": "WHAT 2 PRICING GUIDES SUGGEST",
+      "title": "Ad rights as a *% of your fee*",
+      "rows": [
+       {
+        "k": "Whitelisting (ads from your handle), per 30 days",
+        "v": "20–25%",
+        "pct": 25
+       },
+       {
+        "k": "Ad rights on the brand's page, per month",
+        "v": "20–50%",
+        "pct": 50
+       },
+       {
+        "k": "Broad: all platforms for a full year",
+        "v": "~100%",
+        "pct": 100
+       }
+      ],
+      "foot": "Ranges from Influish (2026) and Influencer Marketing Hub. Start there, then adjust for your niche."
+     },
+     {
+      "type": "doc",
+      "tag": "SCREENSHOT THIS",
+      "title": "Put it in *writing*",
+      "head": "AD RIGHTS · TERMS",
+      "meta": "Example terms · adapt them to your deal",
+      "lines": [
+       {
+        "k": "Platforms",
+        "v": "Instagram + Facebook ads only",
+        "n": "1"
+       },
+       {
+        "k": "Duration",
+        "v": "30 days from the first ad",
+        "n": "2"
+       },
+       {
+        "k": "Fee",
+        "v": "25% of the base fee per 30 days",
+        "n": "3"
+       },
+       {
+        "k": "Edits",
+        "v": "No changes without my OK",
+        "n": "4"
+       },
+       {
+        "k": "After that",
+        "v": "Renew at the same rate, or stop",
+        "n": "5"
+       }
+      ],
+      "foot": "Never sign \"unlimited usage\". Not legal advice."
+     },
+     {
+      "type": "chat",
+      "label": "COPY THIS",
+      "n": "",
+      "title": "Say yes *and* name the price",
+      "who": "Brand team",
+      "status": "online",
+      "msgs": [
+       {
+        "from": "them",
+        "text": "Can we also run your reel as an ad for a bit?"
+       },
+       {
+        "from": "you",
+        "text": "Yes! Ad rights are 25% of the fee per 30 days, Instagram + Facebook. Want 30 or 90 days in the quote?"
+       }
+      ],
+      "note": "You never said no. You just turned \"a bit\" into dates and a price."
+     },
+     {
+      "type": "recap",
+      "tag": "SCREENSHOT THIS",
+      "title": "Ad rights *cheat sheet*",
+      "items": [
+       "Base fee = *organic* only",
+       "Ads = priced *per month*",
+       "Write platforms + *dates*",
+       "Never sign *unlimited*"
+      ]
+     },
+     {
+      "type": "cta",
+      "title": "Send this to a *creator* about to sign a brand deal",
+      "keyword": null,
+      "sub": "Follow @claybyte.in for daily AI + creator business tips.",
+      "scene": {
+       "set": "studio",
+       "cam": "wide",
+       "action": "celebrate",
+       "props": [],
+       "sets": {
+        "studio": {
+         "laptop": {
+          "title": "ad-rights.txt",
+          "lines": [
+           "Organic: base fee",
+           "Ads: +25% / 30 days",
+           "Dates in writing"
+          ]
+         }
+        }
+       }
+      }
+     }
+    ]
+   },
+   "caption": "Your fee doesn't cover ad rights. Save this before your next brand deal.\n\n\"We'll also run it as an ad for a bit\" sounds like a compliment. It's a second job: the brand pays to push your reel to people who never followed you.\n\nSo price it separately:\n1. Base fee = organic post on your page\n2. Ad rights = a % of that fee, per month it runs (two pricing guides put it at roughly 20–50% a month)\n3. Write down platforms, dates, edits, and what happens after\n\nThe reply: \"Yes! Ad rights are 25% of the fee per 30 days. Want 30 or 90 days in the quote?\"\n\nNever sign \"unlimited usage\". Not legal advice; have someone check big contracts.\n\nSend this to a creator about to sign a brand deal.\n\n#creatorbusiness #branddeals #influencertips #ugccreator #contentcreator #freelancetips",
+   "keyword": null,
+   "topic": "Ad rights / usage: price paid ads separately per month, write platforms + dates, never unlimited",
+   "pillar": 4,
+   "sources": [
+    "https://www.influish.com/blog/how-much-should-influencers-charge-for-ad-rights-in-2026",
+    "https://influencermarketinghub.com/whitelisting-and-spark-ads/",
+    "https://creatorflow.so/blog/instagram-carousel-structure/",
+    "https://postnitro.ai/blog/post/instagram-carousel-design"
+   ]
+  },
+  {
+   "slot": 2,
+   "kind": "reel",
+   "publish_at": "2026-11-10T13:30:00+05:30",
+   "script": {
+    "id": "2026-11-10-r1",
+    "keyword": null,
+    "voice": "af_bella",
+    "speed": 1.14,
+    "seed": 21,
+    "caps": "bold",
+    "caps_y": 985,
+    "highlight": [
+     "four",
+     "blind",
+     "bottom",
+     "one",
+     "three",
+     "top",
+     "hey"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Drafts",
+       "title": "Reel opener",
+       "lines": [
+        "Hey guys,",
+        "welcome back!"
+       ],
+       "pill": "0:02 gone"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "openers.txt",
+       "lines": [
+        "1. Result first",
+        "2. Pain moment",
+        "3. Question"
+       ]
+      }
+     },
+     "machine": {
+      "sign": "RANK",
+      "wall": "#F2B33D"
+     }
+    },
+    "beats": [
+     {
+      "banner": "BLIND RANKING",
+      "vo": "Blind ranking four reel openers. Once I place one, it can't move.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "rank",
+       "title": "REEL OPENERS",
+       "n": 4,
+       "rows": []
+      }
+     },
+     {
+      "banner": "OPENER 1 · QUESTION",
+      "vo": "Opener one. A question. Ever wonder why your reels stall? Slot two.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "rank",
+       "title": "REEL OPENERS",
+       "n": 4,
+       "at": 0.78,
+       "rows": [
+        {
+         "n": 2,
+         "text": "Question: \"Ever wonder why…?\"",
+         "new": true
+        }
+       ]
+      }
+     },
+     {
+      "banner": "OPENER 2 · GREETING",
+      "vo": "Opener two. Hey guys, welcome back. Two wasted seconds. Bottom.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "sad"
+      },
+      "overlay": {
+       "type": "rank",
+       "title": "REEL OPENERS",
+       "n": 4,
+       "at": 0.8,
+       "rows": [
+        {
+         "n": 2,
+         "text": "Question: \"Ever wonder why…?\""
+        },
+        {
+         "n": 4,
+         "text": "Greeting: \"Hey guys, welcome back\"",
+         "new": true
+        }
+       ]
+      }
+     },
+     {
+      "banner": "OPENER 3 · RESULT FIRST",
+      "vo": "Opener three. Show the finished result first, then how. Number one.",
+      "set": "machine",
+      "cam": "low",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "rank",
+       "title": "REEL OPENERS",
+       "n": 4,
+       "at": 0.8,
+       "rows": [
+        {
+         "n": 1,
+         "text": "Result first, then the how",
+         "new": true
+        },
+        {
+         "n": 2,
+         "text": "Question: \"Ever wonder why…?\""
+        },
+        {
+         "n": 4,
+         "text": "Greeting: \"Hey guys, welcome back\""
+        }
+       ]
+      },
+      "caps_y": 760
+     },
+     {
+      "banner": "OPENER 4 · PAIN MOMENT",
+      "vo": "Opener four. A pain moment. Three AM, six views. Only slot three is left.",
+      "set": "desk",
+      "cam": "side",
+      "mascot": {
+       "action": "shock"
+      },
+      "overlay": {
+       "type": "rank",
+       "title": "REEL OPENERS",
+       "n": 4,
+       "at": 0.82,
+       "rows": [
+        {
+         "n": 1,
+         "text": "Result first, then the how"
+        },
+        {
+         "n": 2,
+         "text": "Question: \"Ever wonder why…?\""
+        },
+        {
+         "n": 3,
+         "text": "Pain moment: \"3 AM. 6 views.\"",
+         "new": true
+        },
+        {
+         "n": 4,
+         "text": "Greeting: \"Hey guys, welcome back\""
+        }
+       ]
+      }
+     },
+     {
+      "banner": "THE TWIST",
+      "vo": "Blind ranking burned me. A specific pain moment beats a vague question.",
+      "set": "machine",
+      "cam": "low",
+      "caps_y": 760,
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "beforeafter",
+       "before": {
+        "label": "VAGUE",
+        "text": "Ever wonder why your reels stall?"
+       },
+       "after": {
+        "label": "SPECIFIC",
+        "text": "3 AM. 6 views. Then I changed one line."
+       },
+       "flip": 2.2
+      }
+     },
+     {
+      "banner": "SEND THIS",
+      "vo": "Result first, pain moment, then a question. Send this to a friend who still opens with hey guys.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "send",
+       "title": "Send this to",
+       "who": "the friend who opens every reel with \"hey guys\"",
+       "sub": "Result first · pain moment · question · never \"hey guys\""
+      }
+     }
+    ]
+   },
+   "caption": "Blind ranking 4 reel openers. Once one is placed, it can't move.\n\n#1 Result first: show the finished thing, then how you made it.\n#2 A question: \"Ever wonder why…?\" Fine, but vague.\n#3 A pain moment: \"3 AM. 6 views.\" (Blind ranking burned me here. A specific pain moment beats a vague question.)\n#4 \"Hey guys, welcome back\": it spends your first 2 seconds saying nothing.\n\nThe real order: result first → pain moment → question → never \"hey guys\".\n\nHow would you rank them? Drop your order in the comments, and send this to the friend who opens every reel with \"hey guys\".\n\n#reelstips #hooks #contentcreator #instagramtips #creatortips",
+   "keyword": null,
+   "topic": "Blind ranking 4 reel openers: result first, pain moment, question, never 'hey guys'",
+   "pillar": 2,
+   "sources": [
+    "https://blog.mean.ceo/instagram-trends-november-2026/",
+    "https://www.pulse-advertising.com/resources/social-media-news/instagram-algorithm-changes-2026/"
+   ]
+  },
+  {
+   "slot": 3,
+   "kind": "reel",
+   "publish_at": "2026-11-10T19:30:00+05:30",
+   "script": {
+    "id": "2026-11-10-r2",
+    "keyword": "IDEA",
+    "style": "duet",
+    "caps": "bold",
+    "banner_style": "chip",
+    "voices": {
+     "pip": "am_michael:0.6+am_fenrir:0.4",
+     "byte": "af_heart"
+    },
+    "voice": "af_heart",
+    "speed": 1.08,
+    "seed": 22,
+    "highlight": [
+     "four",
+     "Four",
+     "five",
+     "Claude",
+     "IDEA",
+     "one",
+     "pin",
+     "twice"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "night": {}
+    },
+    "beats": [
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "2:05 PM",
+      "vo": "Byte. Someone asked what mic I use. Again.",
+      "pip": {
+       "action": "facepalm"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "BYTE FIXES · *EP 7*",
+      "vo": "Again? How many times today?",
+      "mascot": {
+       "action": "think"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "wide",
+      "banner": "BYTE FIXES · *EP 7*",
+      "vo": "Four. Same question. Four times.",
+      "pip": {
+       "action": "sad"
+      },
+      "speed": 0.97,
+      "overlay": {
+       "type": "pill",
+       "label": "SAME QUESTION TODAY",
+       "from": 1,
+       "to": 4,
+       "suffix": "x",
+       "log": false
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "THE *REFRAME*",
+      "vo": "That's not annoying. That's your next post.",
+      "mascot": {
+       "action": "point"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "THE *REFRAME*",
+      "vo": "Wait... my DMs are a content plan?",
+      "pip": {
+       "action": "shock"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "low",
+      "banner": "STEP 1 · *COLLECT*",
+      "step": [
+       1,
+       3
+      ],
+      "vo": "Step one. Copy every question from your DMs and comments.",
+      "mascot": {
+       "action": "type"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 2 · *PROMPT*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Paste them into Claude. Ask for the five questions people ask most.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "terminal",
+       "lines": [
+        {
+         "role": "you",
+         "text": "Here are the questions from my DMs and comments."
+        },
+        {
+         "role": "you",
+         "text": "Group them. Give me the 5 most asked, each with a 2-line answer."
+        }
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "STEP 2 · *PROMPT*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Won't a FAQ post be kind of boring?",
+      "pip": {
+       "action": "think"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 2 · *PROMPT*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "They literally asked for it. That's the opposite of boring.",
+      "mascot": {
+       "action": "wave"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 3 · *POST*",
+      "step": [
+       3,
+       3
+      ],
+      "vo": "Step three. One question per slide. Post it, then pin it.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "checklist",
+       "sync": false,
+       "items": [
+        "What mic do you use?",
+        "How do you edit?",
+        "How often do you post?"
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "two",
+      "banner": "*PAYOFF*",
+      "vo": "So next time someone asks...",
+      "pip": {
+       "action": "think"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "*PAYOFF*",
+      "vo": "You send them the post. One tap.",
+      "mascot": {
+       "action": "celebrate"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "*PAYOFF*",
+      "vo": "Okay. I'm never answering the mic question twice.",
+      "pip": {
+       "action": "celebrate"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "FREE *TOOL*",
+      "vo": "Want more post ideas hiding in plain sight? Comment IDEA.",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "cta",
+       "keyword": "IDEA",
+       "follow": false,
+       "y": 960
+      }
+     }
+    ]
+   },
+   "caption": "Comment IDEA and I'll DM you the free Reel Idea Machine (a Claude skill + PDF guide).\n\nSame question in your DMs four times today? That's not annoying. That's your next post.\n\nByte fixes · EP 7:\n1. Collect: copy every question from your DMs and comments into one note\n2. Prompt: paste them into Claude: \"Group these. Give me the 5 most asked, each with a 2-line answer.\"\n3. Post: one question per slide, then pin it. Next time someone asks, send them the post.\n\nYour audience already wrote your content plan. You just have to read it.\n\n#claudeai #aitools #contentideas #contentcreator #creatortips #aiforcreators",
+   "keyword": "IDEA",
+   "topic": "Turn repeat DM/comment questions into a pinned FAQ carousel with Claude (Byte fixes EP 7)",
+   "pillar": 1,
+   "sources": [
+    "https://mysocial.io/workflows/create-instagram-faqs-from-comments-with-claude/"
+   ]
+  }
+ ]
+}
