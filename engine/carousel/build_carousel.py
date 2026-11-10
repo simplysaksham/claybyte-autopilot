@@ -96,6 +96,11 @@ def slide_html(s, i, n, kw):
         v = s.get("verdict")
         vd = f'<div class="verdict {E(v.get("mark","pass"))}"><i>{E(v.get("label","VERDICT"))}</i>{H(v.get("text"))}</div>' if v else ""
         return f'<section class="s check">{tag}<h2 class="sm">{H(s.get("title"))}</h2><div class="cks">{rows}</div>{vd}{swipe}{foot}</section>'
+    if t == "timeline":  # dated exit/launch plan: vertical rail with "when" pills, a title and one line each; last row = the finish flag
+        its = s.get("items", [])
+        rows = "".join(f'<div class="tl{" end" if k == len(its)-1 else ""}"><div class="tw">{E(r.get("when"))}</div><i></i><div class="tb"><b>{H(r.get("title"))}</b>{f"<p>{E(r.get(chr(98)+chr(111)+chr(100)+chr(121)))}</p>" if r.get("body") else ""}</div></div>' for k, r in enumerate(its))
+        tag = f'<div class="rtag">{E(s.get("tag"))}</div>' if s.get("tag") else ""
+        return f'<section class="s tline">{tag}<h2 class="sm">{H(s.get("title"))}</h2><div class="tls">{rows}</div>{swipe}{foot}</section>'
     if t == "quote":
         return f'<section class="s dark"><div class="q">“</div><h2 class="qt">{E(s["text"])}</h2><p class="by">{E(s.get("by"))}</p>{swipe}{foot}</section>'
     if t == "cta":

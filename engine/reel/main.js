@@ -456,6 +456,12 @@ function overlay(B, lt, D) {
     let sl = ''; for (let k = 1; k <= n; k++) { const r = rows.find(x => x.n === k); const fresh = r && r.new; const show = r && (!fresh || lt >= st); const pe = fresh ? back((lt - st) / .3) : 1;
       sl += `<div class="rk-r${k === 1 ? ' top' : ''}${fresh && show ? ' fresh' : ''}"><b>#${k}</b>${show ? `<p style="transform:translateX(${(1 - pe) * 260}px) scale(${.7 + .3 * pe});opacity:${clamp(pe * 2)}">${esc(r.text)}</p>` : '<p class="emp">?</p>'}</div>`; }
     h = `<div class="rk" style="transform:translateY(${(1 - e) * 60}px);opacity:${clamp(lt / .12)}">${o.title ? `<h4>${esc(o.title)}</h4>` : ''}${sl}</div>`;
+  } else if (o.type === 'ladder') {
+    // escalating price ladder: rows {k,v,pct,new}; placed rows show at once, the new:true row slides in at o.at and its bar fills; o.max = bar scale
+    const rows = o.rows || [], st = (o.at ?? .35) * D, e = back((lt - .05) / .3), mx = o.max || 100;
+    const rr = rows.map(r => { const fresh = r.new; if (r.later || !r.v || (fresh && lt < st)) return `<div class="ld-r emp"><b>${esc(r.k)}</b><p>?</p></div>`; const pe = fresh ? back((lt - st) / .3) : 1; const fill = fresh ? eout((lt - st - .15) / .7) : 1;
+      return `<div class="ld-r${fresh ? ' fresh' : ''}"><b>${esc(r.k)}</b><div class="ld-v" style="transform:translateX(${(1 - pe) * 200}px);opacity:${clamp(pe * 2)}"><u><i style="width:${(clamp((r.pct || 0) / mx) * fill * 100).toFixed(1)}%;background:${r.pct / mx > .66 ? '#E8664A' : r.pct / mx > .33 ? '#F2B33D' : '#36B5A0'}"></i></u><em>${esc(r.v)}</em></div></div>`; }).join('');
+    h = `<div class="ld"${o.y != null ? ` style="top:${o.y}px"` : ''}><div style="transform:translateY(${(1 - e) * 60}px);opacity:${clamp(lt / .12)}">${o.title ? `<h4>${esc(o.title)}</h4>` : ''}${rr}${o.foot ? `<small>${esc(o.foot)}</small>` : ''}</div></div>`;
   } else if (o.type === 'cta') {
     const kw = String(o.keyword || T.keyword || 'LINK').toUpperCase(); const ty = clamp((lt - .5) / .8); const nch = Math.floor(ty * kw.length + .0001);
     const pp = clamp((lt - 1.5) / .15) - clamp((lt - 1.75) / .15); const eb = back((lt - 1.8) / .35);

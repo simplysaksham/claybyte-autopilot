@@ -1,0 +1,770 @@
+{
+ "date": "2026-11-11",
+ "items": [
+  {
+   "slot": 1,
+   "kind": "carousel",
+   "publish_at": "2026-11-11T10:00:00+05:30",
+   "keyword": null,
+   "pillar": 3,
+   "topic": "Client offboarding: notice in writing, sign-off, separate final invoice, handover pack, testimonial after payment",
+   "sources": [
+    "https://soloopsguide.com/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/",
+    "https://postnitro.ai/blog/post/instagram-carousel-design",
+    "https://creatorflow.so/blog/instagram-carousel-structure/"
+   ],
+   "caption": "Fire clients. Keep the bridge. Save this for the day you need it.\n\nGhosting feels easier. It also kills the referral and the testimonial you earned.\n\nThe clean exit:\n1. Give notice in writing, with the last day named\n2. Finish or close open work and get sign-off in writing (silence isn't a yes)\n3. Send the final invoice as its own email\n4. Hand over logins, files, the posting schedule and a 1-page how-to\n5. Ask for a testimonial only after the invoice is paid\n\nKeep the notice to dates and deliverables. Vent to your friends, not the client.\n\nSend this to a freelancer stuck with a client they've outgrown.\n\n#freelancelife #socialmediamanager #agencylife #clientmanagement #freelancetips #creatorbusiness",
+   "spec": {
+    "id": "2026-11-11-c1",
+    "keyword": null,
+    "seam": true,
+    "cover": {
+     "style": "poster",
+     "theme": "lilac",
+     "series": "AGENCY LIFE · OFFBOARDING",
+     "kicker": "SAVE THIS",
+     "title": "Fire clients. *Keep* the bridge.",
+     "sub": "The 5-step clean exit.",
+     "scene": {
+      "set": "studio",
+      "cam": "wide",
+      "action": "wave",
+      "props": [],
+      "sets": {
+       "studio": {
+        "laptop": {
+         "title": "notice.txt",
+         "lines": [
+          "Last day: 30th",
+          "Handover: ready"
+         ]
+        }
+       }
+      }
+     }
+    },
+    "slides": [
+     {
+      "type": "flag",
+      "n": "",
+      "label": "DON'T DO THIS",
+      "title": "The *ghost* exit",
+      "says_label": "YOU THINK",
+      "says": "I'll just slowly stop replying.",
+      "fix_label": "INSTEAD",
+      "fix": "Ghosting burns the referral too. A clean exit is 5 steps, done over a couple of weeks."
+     },
+     {
+      "type": "timeline",
+      "tag": "THE CLEAN EXIT",
+      "title": "Your exit *plan*",
+      "items": [
+       {
+        "when": "DAY 1",
+        "title": "Give notice in *writing*",
+        "body": "Use your contract's notice period. Name the last day."
+       },
+       {
+        "when": "WEEK 1",
+        "title": "Close open work",
+        "body": "Get sign-off in writing. Silence isn't a yes."
+       },
+       {
+        "when": "LAST DAY",
+        "title": "Send the *final invoice*",
+        "body": "Its own email. Closing work and closing money are two jobs."
+       },
+       {
+        "when": "LAST DAY",
+        "title": "Hand over everything",
+        "body": "Logins, files, schedule, a 1-page how-to."
+       },
+       {
+        "when": "PAID",
+        "title": "Ask for a *testimonial*",
+        "body": "Only after the invoice clears."
+       }
+      ]
+     },
+     {
+      "type": "chat",
+      "label": "COPY THIS",
+      "n": "",
+      "title": "The *notice* message",
+      "who": "Client",
+      "status": "online",
+      "msgs": [
+       {
+        "from": "them",
+        "text": "Can we plan next month's content?"
+       },
+       {
+        "from": "you",
+        "text": "Before we plan: I'm wrapping up our work on the 30th. I'll finish this month and hand over everything."
+       }
+      ],
+      "note": "A date, what's finished, what they get. No blame, no essay."
+     },
+     {
+      "type": "doc",
+      "tag": "SCREENSHOT THIS",
+      "title": "The *handover* pack",
+      "head": "HANDOVER · LAST DAY",
+      "meta": "Example list · adapt it to your client",
+      "lines": [
+       {
+        "k": "Logins",
+        "v": "Your access removed, passwords reset by them",
+        "n": "1"
+       },
+       {
+        "k": "Files",
+        "v": "Raw + final files in one shared folder",
+        "n": "2"
+       },
+       {
+        "k": "Schedule",
+        "v": "Posts queued up to the last day",
+        "n": "3"
+       },
+       {
+        "k": "How-to",
+        "v": "1 page: tools, timings, what worked",
+        "n": "4"
+       },
+       {
+        "k": "Contacts",
+        "v": "Editors and tools you used",
+        "n": "5"
+       }
+      ],
+      "foot": "A good handover is the referral you get later."
+     },
+     {
+      "type": "flag",
+      "n": "",
+      "label": "ALSO DON'T",
+      "title": "The *rage* exit",
+      "says_label": "YOU WANT TO SAY",
+      "says": "Working with you has been a nightmare.",
+      "fix_label": "SAY THIS",
+      "fix": "Even if it was: dates and deliverables only. Vent to your friends, not in the client's inbox."
+     },
+     {
+      "type": "recap",
+      "tag": "SCREENSHOT THIS",
+      "title": "Clean exit *cheat sheet*",
+      "items": [
+       "Notice in *writing*",
+       "Sign-off, not *silence*",
+       "Invoice = its *own email*",
+       "Testimonial *after payment*"
+      ]
+     },
+     {
+      "type": "cta",
+      "title": "Send this to a *freelancer* stuck with a bad client",
+      "keyword": null,
+      "sub": "Follow @claybyte.in for daily AI + creator business tips.",
+      "scene": {
+       "set": "desk",
+       "cam": "wide",
+       "action": "celebrate",
+       "props": [],
+       "sets": {
+        "desk": {
+         "phone": {
+          "app": "Bank",
+          "title": "Final invoice",
+          "lines": [
+           "Paid",
+           "Thanks for everything!"
+          ],
+          "pill": "Paid ✓"
+         }
+        }
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "slot": 2,
+   "kind": "reel",
+   "publish_at": "2026-11-11T13:30:00+05:30",
+   "keyword": null,
+   "pillar": 4,
+   "topic": "Exclusivity fee: price category exclusivity by length (30/90/365 days) on top of the base fee; write category, end date, 30-day after-window",
+   "sources": [
+    "https://influencerfee.com/blog/influencer-exclusivity-pricing-guide/",
+    "https://creatorflow.so/blog/instagram-trends-creators-marketers/"
+   ],
+   "caption": "\"Just don't work with our competitors.\" That line is worth money. Save this before you sign.\n\nExclusive means saying no to other paid deals, so it gets its own fee on top of your content fee. One 2026 pricing guide suggests, for category exclusivity:\n• 30 days: +20–35%\n• 90 days: +50–75%\n• 12 months: +100–150%\n• No other brands at all, 30 days: +50–80%\n\nBefore you sign, write down:\n1. The category (name the competitor brands)\n2. The end date\n3. A short after-window (aim for 30 days)\n\nThese are one guide's ranges, not rules. Not legal advice.\n\nSend this to the friend who said yes to \"exclusive\" for free.\n\n#branddeals #creatorbusiness #influencertips #ugccreator #contentcreator #creatoreconomy",
+   "script": {
+    "id": "2026-11-11-r1",
+    "keyword": null,
+    "voice": "af_heart",
+    "speed": 1.1,
+    "seed": 31,
+    "caps": "bold",
+    "caps_y": 985,
+    "highlight": [
+     "thirty",
+     "Thirty",
+     "ninety",
+     "Ninety",
+     "Twelve",
+     "twelve",
+     "exclusive",
+     "percent",
+     "category",
+     "fifty"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Mail",
+       "title": "Brand deal",
+       "lines": [
+        "Just don't work",
+        "with competitors :)"
+       ],
+       "pill": "Exclusive?"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "contract.pdf",
+       "lines": [
+        "Exclusivity: yes",
+        "Fee: same",
+        "Length: ?"
+       ]
+      }
+     },
+     "machine": {
+      "sign": "PRICE",
+      "wall": "#B6A2E3"
+     }
+    },
+    "beats": [
+     {
+      "banner": "WATCH MY FACE",
+      "vo": "A brand says: just don't work with our competitors. Watch my face as the months go up.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "ladder",
+       "title": "EXCLUSIVITY · ADD ON TOP",
+       "max": 150,
+       "at": 5,
+       "rows": [
+        {
+         "k": "30 DAYS · CATEGORY",
+         "v": "+20–35%",
+         "pct": 35,
+         "new": true
+        },
+        {
+         "k": "90 DAYS · CATEGORY",
+         "v": "+50–75%",
+         "pct": 75,
+         "new": true
+        },
+        {
+         "k": "12 MONTHS · CATEGORY",
+         "v": "+100–150%",
+         "pct": 150,
+         "new": true
+        },
+        {
+         "k": "30 DAYS · NO BRANDS",
+         "v": "+50–80%",
+         "pct": 80,
+         "new": true
+        }
+       ]
+      }
+     },
+     {
+      "banner": "30 DAYS",
+      "vo": "Thirty days, your category only. One pricing guide says add twenty to thirty-five percent.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "ladder",
+       "title": "EXCLUSIVITY · ADD ON TOP",
+       "max": 150,
+       "at": 0.6,
+       "rows": [
+        {
+         "k": "30 DAYS · CATEGORY",
+         "v": "+20–35%",
+         "pct": 35,
+         "new": true
+        },
+        {
+         "k": "90 DAYS · CATEGORY",
+         "v": "",
+         "pct": 0,
+         "new": true
+        },
+        {
+         "k": "12 MONTHS · CATEGORY",
+         "v": "",
+         "pct": 0,
+         "new": true
+        },
+        {
+         "k": "30 DAYS · NO BRANDS",
+         "v": "",
+         "pct": 0,
+         "new": true
+        }
+       ]
+      }
+     },
+     {
+      "banner": "90 DAYS",
+      "vo": "Ninety days? Now it's plus fifty to seventy-five percent.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "shock"
+      },
+      "overlay": {
+       "type": "ladder",
+       "title": "EXCLUSIVITY · ADD ON TOP",
+       "max": 150,
+       "at": 0.5,
+       "rows": [
+        {
+         "k": "30 DAYS · CATEGORY",
+         "v": "+20–35%",
+         "pct": 35
+        },
+        {
+         "k": "90 DAYS · CATEGORY",
+         "v": "+50–75%",
+         "pct": 75,
+         "new": true
+        },
+        {
+         "k": "12 MONTHS · CATEGORY",
+         "v": "",
+         "new": true,
+         "later": true
+        },
+        {
+         "k": "30 DAYS · NO BRANDS",
+         "v": "",
+         "new": true,
+         "later": true
+        }
+       ]
+      }
+     },
+     {
+      "banner": "12 MONTHS",
+      "vo": "Twelve months. Plus one hundred to one fifty. Up to two and a half times the fee.",
+      "set": "machine",
+      "cam": "low",
+      "caps_y": 760,
+      "mascot": {
+       "action": "shock"
+      },
+      "overlay": {
+       "type": "ladder",
+       "title": "EXCLUSIVITY · ADD ON TOP",
+       "max": 150,
+       "at": 0.4,
+       "rows": [
+        {
+         "k": "30 DAYS · CATEGORY",
+         "v": "+20–35%",
+         "pct": 35
+        },
+        {
+         "k": "90 DAYS · CATEGORY",
+         "v": "+50–75%",
+         "pct": 75
+        },
+        {
+         "k": "12 MONTHS · CATEGORY",
+         "v": "+100–150%",
+         "pct": 150,
+         "new": true
+        },
+        {
+         "k": "30 DAYS · NO BRANDS",
+         "v": "",
+         "new": true,
+         "later": true
+        }
+       ]
+      }
+     },
+     {
+      "banner": "NO OTHER BRANDS",
+      "vo": "And no other brands at all, even for thirty days? Plus fifty to eighty.",
+      "set": "machine",
+      "cam": "low",
+      "caps_y": 760,
+      "mascot": {
+       "action": "sad"
+      },
+      "overlay": {
+       "type": "ladder",
+       "title": "EXCLUSIVITY · ADD ON TOP",
+       "max": 150,
+       "at": 0.6,
+       "rows": [
+        {
+         "k": "30 DAYS · CATEGORY",
+         "v": "+20–35%",
+         "pct": 35
+        },
+        {
+         "k": "90 DAYS · CATEGORY",
+         "v": "+50–75%",
+         "pct": 75
+        },
+        {
+         "k": "12 MONTHS · CATEGORY",
+         "v": "+100–150%",
+         "pct": 150
+        },
+        {
+         "k": "30 DAYS · NO BRANDS",
+         "v": "+50–80%",
+         "pct": 80,
+         "new": true
+        }
+       ]
+      }
+     },
+     {
+      "banner": "WHY IT COSTS",
+      "vo": "Because exclusive means saying no to other paid deals. That's what you're pricing.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "beforeafter",
+       "before": {
+        "label": "THEY SAY",
+        "text": "Just don't work with competitors."
+       },
+       "after": {
+        "label": "IT MEANS",
+        "text": "You turn down paid deals. Price that."
+       },
+       "flip": 1.8
+      }
+     },
+     {
+      "banner": "WRITE 3 THINGS",
+      "vo": "Before you sign, write the category, the end date, and a short after-window.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "checklist",
+       "items": [
+        "Category: name the brands",
+        "End date: in writing",
+        "After-window: aim for 30 days"
+       ]
+      }
+     },
+     {
+      "banner": "SEND THIS",
+      "vo": "Send this to the friend who said yes to exclusive for free.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "send",
+       "title": "Send this to",
+       "who": "the friend who signed \"exclusive\" for free",
+       "sub": "Ranges: one 2026 pricing guide. Not legal advice."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "slot": 3,
+   "kind": "reel",
+   "publish_at": "2026-11-11T19:30:00+05:30",
+   "keyword": "IDEA",
+   "pillar": 1,
+   "topic": "Build a 30-day content calendar in Claude Sheets (beta) with one prompt (Byte fixes EP 8)",
+   "sources": [
+    "https://www.unite.ai/anthropic-launches-claude-whiteboards-and-sheets-in-beta/",
+    "https://releasebot.io/updates/anthropic"
+   ],
+   "caption": "Comment IDEA and I'll DM you the free Reel Idea Machine (a Claude skill + PDF guide) to fill your calendar.\n\nA folder of 42 screenshots is not a content plan.\n\nByte fixes · EP 8: Claude Sheets just launched in beta (paid plans, Nov 10). It builds spreadsheets with tabs, formulas, formatting and drop-downs from a prompt.\n\n1. Ask: \"Make a 30-day Instagram content calendar. Columns: date, pillar, hook, format, status.\"\n2. Add: \"Make status a drop-down: idea / filmed / posted. Add a tab that counts posts by pillar.\"\n3. Use it: every time you post, flip the status.\n\nTonight you don't scroll your screenshots. You check the sheet and film what it says.\n\n#claudeai #aitools #contentcalendar #contentcreator #creatortips #aiforcreators",
+   "script": {
+    "id": "2026-11-11-r2",
+    "keyword": "IDEA",
+    "style": "duet",
+    "caps": "bold",
+    "caps_y": 960,
+    "banner_style": "chip",
+    "voices": {
+     "pip": "am_michael:0.6+am_fenrir:0.4",
+     "byte": "af_heart"
+    },
+    "voice": "af_heart",
+    "speed": 1.08,
+    "seed": 32,
+    "highlight": [
+     "forty-two",
+     "42",
+     "Sheets",
+     "Claude",
+     "thirty",
+     "IDEA",
+     "drop-down",
+     "one"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "night": {}
+    },
+    "beats": [
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "11:20 PM",
+      "vo": "Byte. My content plan is a screenshot folder.",
+      "pip": {
+       "action": "sad"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "BYTE FIXES · *EP 8*",
+      "vo": "A screenshot folder? How many?",
+      "mascot": {
+       "action": "think"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "wide",
+      "banner": "BYTE FIXES · *EP 8*",
+      "vo": "Forty-two screenshots. Zero posts planned.",
+      "pip": {
+       "action": "facepalm"
+      },
+      "speed": 0.97,
+      "overlay": {
+       "type": "pill",
+       "label": "SCREENSHOTS SAVED",
+       "from": 1,
+       "to": 42,
+       "log": false
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "THE *NEWS*",
+      "vo": "Claude just launched Sheets, in beta. It builds the calendar from one prompt.",
+      "mascot": {
+       "action": "point"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "THE *NEWS*",
+      "vo": "Wait. A real spreadsheet? From a prompt?",
+      "pip": {
+       "action": "shock"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "low",
+      "banner": "STEP 1 · *ASK*",
+      "step": [
+       1,
+       3
+      ],
+      "vo": "Step one. Ask for a thirty-day content calendar.",
+      "mascot": {
+       "action": "type"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 1 · *ASK*",
+      "step": [
+       1,
+       3
+      ],
+      "vo": "Columns: date, pillar, hook, format, and status.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "terminal",
+       "lines": [
+        {
+         "role": "you",
+         "text": "Make a 30-day Instagram content calendar."
+        },
+        {
+         "role": "you",
+         "text": "Columns: date, pillar, hook, format, status."
+        }
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "STEP 2 · *UPGRADE*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Can it do the little drop-down thing?",
+      "pip": {
+       "action": "think"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 2 · *UPGRADE*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Yep. Drop-downs, formulas, formatting. Ask for a status drop-down.",
+      "mascot": {
+       "action": "wave"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 2 · *UPGRADE*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Idea, filmed, posted. Plus a tab that counts posts per pillar.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "checklist",
+       "sync": false,
+       "items": [
+        "Idea",
+        "Filmed",
+        "Posted"
+       ]
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 3 · *USE IT*",
+      "step": [
+       3,
+       3
+      ],
+      "vo": "Step three. Every time you post, flip the status.",
+      "mascot": {
+       "action": "celebrate"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "two",
+      "banner": "*PAYOFF*",
+      "vo": "So tonight I just... check the sheet?",
+      "pip": {
+       "action": "think"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "*PAYOFF*",
+      "vo": "And film what it says. No more scrolling screenshots.",
+      "mascot": {
+       "action": "celebrate"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "*PAYOFF*",
+      "vo": "Deleting forty-two screenshots. Right now.",
+      "pip": {
+       "action": "celebrate"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "FREE *TOOL*",
+      "vo": "Need hooks to fill that sheet? Comment IDEA.",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "caps_y": 1080,
+      "overlay": {
+       "type": "cta",
+       "keyword": "IDEA",
+       "follow": false,
+       "y": 960
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -160,3 +160,15 @@ mark:after{content:"";position:absolute;left:-.08em;right:-.08em;bottom:.04em;he
 .seam{position:absolute!important;top:610px;width:124px;height:124px;border-radius:50%;background:#E8664A;box-shadow:0 8px 0 rgba(0,0,0,.18);z-index:5}
 .seam.r{right:-62px}.seam.l{left:-62px}
 .seam span{position:absolute;left:9px;top:33px;font:900 46px/1 Brico;color:#FFF3DC}
+
+/* timeline slide */
+.tline{justify-content:center;padding-bottom:200px}
+.tline h2.sm{margin-bottom:44px}
+.tls{position:relative;display:flex;flex-direction:column;gap:30px}
+.tls:before{content:"";position:absolute;left:213px;top:30px;bottom:40px;width:8px;border-radius:4px;background:repeating-linear-gradient(#2A1F33 0 18px,transparent 18px 30px);opacity:.25}
+.tl{display:flex;align-items:flex-start;gap:0}
+.tl .tw{flex:none;width:180px;margin-top:8px;text-align:center;font:800 27px/1 Brico;letter-spacing:2px;background:#2A1F33;color:#FFF3DC;padding:12px 6px;border-radius:14px}
+.tl i{flex:none;width:34px;height:34px;margin:12px 34px 0 18px;border-radius:50%;background:#36B5A0;box-shadow:0 0 0 7px #FFF3DC,0 5px 0 7px rgba(0,0,0,.08)}
+.tl:nth-child(2n) i{background:#F2B33D}.tl.end i{background:#E8664A}.tl.end .tw{background:#E8664A}
+.tl .tb b{display:block;font:800 44px/1.12 Brico}
+.tl .tb p{margin:6px 0 0;font:600 32px/1.3 Brico;color:#5d5167}
