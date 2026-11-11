@@ -462,6 +462,16 @@ function overlay(B, lt, D) {
     const rr = rows.map(r => { const fresh = r.new; if (r.later || !r.v || (fresh && lt < st)) return `<div class="ld-r emp"><b>${esc(r.k)}</b><p>?</p></div>`; const pe = fresh ? back((lt - st) / .3) : 1; const fill = fresh ? eout((lt - st - .15) / .7) : 1;
       return `<div class="ld-r${fresh ? ' fresh' : ''}"><b>${esc(r.k)}</b><div class="ld-v" style="transform:translateX(${(1 - pe) * 200}px);opacity:${clamp(pe * 2)}"><u><i style="width:${(clamp((r.pct || 0) / mx) * fill * 100).toFixed(1)}%;background:${r.pct / mx > .66 ? '#E8664A' : r.pct / mx > .33 ? '#F2B33D' : '#36B5A0'}"></i></u><em>${esc(r.v)}</em></div></div>`; }).join('');
     h = `<div class="ld"${o.y != null ? ` style="top:${o.y}px"` : ''}><div style="transform:translateY(${(1 - e) * 60}px);opacity:${clamp(lt / .12)}">${o.title ? `<h4>${esc(o.title)}</h4>` : ''}${rr}${o.foot ? `<small>${esc(o.foot)}</small>` : ''}</div></div>`;
+  } else if (o.type === 'trim') {
+    // clip timeline: talk segments (teal) separated by dead-air gaps (red, hatched); at o.at the gaps get a cut mark and collapse,
+    // the length label counts from o.from to o.to seconds. segs: [3,2,4,...] relative talk lengths; gaps: [1,.6,...] relative gap lengths
+    const segs = o.segs || [3, 2, 4, 3, 2], gaps = o.gaps || [1.2, .8, 1.5, .9], st = (o.at ?? .35) * D, k = eout((lt - st) / (o.dur ?? .9)), e = back((lt - .05) / .3);
+    const cut = lt >= st - .25; const tot = segs.reduce((a, b) => a + b, 0) + gaps.reduce((a, b) => a + b, 0);
+    let bar = ''; segs.forEach((g, i) => { bar += `<i class="tr-s" style="flex:${g}"></i>`; if (i < gaps.length) { const w = gaps[i] * (1 - k); bar += `<i class="tr-g${cut ? ' cut' : ''}" style="flex:${Math.max(0.0001, w)};opacity:${k >= 1 ? 0 : 1}"></i>`; } });
+    const sec = lerp(o.from ?? 48, o.to ?? 31, k);
+    h = `<div class="tr" style="transform:translateY(${(1 - e) * 60}px);opacity:${clamp(lt / .12)}"><div class="tr-h"><b>${esc(o.title || 'YOUR TAKE')}</b><em class="${k >= 1 ? 'ok' : ''}">${sec.toFixed(0)}s</em></div>
+      <div class="tr-bar" style="width:${(lerp(100, 100 * (tot - gaps.reduce((a, b) => a + b, 0)) / tot, k)).toFixed(1)}%">${bar}</div>
+      <div class="tr-l"><span><i class="tr-s"></i>${esc(o.talk || 'talking')}</span><span><i class="tr-g"></i>${esc(o.dead || 'dead air')}</span>${o.foot ? `<small>${esc(o.foot)}</small>` : ''}</div></div>`;
   } else if (o.type === 'cta') {
     const kw = String(o.keyword || T.keyword || 'LINK').toUpperCase(); const ty = clamp((lt - .5) / .8); const nch = Math.floor(ty * kw.length + .0001);
     const pp = clamp((lt - 1.5) / .15) - clamp((lt - 1.75) / .15); const eb = back((lt - 1.8) / .35);

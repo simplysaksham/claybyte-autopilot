@@ -1,0 +1,696 @@
+{
+ "date": "2026-11-12",
+ "items": [
+  {
+   "slot": 1,
+   "kind": "carousel",
+   "publish_at": "2026-11-12T10:00:00+05:30",
+   "spec": {
+    "id": "2026-11-12-c1",
+    "keyword": null,
+    "seam": true,
+    "cover": {
+     "style": "frame",
+     "theme": "teal",
+     "series": "CREATOR MONEY · CONTRACTS",
+     "kicker": "READ BEFORE YOU SIGN",
+     "title": "This clause is *exclusivity* in disguise",
+     "sub": "It's called first refusal.",
+     "scene": {
+      "set": "studio",
+      "cam": "wide",
+      "action": "shock",
+      "props": [],
+      "sets": {
+       "studio": {
+        "laptop": {
+         "title": "contract.pdf",
+         "lines": [
+          "9. First refusal",
+          "Ends: never?"
+         ]
+        }
+       }
+      }
+     }
+    },
+    "slides": [
+     {
+      "type": "flag",
+      "n": "",
+      "label": "SPOT THIS",
+      "title": "The *polite* line",
+      "says_label": "THE CONTRACT SAYS",
+      "says": "Brand gets first refusal on future deals.",
+      "fix_label": "WHAT IT CAN MEAN",
+      "fix": "With no deadline and no release, you can't sign anyone else until they decide."
+     },
+     {
+      "type": "table",
+      "tag": "KNOW THE DIFFERENCE",
+      "title": "Exclusivity vs *first refusal*",
+      "a": {
+       "name": "Exclusivity"
+      },
+      "b": {
+       "name": "First refusal"
+      },
+      "pick": "b",
+      "rows": [
+       {
+        "k": "When",
+        "a": "During the deal",
+        "b": "When it ends"
+       },
+       {
+        "k": "Blocks",
+        "a": "Working with competitors",
+        "b": "Signing a new offer before they answer"
+       },
+       {
+        "k": "They can",
+        "a": "Keep you off rivals",
+        "b": "Match an offer and keep you"
+       },
+       {
+        "k": "Price it",
+        "a": "Paid add-on",
+        "b": "Time limit or paid add-on"
+       }
+      ],
+      "foot": "Different clauses. Both cost you *options*."
+     },
+     {
+      "type": "doc",
+      "tag": "SCREENSHOT THIS",
+      "title": "Fix the *clause*",
+      "head": "CLAUSE 9 · FIRST REFUSAL",
+      "meta": "Example terms · not legal advice",
+      "lines": [
+       {
+        "k": "Window",
+        "v": "They answer within 7 days",
+        "n": "1"
+       },
+       {
+        "k": "Match",
+        "v": "Same fee, deliverables and dates",
+        "n": "2"
+       },
+       {
+        "k": "Release",
+        "v": "If they pass or stay silent, you're free",
+        "n": "3"
+       },
+       {
+        "k": "End date",
+        "v": "The right ends on a set date",
+        "n": "4"
+       },
+       {
+        "k": "Price",
+        "v": "Or it's a paid add-on",
+        "n": "5"
+       }
+      ],
+      "foot": "Short windows force a fast answer."
+     },
+     {
+      "type": "flag",
+      "n": "",
+      "label": "RED FLAG",
+      "title": "No *release* on no",
+      "says_label": "THE CONTRACT SAYS",
+      "says": "Brand may exercise this right at any time.",
+      "fix_label": "ASK FOR",
+      "fix": "If they decline or don't reply in time, the right ends. Otherwise it's open-ended exclusivity."
+     },
+     {
+      "type": "chat",
+      "label": "COPY THIS",
+      "n": "",
+      "title": "What to *reply*",
+      "who": "Brand",
+      "status": "online",
+      "msgs": [
+       {
+        "from": "them",
+        "text": "It's a standard clause. We need first refusal on renewals."
+       },
+       {
+        "from": "you",
+        "text": "Sure: 7-day reply window, matching terms only, and I'm free if you pass. Otherwise it's a paid add-on."
+       }
+      ],
+      "note": "Yes with limits beats a flat no. You keep the deal and your options."
+     },
+     {
+      "type": "recap",
+      "tag": "SCREENSHOT THIS",
+      "title": "First refusal *cheat sheet*",
+      "items": [
+       "Short answer *window*",
+       "Define the *match*",
+       "*Release* if they pass",
+       "*End date* or a fee"
+      ]
+     },
+     {
+      "type": "cta",
+      "title": "Send this to a *creator* about to sign",
+      "keyword": null,
+      "sub": "Not legal advice; get big contracts checked. Follow @claybyte.in for creator business tips.",
+      "scene": {
+       "set": "desk",
+       "cam": "wide",
+       "action": "celebrate",
+       "props": [],
+       "sets": {
+        "desk": {
+         "phone": {
+          "app": "Mail",
+          "title": "Contract v2",
+          "lines": [
+           "Reply in 7 days",
+           "Then you're free"
+          ],
+          "pill": "Signed ✓"
+         }
+        }
+       }
+      }
+     }
+    ]
+   },
+   "caption": "This clause is exclusivity in disguise. Read it before you sign.\n\n\"Brand gets first refusal on future deals\" sounds polite. Exclusivity covers the deal itself. First refusal kicks in when it ends: the brand can match a new offer and keep you, and you can't sign anyone else until they answer.\n\nMake it fair:\n1. A short answer window (one creator-contract guide calls 5-14 days typical)\n2. Define \"match\": same fee, deliverables and dates\n3. If they pass or stay silent, you're free\n4. The right ends on a set date\n5. Or price it as a paid add-on, like exclusivity\n\nRed flag: no release when they say no. That's open-ended exclusivity.\n\nNot legal advice. Get big contracts checked.\n\nSend this to a creator who's about to sign.\n\n#branddeals #creatorbusiness #influencertips #contentcreator #ugccreator #freelancetips",
+   "keyword": null,
+   "pillar": 4,
+   "topic": "Right of first refusal vs exclusivity in brand deals: answer window, define match, release on no, end date or fee",
+   "sources": [
+    "https://www.makeinfluence.com/en/academy/right-of-first-refusal-and-renewal-options-in-influencer-contracts",
+    "https://www.creatoressentials.com/glossary/right-of-first-refusal/"
+   ]
+  },
+  {
+   "slot": 2,
+   "kind": "reel",
+   "publish_at": "2026-11-12T13:30:00+05:30",
+   "script": {
+    "id": "2026-11-12-r1",
+    "keyword": null,
+    "voice": "af_bella",
+    "speed": 1.12,
+    "seed": 41,
+    "caps": "bold",
+    "caps_y": 985,
+    "highlight": [
+     "seventeen",
+     "Seventeen",
+     "silence",
+     "first",
+     "dead",
+     "punch",
+     "forty-eight",
+     "thirty-one",
+     "three",
+     "Three"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Edit",
+       "title": "take_03.mov",
+       "lines": [
+        "0:48",
+        "needs cutting"
+       ],
+       "pill": "0:48"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "timeline",
+       "lines": [
+        "> take_03  0:48",
+        "> dead air: lots"
+       ]
+      }
+     },
+     "machine": {
+      "sign": "CUT",
+      "wall": "#8DB2DA"
+     }
+    },
+    "beats": [
+     {
+      "banner": "17 SECONDS OF NOTHING",
+      "vo": "Say your take is forty-eight seconds. Seventeen of them are silence.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "trim",
+       "title": "YOUR TAKE",
+       "segs": [
+        3,
+        2,
+        4,
+        2,
+        3,
+        2
+       ],
+       "gaps": [
+        1.4,
+        0.9,
+        1.6,
+        1.1,
+        1.2
+       ],
+       "talk": "talking",
+       "dead": "dead air",
+       "from": 48,
+       "to": 31,
+       "at": 9
+      }
+     },
+     {
+      "banner": "THE DEAD-AIR PASS",
+      "vo": "Fix it with the dead-air pass. Three cuts, before any effects.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "bigstat",
+       "value": "3",
+       "label": "CUTS BEFORE EFFECTS"
+      }
+     },
+     {
+      "banner": "CUT 1 · BREATHS",
+      "vo": "Cut one. Delete the breath before every sentence. Start on the first word.",
+      "set": "machine",
+      "cam": "low",
+      "caps_y": 760,
+      "mascot": {
+       "action": "press"
+      },
+      "props": [
+       "press"
+      ],
+      "overlay": {
+       "type": "card",
+       "title": "CUT 1",
+       "items": [
+        "Start on the first word"
+       ]
+      }
+     },
+     {
+      "banner": "CUT 2 · FILLERS",
+      "vo": "Cut two. So, um, basically, like. If the line works without it, it goes.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "throw"
+      },
+      "overlay": {
+       "type": "chips",
+       "items": [
+        "So",
+        "um",
+        "basically",
+        "like"
+       ]
+      }
+     },
+     {
+      "banner": "CUT 3 · ENDINGS",
+      "vo": "Cut three. The pause after each point, and the trailing yeah.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "shock"
+      },
+      "overlay": {
+       "type": "bigstat",
+       "value": "…yeah",
+       "label": "CUT THE TAIL"
+      }
+     },
+     {
+      "banner": "LOOKS JUMPY?",
+      "vo": "Jump cuts look jumpy? Punch in a little on every other cut.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "compare",
+       "left": {
+        "name": "SAME FRAME",
+        "items": [
+         "Jumpy"
+        ]
+       },
+       "right": {
+        "name": "PUNCH IN",
+        "items": [
+         "Feels edited"
+        ]
+       },
+       "winner": "right",
+       "reveal": 0.55
+      }
+     },
+     {
+      "banner": "48s → 31s",
+      "vo": "Same take, same words. Forty-eight seconds becomes thirty-one. No dead air.",
+      "set": "machine",
+      "cam": "low",
+      "caps_y": 760,
+      "mascot": {
+       "action": "celebrate"
+      },
+      "props": [
+       "confetti"
+      ],
+      "overlay": {
+       "type": "trim",
+       "title": "YOUR TAKE",
+       "segs": [
+        3,
+        2,
+        4,
+        2,
+        3,
+        2
+       ],
+       "gaps": [
+        1.4,
+        0.9,
+        1.6,
+        1.1,
+        1.2
+       ],
+       "talk": "talking",
+       "dead": "dead air",
+       "from": 48,
+       "to": 31,
+       "at": 0.3,
+       "foot": "Example take. Your numbers will differ."
+      }
+     },
+     {
+      "banner": "SEND THIS",
+      "vo": "Send this to the friend whose reels start with a breath.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "send",
+       "title": "Send this to",
+       "who": "the friend whose reels start with a breath",
+       "sub": "Rule: nothing changes for 3 s? Cut or add text."
+      }
+     }
+    ]
+   },
+   "caption": "Your reel isn't boring. It has dead air. Save this for your next edit.\n\nThe dead-air pass (do it before any effects):\n1. Breaths: start every sentence on the first word\n2. Fillers: so, um, basically, like. If the line works without it, cut it\n3. Endings: the pause after each point and the trailing \"yeah\"\n\nCuts look jumpy? Punch in a little on every other cut.\n\nExample: a 48-second take with 17 seconds of silence ends up at 31. Your numbers will differ, but the pass is the same.\n\nRule of thumb: if nothing changes for 3 seconds, cut or add text.\n\nSend this to the friend whose reels start with a breath.\n\n#reelstips #videoediting #contentcreator #editingtips #instagramreels #creatortips",
+   "keyword": null,
+   "pillar": 2,
+   "topic": "Dead-air pass: cut breaths, fillers and endings before effects; punch in to hide jump cuts",
+   "sources": [
+    "https://manychat.com/blog/instagram-trends-for-creators-2026/"
+   ]
+  },
+  {
+   "slot": 3,
+   "kind": "reel",
+   "publish_at": "2026-11-12T19:30:00+05:30",
+   "script": {
+    "id": "2026-11-12-r2",
+    "keyword": "IDEA",
+    "style": "duet",
+    "caps": "bold",
+    "caps_y": 960,
+    "banner_style": "chip",
+    "voices": {
+     "pip": "am_michael:0.6+am_fenrir:0.4",
+     "byte": "af_heart"
+    },
+    "voice": "af_heart",
+    "speed": 1.08,
+    "seed": 42,
+    "highlight": [
+     "four",
+     "Whiteboards",
+     "Claude",
+     "whiteboard",
+     "buffer",
+     "doc",
+     "IDEA",
+     "beta"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "night": {}
+    },
+    "beats": [
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "6:05 PM",
+      "vo": "Byte. Shoot day is tomorrow. My plan is in four group chats.",
+      "pip": {
+       "action": "sad"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "BYTE FIXES · *EP 9*",
+      "vo": "Four group chats? For one shoot?",
+      "mascot": {
+       "action": "think"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "wide",
+      "banner": "BYTE FIXES · *EP 9*",
+      "vo": "Shots in one. Locations in another. Times... somewhere.",
+      "pip": {
+       "action": "facepalm"
+      },
+      "speed": 0.97,
+      "overlay": {
+       "type": "pill",
+       "label": "GROUP CHATS",
+       "from": 1,
+       "to": 4,
+       "log": false
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "THE *NEWS*",
+      "vo": "Claude just got Whiteboards, in beta. Plan the whole day on one board.",
+      "mascot": {
+       "action": "point"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "THE *NEWS*",
+      "vo": "Wait. A whiteboard? Inside Claude?",
+      "pip": {
+       "action": "shock"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "low",
+      "banner": "STEP 1 · *DUMP*",
+      "vo": "Step one. Paste everything. The brief, the shots, the addresses.",
+      "step": [
+       1,
+       3
+      ],
+      "mascot": {
+       "action": "type"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 1 · *DUMP*",
+      "vo": "Then ask it to map the day, grouped by location.",
+      "step": [
+       1,
+       3
+      ],
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "terminal",
+       "lines": [
+        {
+         "role": "you",
+         "text": "Map my shoot day on a board."
+        },
+        {
+         "role": "you",
+         "text": "Group shots by location."
+        }
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "STEP 2 · *CHECK*",
+      "vo": "Okay. But what if we run late?",
+      "step": [
+       2,
+       3
+      ],
+      "pip": {
+       "action": "think"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 2 · *CHECK*",
+      "vo": "Ask for a buffer after every location move.",
+      "step": [
+       2,
+       3
+      ],
+      "mascot": {
+       "action": "wave"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 2 · *CHECK*",
+      "vo": "Cafe, office, street. Travel time between each one.",
+      "step": [
+       2,
+       3
+      ],
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "checklist",
+       "sync": false,
+       "items": [
+        "Cafe · 4 shots",
+        "+ buffer",
+        "Office · 3 shots",
+        "+ buffer",
+        "Street · 2 shots"
+       ]
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 3 · *SHARE*",
+      "vo": "Step three. Turn the board into a doc, and send it to the crew.",
+      "step": [
+       3,
+       3
+      ],
+      "mascot": {
+       "action": "celebrate"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "low",
+      "banner": "*PAYOFF*",
+      "vo": "Do I need some special plan for this?",
+      "pip": {
+       "action": "think"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "*PAYOFF*",
+      "vo": "Any paid plan. It's in beta for now.",
+      "mascot": {
+       "action": "wave"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "two",
+      "banner": "*PAYOFF*",
+      "vo": "Muting all four group chats. Right now.",
+      "pip": {
+       "action": "celebrate"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "FREE *TOOL*",
+      "vo": "Need shot ideas for that board? Comment IDEA.",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "caps_y": 1080,
+      "overlay": {
+       "type": "cta",
+       "keyword": "IDEA",
+       "follow": false,
+       "y": 960
+      }
+     }
+    ]
+   },
+   "caption": "Comment IDEA and I'll DM you the free Reel Idea Machine (a Claude skill + PDF guide) to fill your shot list.\n\nShoot day tomorrow. Plan spread over four group chats.\n\nByte fixes · EP 9: Claude Whiteboards launched in beta on paid plans (web, desktop and mobile).\n1. Paste everything: brief, shots, addresses\n2. Ask it to map the day on a board, grouped by location\n3. Add a buffer after every location move\n4. Turn the board into a doc and send it to your crew\n\nOne board instead of four chats.\n\n#claudeai #aitools #contentcreator #videoproduction #creatortips #aiforcreators",
+   "keyword": "IDEA",
+   "pillar": 1,
+   "topic": "Plan a shoot day on one Claude Whiteboard (beta): map by location, buffers, turn into a doc (Byte fixes EP 9)",
+   "sources": [
+    "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+    "https://tech-ish.com/2026/11/11/anthropic-claude-sheets-whiteboards-meetings/"
+   ]
+  }
+ ]
+}

@@ -9,6 +9,7 @@ slide types: point{n,title,body} list{title,items} stat{value,label,body} compar
              doc{title,tag,head,meta,lines:[{k,v,n}],foot}  (paper document mock; lines with "n" get a numbered marker)
              chat{n,label,title,who,status,msgs:[{from:"them"|"you",text}],note}  (DM thread mock: client bubble + your reply script)
              bars{tag,title,rows:[{k,v,pct,note}],foot}  (stage -> value meter rows with big bars)
+             table{tag,title,a:{name},b:{name},pick:'a'|'b',rows:[{k,a,b}],foot}  (versus table: attribute rows x 2 columns)
 cta.scene{set,cam,action,props,sets} optional: renders the mascot in a window under the CTA text
 """
 import sys, os, json, asyncio, subprocess, time, html, re
@@ -101,6 +102,13 @@ def slide_html(s, i, n, kw):
         rows = "".join(f'<div class="tl{" end" if k == len(its)-1 else ""}"><div class="tw">{E(r.get("when"))}</div><i></i><div class="tb"><b>{H(r.get("title"))}</b>{f"<p>{E(r.get(chr(98)+chr(111)+chr(100)+chr(121)))}</p>" if r.get("body") else ""}</div></div>' for k, r in enumerate(its))
         tag = f'<div class="rtag">{E(s.get("tag"))}</div>' if s.get("tag") else ""
         return f'<section class="s tline">{tag}<h2 class="sm">{H(s.get("title"))}</h2><div class="tls">{rows}</div>{swipe}{foot}</section>'
+    if t == "table":  # side-by-side versus table: attribute rows x two columns (a/b); "pick" (a|b) highlights one column; optional foot line
+        A, B = s.get("a", {}), s.get("b", {}); pk = s.get("pick")
+        hd = f'<div class="tr hd"><span></span><b class="{"pk" if pk=="a" else ""}">{E(A.get("name"))}</b><b class="{"pk" if pk=="b" else ""}">{E(B.get("name"))}</b></div>'
+        rows = "".join(f'<div class="tr"><span>{E(r.get("k"))}</span><p class="{"pk" if pk=="a" else ""}">{H(r.get("a"))}</p><p class="{"pk" if pk=="b" else ""}">{H(r.get("b"))}</p></div>' for r in s.get("rows", []))
+        tag = f'<div class="rtag">{E(s.get("tag"))}</div>' if s.get("tag") else ""
+        tf = f'<div class="tfoot">{H(s.get("foot"))}</div>' if s.get("foot") else ""
+        return f'<section class="s table">{tag}<h2 class="sm">{H(s.get("title"))}</h2><div class="tbl">{hd}{rows}</div>{tf}{swipe}{foot}</section>'
     if t == "quote":
         return f'<section class="s dark"><div class="q">“</div><h2 class="qt">{E(s["text"])}</h2><p class="by">{E(s.get("by"))}</p>{swipe}{foot}</section>'
     if t == "cta":
