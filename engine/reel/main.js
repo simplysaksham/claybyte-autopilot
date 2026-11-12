@@ -456,6 +456,12 @@ function overlay(B, lt, D) {
     let sl = ''; for (let k = 1; k <= n; k++) { const r = rows.find(x => x.n === k); const fresh = r && r.new; const show = r && (!fresh || lt >= st); const pe = fresh ? back((lt - st) / .3) : 1;
       sl += `<div class="rk-r${k === 1 ? ' top' : ''}${fresh && show ? ' fresh' : ''}"><b>#${k}</b>${show ? `<p style="transform:translateX(${(1 - pe) * 260}px) scale(${.7 + .3 * pe});opacity:${clamp(pe * 2)}">${esc(r.text)}</p>` : '<p class="emp">?</p>'}</div>`; }
     h = `<div class="rk" style="transform:translateY(${(1 - e) * 60}px);opacity:${clamp(lt / .12)}">${o.title ? `<h4>${esc(o.title)}</h4>` : ''}${sl}</div>`;
+  } else if (o.type === 'tier') {
+    // tier list: rows {t:"S",text,new}; placed rows show at once, the new:true row's chip drops in at o.at (fraction of beat); empty rows show a dashed slot
+    const rows = o.rows || [], st = (o.at ?? .4) * D, e = back((lt - .05) / .3); const TCOL = { S: '#E8664A', A: '#F2B33D', B: '#A6C796', C: '#8DB2DA', D: '#B6A2E3', F: '#9C8FA6' };
+    const rr = rows.map(r => { const fresh = r.new; const show = r.text && (!fresh || lt >= st); const pe = fresh ? back((lt - st) / .3) : 1;
+      return `<div class="ti-r${fresh && show ? ' fresh' : ''}"><b style="background:${TCOL[r.t] || '#2A1F33'}">${esc(r.t)}</b>${show ? `<p style="transform:translateY(${(1 - pe) * -70}px) scale(${.75 + .25 * pe});opacity:${clamp(pe * 2)}">${esc(r.text)}</p>` : '<p class="emp"></p>'}</div>`; }).join('');
+    h = `<div class="ti"${o.y != null ? ` style="top:${o.y}px"` : ''}><div style="transform:translateY(${(1 - e) * 60}px);opacity:${clamp(lt / .12)}">${o.title ? `<h4>${esc(o.title)}</h4>` : ''}${rr}</div></div>`;
   } else if (o.type === 'ladder') {
     // escalating price ladder: rows {k,v,pct,new}; placed rows show at once, the new:true row slides in at o.at and its bar fills; o.max = bar scale
     const rows = o.rows || [], st = (o.at ?? .35) * D, e = back((lt - .05) / .3), mx = o.max || 100;

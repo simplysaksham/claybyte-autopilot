@@ -109,6 +109,12 @@ def slide_html(s, i, n, kw):
         tag = f'<div class="rtag">{E(s.get("tag"))}</div>' if s.get("tag") else ""
         tf = f'<div class="tfoot">{H(s.get("foot"))}</div>' if s.get("foot") else ""
         return f'<section class="s table">{tag}<h2 class="sm">{H(s.get("title"))}</h2><div class="tbl">{hd}{rows}</div>{tf}{swipe}{foot}</section>'
+    if t == "myth":  # myth vs fact: crossed-out myth card (stamped MYTH) -> fact card with a check; optional "why" line
+        lab = f'{E(s.get("label","MYTH VS FACT"))} {E(s.get("n",""))}'.strip()
+        why = f'<div class="mwhy">{H(s.get("why"))}</div>' if s.get("why") else ""
+        return f'''<section class="s myth" data-n="{E(s.get("n",""))}"><div class="mlab">{lab}</div><h2 class="sm">{H(s.get("title"))}</h2>
+<div class="mcard"><span>MYTH</span><p>{E(s.get("myth"))}</p><em>✕</em></div><div class="marr">↓</div>
+<div class="fcard"><span>FACT</span><p>{H(s.get("fact"))}</p><em>✓</em></div>{why}{swipe}{foot}</section>'''
     if t == "quote":
         return f'<section class="s dark"><div class="q">“</div><h2 class="qt">{E(s["text"])}</h2><p class="by">{E(s.get("by"))}</p>{swipe}{foot}</section>'
     if t == "cta":

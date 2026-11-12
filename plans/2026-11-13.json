@@ -1,0 +1,721 @@
+{
+ "date": "2026-11-13",
+ "items": [
+  {
+   "slot": 1,
+   "kind": "carousel",
+   "publish_at": "2026-11-13T10:00:00+05:30",
+   "spec": {
+    "id": "2026-11-13-c1",
+    "keyword": null,
+    "seam": true,
+    "cover": {
+     "style": "poster",
+     "theme": "coral",
+     "series": "AGENCY LIFE · APPROVALS",
+     "kicker": "FIX IT IN THE SOW",
+     "title": "Day 9. Still no *feedback?*",
+     "sub": "Put the clock in the contract.",
+     "scene": {
+      "set": "desk",
+      "cam": "wide",
+      "action": "sad",
+      "props": [],
+      "sets": {
+       "desk": {
+        "phone": {
+         "app": "Messages",
+         "title": "Client",
+         "lines": [
+          "Will review this week!",
+          "Sent 9 days ago"
+         ],
+         "pill": "Seen"
+        }
+       }
+      }
+     }
+    },
+    "slides": [
+     {
+      "type": "myth",
+      "n": "01",
+      "label": "MYTH VS FACT",
+      "title": "Waiting is *part of the job*",
+      "myth": "Slow feedback is just how clients are.",
+      "fact": "Slow feedback is a *missing clause*. Put a review window in the SOW.",
+      "why": "Then the delay is their choice, not your problem."
+     },
+     {
+      "type": "myth",
+      "n": "02",
+      "label": "MYTH VS FACT",
+      "title": "Silence means *yes*",
+      "myth": "No reply by the deadline = approved.",
+      "fact": "Only if your SOW *says so*. Otherwise they choose: approve, new date, or cut scope.",
+      "why": "Some agencies use deemed approval. Others never do. Pick one, in writing."
+     },
+     {
+      "type": "myth",
+      "n": "03",
+      "label": "MYTH VS FACT",
+      "title": "More reviewers, *better work*",
+      "myth": "Anyone on their team can send notes.",
+      "fact": "One *named approver* + a backup. One list of notes per round.",
+      "why": "Five people, five inboxes, five versions of done."
+     },
+     {
+      "type": "doc",
+      "tag": "SCREENSHOT THIS",
+      "title": "The feedback *clause*",
+      "head": "SOW · FEEDBACK & APPROVALS",
+      "meta": "Example terms · not legal advice",
+      "lines": [
+       {
+        "k": "Window",
+        "v": "3 business days per round",
+        "n": "1"
+       },
+       {
+        "k": "Approver",
+        "v": "One named person + a backup",
+        "n": "2"
+       },
+       {
+        "k": "Notes",
+        "v": "One combined list per round",
+        "n": "3"
+       },
+       {
+        "k": "Late notes",
+        "v": "Delivery moves by the delay",
+        "n": "4"
+       },
+       {
+        "k": "Still silent",
+        "v": "Approve, new date or cut scope",
+        "n": "5"
+       }
+      ],
+      "foot": "Agree it before work starts, not mid-project."
+     },
+     {
+      "type": "chat",
+      "label": "COPY THIS",
+      "n": "",
+      "title": "When they're *late*",
+      "who": "Client",
+      "status": "online",
+      "msgs": [
+       {
+        "from": "them",
+        "text": "So sorry, crazy week! Can you still hit Friday?"
+       },
+       {
+        "from": "you",
+        "text": "Happy to. Notes by Tuesday 5 PM keeps Friday. After that, delivery moves a day per day late."
+       }
+      ],
+      "note": "Friendly, specific, and the choice is theirs."
+     },
+     {
+      "type": "recap",
+      "tag": "SCREENSHOT THIS",
+      "title": "Feedback *cheat sheet*",
+      "items": [
+       "*3-day* review window",
+       "*One* approver + backup",
+       "*One* list per round",
+       "Late notes move the *date*"
+      ]
+     },
+     {
+      "type": "cta",
+      "title": "Save this for your next *SOW*",
+      "keyword": null,
+      "sub": "Send it to the friend still waiting on feedback. Follow @claybyte.in for agency tips.",
+      "scene": {
+       "set": "studio",
+       "cam": "wide",
+       "action": "celebrate",
+       "props": [],
+       "sets": {
+        "studio": {
+         "laptop": {
+          "title": "SOW.pdf",
+          "lines": [
+           "7. Feedback: 3 days",
+           "Approver: 1 person"
+          ]
+         }
+        }
+       }
+      }
+     }
+    ]
+   },
+   "caption": "Day 9 and still no feedback? That's not a client problem. It's a missing clause.\n\n3 myths that keep you waiting:\n1. \"Waiting is part of the job.\" Fact: put a review window in the SOW.\n2. \"Silence means yes.\" Fact: only if your contract says so. Otherwise they choose: approve, a new date, or cut scope.\n3. \"More reviewers, better work.\" Fact: one named approver + a backup, one combined list of notes per round.\n\nThe clause (example terms, not legal advice):\n- Review window: 3 business days per round\n- One named approver + a backup\n- One combined list of notes per round\n- Late notes move the delivery date\n\nSave this for your next SOW. Send it to the friend still waiting on feedback.\n\n#agencylife #freelancetips #clientmanagement #socialmediamanager #creatorbusiness #freelancer",
+   "keyword": null,
+   "topic": "Client feedback myths vs facts: 3-business-day review window, deemed approval vs choice (approve/new date/cut scope), one approver + backup, one combined notes list",
+   "pillar": 3,
+   "sources": [
+    "https://agencymanagementinstitute.com/do-you-have-a-feedback-approval-clause-in-your-sows/",
+    "https://enterprisedna.co/resources/guides/agencies-stop-client-approval-delays",
+    "https://blog.freelancersunion.org/2014/02/19/what-do-your-client-slow-respond/"
+   ]
+  },
+  {
+   "slot": 2,
+   "kind": "reel",
+   "publish_at": "2026-11-13T13:30:00+05:30",
+   "script": {
+    "id": "2026-11-13-r1",
+    "keyword": null,
+    "voice": "af_bella",
+    "speed": 1.12,
+    "seed": 43,
+    "caps": "bold",
+    "caps_y": 985,
+    "highlight": [
+     "F",
+     "S",
+     "B",
+     "C",
+     "first",
+     "result",
+     "logo",
+     "payoff"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Reels",
+       "title": "frame_01.jpg",
+       "lines": [
+        "LOGO",
+        "0:00"
+       ],
+       "pill": "0:01"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "first_frame",
+       "lines": [
+        "> frame 1: ?",
+        "> sound: off"
+       ]
+      }
+     },
+     "machine": {
+      "sign": "FRAMES",
+      "wall": "#F2B33D"
+     }
+    },
+    "beats": [
+     {
+      "banner": "I RANKED 5 FIRST FRAMES",
+      "vo": "Five first frames, ranked. The one I used to open with lands in F.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "tier",
+       "title": "FIRST FRAME TIER LIST",
+       "rows": [
+        {
+         "t": "S",
+         "text": ""
+        },
+        {
+         "t": "A",
+         "text": ""
+        },
+        {
+         "t": "B",
+         "text": ""
+        },
+        {
+         "t": "C",
+         "text": ""
+        },
+        {
+         "t": "F",
+         "text": ""
+        }
+       ]
+      }
+     },
+     {
+      "banner": "F · LOGO INTRO",
+      "vo": "Logo intro, or a black frame. F. Nobody waits for your logo.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "sad"
+      },
+      "overlay": {
+       "type": "tier",
+       "rows": [
+        {
+         "t": "S",
+         "text": ""
+        },
+        {
+         "t": "A",
+         "text": ""
+        },
+        {
+         "t": "B",
+         "text": ""
+        },
+        {
+         "t": "C",
+         "text": ""
+        },
+        {
+         "t": "F",
+         "text": "Logo intro / black frame",
+         "new": true
+        }
+       ],
+       "at": 0.42
+      }
+     },
+     {
+      "banner": "C · SILENT B-ROLL",
+      "vo": "Slow b-roll with no text. C. Pretty, but it says nothing.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "tier",
+       "rows": [
+        {
+         "t": "S",
+         "text": ""
+        },
+        {
+         "t": "A",
+         "text": ""
+        },
+        {
+         "t": "B",
+         "text": ""
+        },
+        {
+         "t": "C",
+         "text": "Slow b-roll, no text",
+         "new": true
+        },
+        {
+         "t": "F",
+         "text": "Logo intro / black frame"
+        }
+       ],
+       "at": 0.42
+      }
+     },
+     {
+      "banner": "B · PLAIN TEXT",
+      "vo": "Text on a plain background. B. Clear, but there's nothing to watch.",
+      "set": "machine",
+      "cam": "low",
+      "caps_y": 1150,
+      "mascot": {
+       "action": "idle"
+      },
+      "overlay": {
+       "type": "tier",
+       "rows": [
+        {
+         "t": "S",
+         "text": ""
+        },
+        {
+         "t": "A",
+         "text": ""
+        },
+        {
+         "t": "B",
+         "text": "Text on a plain background",
+         "new": true
+        },
+        {
+         "t": "C",
+         "text": "Slow b-roll, no text"
+        },
+        {
+         "t": "F",
+         "text": "Logo intro / black frame"
+        }
+       ],
+       "at": 0.42
+      }
+     },
+     {
+      "banner": "A · FACE + TEXT",
+      "vo": "Your face, mid-sentence, plus text. A. You're already talking when they land.",
+      "set": "stage",
+      "cam": "low",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "tier",
+       "rows": [
+        {
+         "t": "S",
+         "text": ""
+        },
+        {
+         "t": "A",
+         "text": "Face mid-sentence + text",
+         "new": true
+        },
+        {
+         "t": "B",
+         "text": "Text on a plain background"
+        },
+        {
+         "t": "C",
+         "text": "Slow b-roll, no text"
+        },
+        {
+         "t": "F",
+         "text": "Logo intro / black frame"
+        }
+       ],
+       "at": 0.42
+      }
+     },
+     {
+      "banner": "S · RESULT FIRST",
+      "vo": "S tier. The result on frame one, with one line of text. Payoff first.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "tier",
+       "rows": [
+        {
+         "t": "S",
+         "text": "Result on screen + 1 line",
+         "new": true
+        },
+        {
+         "t": "A",
+         "text": "Face mid-sentence + text"
+        },
+        {
+         "t": "B",
+         "text": "Text on a plain background"
+        },
+        {
+         "t": "C",
+         "text": "Slow b-roll, no text"
+        },
+        {
+         "t": "F",
+         "text": "Logo intro / black frame"
+        }
+       ],
+       "at": 0.42
+      }
+     },
+     {
+      "banner": "SEND THIS",
+      "vo": "Send this to the friend whose reels open on a logo.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "send",
+       "title": "Send this to",
+       "who": "the friend whose reels open on a logo",
+       "sub": "Test: pause on frame one. Does it make sense alone?"
+      }
+     }
+    ]
+   },
+   "caption": "Your first frame does more work than your hook line. Ranked, S to F:\n\nS: the result on screen + one line of text (payoff first)\nA: your face mid-sentence + text\nB: text on a plain background\nC: slow b-roll with no text\nF: a logo intro or a black frame\n\nQuick test: pause on frame one with the sound off. If it makes sense alone, it's working.\n\nSend this to the friend whose reels open on a logo. Save it for your next edit.\n\n#reelstips #contentcreator #videoediting #instagramtips #creatortips #hooks",
+   "keyword": null,
+   "topic": "First-frame tier list: S result on screen + 1 line, A face mid-sentence + text, B plain text, C silent b-roll, F logo intro",
+   "pillar": 2,
+   "sources": []
+  },
+  {
+   "slot": 3,
+   "kind": "reel",
+   "publish_at": "2026-11-13T19:30:00+05:30",
+   "script": {
+    "id": "2026-11-13-r2",
+    "keyword": "IDEA",
+    "style": "duet",
+    "caps": "bold",
+    "caps_y": 960,
+    "banner_style": "chip",
+    "voices": {
+     "pip": "am_michael:0.6+am_fenrir:0.4",
+     "byte": "af_heart"
+    },
+    "voice": "af_heart",
+    "speed": 1.08,
+    "seed": 44,
+    "highlight": [
+     "twelve",
+     "Twelve",
+     "Zero",
+     "twenty",
+     "Whiteboards",
+     "theme",
+     "deck",
+     "IDEA",
+     "beta",
+     "Problem",
+     "plan",
+     "price"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "night": {}
+    },
+    "beats": [
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "12 HOURS TO *PITCH*",
+      "vo": "Byte. My client pitch is in twelve hours.",
+      "pip": {
+       "action": "sad"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "BYTE FIXES · *EP 10*",
+      "vo": "Twelve hours. And how many slides?",
+      "mascot": {
+       "action": "think"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "wide",
+      "banner": "BYTE FIXES · *EP 10*",
+      "vo": "Zero slides. Twenty sticky notes.",
+      "pip": {
+       "action": "facepalm"
+      },
+      "speed": 0.97,
+      "overlay": {
+       "type": "pill",
+       "label": "STICKY NOTES",
+       "from": 1,
+       "to": 20,
+       "log": false
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "THE *SHORTCUT*",
+      "vo": "Claude has Whiteboards now, in beta. Start there.",
+      "mascot": {
+       "action": "point"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "THE *SHORTCUT*",
+      "vo": "Okay. What do I even put on it?",
+      "pip": {
+       "action": "think"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "low",
+      "banner": "STEP 1 · *DUMP*",
+      "vo": "Step one. Paste every note. Even the messy ones.",
+      "step": [
+       1,
+       3
+      ],
+      "mascot": {
+       "action": "type"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 2 · *GROUP*",
+      "vo": "Step two. Ask Claude to group them by theme.",
+      "step": [
+       2,
+       3
+      ],
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "terminal",
+       "lines": [
+        {
+         "role": "you",
+         "text": "Group these notes by theme"
+        },
+        {
+         "role": "ai",
+         "text": "Problem · Plan · Price"
+        }
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "close",
+      "banner": "STEP 2 · *GROUP*",
+      "vo": "Problem, plan, price. Wait, that's my whole pitch.",
+      "step": [
+       2,
+       3
+      ],
+      "pip": {
+       "action": "shock"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 3 · *DECK*",
+      "vo": "Step three. Ask it to turn the board into a deck.",
+      "step": [
+       3,
+       3
+      ],
+      "mascot": {
+       "action": "celebrate"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "STEP 3 · *DECK*",
+      "vo": "Hold on. It makes the slides for me?",
+      "step": [
+       3,
+       3
+      ],
+      "pip": {
+       "action": "shock"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 3 · *DECK*",
+      "vo": "A first draft. You rewrite the words. You own the pitch.",
+      "step": [
+       3,
+       3
+      ],
+      "mascot": {
+       "action": "wave"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "low",
+      "banner": "*PAYOFF*",
+      "vo": "Do I need some special plan for this?",
+      "pip": {
+       "action": "think"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "*PAYOFF*",
+      "vo": "Any paid plan. Web, desktop or mobile. Still in beta.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "card",
+       "title": "CLAUDE WHITEBOARDS",
+       "items": [
+        "Paid plans",
+        "Web · desktop · mobile",
+        "Beta for now"
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "two",
+      "banner": "*PAYOFF*",
+      "vo": "Twelve hours. One board. I've got this.",
+      "pip": {
+       "action": "celebrate"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "FREE *TOOL*",
+      "vo": "Want reel ideas for that pitch? Comment IDEA.",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "caps_y": 1080,
+      "overlay": {
+       "type": "cta",
+       "keyword": "IDEA",
+       "follow": false,
+       "y": 960
+      }
+     }
+    ]
+   },
+   "caption": "12 hours to a client pitch. 0 slides. 20 sticky notes. (Byte fixes · EP 10)\n\nClaude Whiteboards (beta, on paid plans, web/desktop/mobile) can turn a board into a doc or a presentation:\n1. Paste every sticky note onto one board\n2. Ask Claude to group them by theme (problem, plan, price)\n3. Ask it to turn the board into a deck, then rewrite it in your own words\n\nThe draft is a start. You own the pitch.\n\nComment IDEA and I'll DM you my free Reel Idea Machine (Claude skill + PDF guide).\n\n#claudeai #aitools #agencylife #freelancer #contentcreator #clientpitch",
+   "keyword": "IDEA",
+   "topic": "Sticky notes to client pitch deck with Claude Whiteboards (beta): dump, group by theme, turn board into a deck (Byte fixes EP 10)",
+   "pillar": 1,
+   "sources": [
+    "https://www.unite.ai/anthropic-launches-claude-whiteboards-and-sheets-in-beta/",
+    "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
+   ]
+  }
+ ]
+}
