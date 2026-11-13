@@ -437,7 +437,7 @@ function overlay(B, lt, D) {
     let tiles = ''; for (let i = 0; i < n; i++) { const tt = .2 + i / n * du; if (lt < tt) { tiles += '<i class="off"></i>'; continue; } const e = back((lt - tt) / .2); tiles += `<i style="background:${TC[(i * 5 + 3) % 7]};transform:scale(${e})"><b></b></i>`; }
     h = `<div class="grid" style="grid-template-columns:repeat(${cols},1fr)">${o.label ? `<small style="grid-column:1/-1">${esc(o.label)}</small>` : ''}${tiles}</div>`;
   } else if (o.type === 'stamp') {
-    const st = o.at ?? .3; if (lt >= st) { const k = clamp((lt - st) / .18); const sc = lerp(2.4, 1, eout(k)); h = `<div class="stamp ${o.mark === 'check' ? 'ok' : ''}" style="opacity:${k};transform:translateX(-50%) rotate(${o.rot ?? -8}deg) scale(${sc})">${esc(o.text || '')}<span>${o.mark === 'check' ? '✓' : '✕'}</span></div>`; }
+    const st = o.at ?? .3; if (lt >= st) { const k = clamp((lt - st) / .18); const sc = lerp(2.4, 1, eout(k)); h = `<div class="stamp ${o.mark === 'check' ? 'ok' : ''}" style="${o.size ? `font-size:${o.size}px;` : ''}opacity:${k};transform:translateX(-50%) rotate(${o.rot ?? -8}deg) scale(${sc})">${esc(o.text || '')}<span>${o.mark === 'check' ? '✓' : '✕'}</span></div>`; }
   } else if (o.type === 'phone') {
     const e = back((lt - .1) / .4);
     h = `<div class="phn" style="transform:translateY(${(1 - e) * 120}px) rotate(${o.rot ?? -3}deg);opacity:${clamp(lt / .15)}"><div class="scr" style="background:${o.bg || 'linear-gradient(160deg,#36B5A0,#2A1F33)'}">${o.pill ? `<div class="vp"><i></i>${esc(o.pill)}</div>` : ''}<p>${esc(o.text || '')}</p>${o.sub ? `<span>${esc(o.sub)}</span>` : ''}</div></div>`;
@@ -478,6 +478,16 @@ function overlay(B, lt, D) {
     h = `<div class="tr" style="transform:translateY(${(1 - e) * 60}px);opacity:${clamp(lt / .12)}"><div class="tr-h"><b>${esc(o.title || 'YOUR TAKE')}</b><em class="${k >= 1 ? 'ok' : ''}">${sec.toFixed(0)}s</em></div>
       <div class="tr-bar" style="width:${(lerp(100, 100 * (tot - gaps.reduce((a, b) => a + b, 0)) / tot, k)).toFixed(1)}%">${bar}</div>
       <div class="tr-l"><span><i class="tr-s"></i>${esc(o.talk || 'talking')}</span><span><i class="tr-g"></i>${esc(o.dead || 'dead air')}</span>${o.foot ? `<small>${esc(o.foot)}</small>` : ''}</div></div>`;
+  } else if (o.type === 'verdict') {
+    // verdict card: a mock post (o.title = what was done, o.adds = chips of what was added) gets a stamp at o.at (fraction of beat):
+    // o.ok true -> green ORIGINAL check, false -> red NOT ORIGINAL cross; o.why appears after the stamp
+    const e = back((lt - .05) / .3), st = (o.at ?? .55) * D, k = clamp((lt - st) / .18), sc = lerp(2.2, 1, eout(k));
+    const adds = (o.adds || []).map((a, i) => { const ae = back((lt - .25 - i * .18) / .25); return `<i style="transform:scale(${ae})">+ ${esc(a)}</i>`; }).join('');
+    h = `<div class="vd${o.ok ? ' ok' : ''}"${o.y != null ? ` style="top:${o.y}px"` : ''}><div style="transform:translateY(${(1 - e) * 60}px);opacity:${clamp(lt / .12)}">
+      <div class="vd-h">${o.tag ? `<span>${esc(o.tag)}</span>` : ''}<b>${esc(o.head || 'ORIGINAL?')}</b></div>
+      <div class="vd-p" style="${lt >= st ? `filter:saturate(${o.ok ? 1 : .35})` : ''}"><p>${esc(o.title || '')}</p><div class="vd-a">${adds}</div>
+      ${lt >= st ? `<div class="vd-s" style="opacity:${k};transform:rotate(${o.rot ?? -6}deg) scale(${sc})">${esc(o.mark || (o.ok ? 'ORIGINAL' : 'NOT ORIGINAL'))}<em>${o.ok ? '✓' : '✕'}</em></div>` : ''}</div>
+      ${o.why ? `<small style="opacity:${clamp((lt - st - .35) / .3)}">${esc(o.why)}</small>` : ''}</div></div>`;
   } else if (o.type === 'cta') {
     const kw = String(o.keyword || T.keyword || 'LINK').toUpperCase(); const ty = clamp((lt - .5) / .8); const nch = Math.floor(ty * kw.length + .0001);
     const pp = clamp((lt - 1.5) / .15) - clamp((lt - 1.75) / .15); const eb = back((lt - 1.8) / .35);

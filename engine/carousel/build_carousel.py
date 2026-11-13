@@ -9,6 +9,7 @@ slide types: point{n,title,body} list{title,items} stat{value,label,body} compar
              doc{title,tag,head,meta,lines:[{k,v,n}],foot}  (paper document mock; lines with "n" get a numbered marker)
              chat{n,label,title,who,status,msgs:[{from:"them"|"you",text}],note}  (DM thread mock: client bubble + your reply script)
              bars{tag,title,rows:[{k,v,pct,note}],foot}  (stage -> value meter rows with big bars)
+             split{tag,title,total_label,total,segs:[{pct,label,when,note}],foot}  (payment schedule: one segmented bar + legend)
              table{tag,title,a:{name},b:{name},pick:'a'|'b',rows:[{k,a,b}],foot}  (versus table: attribute rows x 2 columns)
 cta.scene{set,cam,action,props,sets} optional: renders the mascot in a window under the CTA text
 """
@@ -115,6 +116,14 @@ def slide_html(s, i, n, kw):
         return f'''<section class="s myth" data-n="{E(s.get("n",""))}"><div class="mlab">{lab}</div><h2 class="sm">{H(s.get("title"))}</h2>
 <div class="mcard"><span>MYTH</span><p>{E(s.get("myth"))}</p><em>✕</em></div><div class="marr">↓</div>
 <div class="fcard"><span>FACT</span><p>{H(s.get("fact"))}</p><em>✓</em></div>{why}{swipe}{foot}</section>'''
+    if t == "split":  # payment split: one big segmented bar (segments {pct,label,when,note}) + a legend row per segment; optional total + foot
+        segs = s.get("segs", []); COL = ["#E8664A", "#F2B33D", "#36B5A0", "#B6A2E3", "#2A1F33"]
+        bar = "".join(f'<i style="flex:{max(1,float(g.get("pct",0))):.0f};background:{COL[k % 5]}"><b>{E(g.get("label", str(g.get("pct",""))+"%"))}</b></i>' for k, g in enumerate(segs))
+        leg = "".join(f'<div class="sp-r"><i style="background:{COL[k % 5]}"></i><div><b>{E(g.get("label", str(g.get("pct",""))+"%"))} · {H(g.get("when"))}</b>{f"<p>{E(g.get(chr(110)+chr(111)+chr(116)+chr(101)))}</p>" if g.get("note") else ""}</div></div>' for k, g in enumerate(segs))
+        tag = f'<div class="rtag">{E(s.get("tag"))}</div>' if s.get("tag") else ""
+        tot = f'<div class="sp-t"><span>{E(s.get("total_label","PROJECT"))}</span><b>{E(s.get("total"))}</b></div>' if s.get("total") else ""
+        sf = f'<div class="bfoot">{H(s.get("foot"))}</div>' if s.get("foot") else ""
+        return f'<section class="s split">{tag}<h2 class="sm">{H(s.get("title"))}</h2>{tot}<div class="sp-bar">{bar}</div><div class="sp-l">{leg}</div>{sf}{swipe}{foot}</section>'
     if t == "quote":
         return f'<section class="s dark"><div class="q">“</div><h2 class="qt">{E(s["text"])}</h2><p class="by">{E(s.get("by"))}</p>{swipe}{foot}</section>'
     if t == "cta":

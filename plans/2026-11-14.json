@@ -1,0 +1,699 @@
+{
+ "date": "2026-11-14",
+ "items": [
+  {
+   "slot": 1,
+   "kind": "carousel",
+   "publish_at": "2026-11-14T10:00:00+05:30",
+   "spec": {
+    "id": "2026-11-14-c1",
+    "keyword": null,
+    "seam": true,
+    "cover": {
+     "style": "poster",
+     "theme": "ink",
+     "series": "CREATOR MONEY · DEPOSITS",
+     "kicker": "GET PAID FIRST",
+     "title": "No deposit? You're the *bank*.",
+     "sub": "How much to ask, and the exact words.",
+     "scene": {
+      "set": "studio",
+      "cam": "wide",
+      "action": "shock",
+      "props": [],
+      "sets": {
+       "studio": {
+        "laptop": {
+         "title": "invoice_031",
+         "lines": [
+          "Deposit: 0%",
+          "Paid: ...after?"
+         ]
+        }
+       }
+      }
+     }
+    },
+    "slides": [
+     {
+      "type": "myth",
+      "n": "",
+      "label": "MYTH VS FACT",
+      "title": "Deposits look *pushy*",
+      "myth": "Asking for money upfront scares good clients away.",
+      "fact": "A deposit is *normal*. Freelance payment guides put it at 25–50% of the project.",
+      "why": "It holds your start date and filters out clients who won't pay."
+     },
+     {
+      "type": "bars",
+      "tag": "BY PROJECT SIZE",
+      "title": "How much to *ask*",
+      "rows": [
+       {
+        "k": "Small one-off job",
+        "v": "50–100%",
+        "pct": 95,
+        "note": "One logo, one post: full upfront is fair."
+       },
+       {
+        "k": "Typical project",
+        "v": "25–50%",
+        "pct": 50,
+        "note": "Lean to 50% with a new client."
+       },
+       {
+        "k": "Big or long project",
+        "v": "25–33%",
+        "pct": 30,
+        "note": "Then bill the rest by milestone."
+       }
+      ],
+      "foot": "Common ranges from freelance payment guides, not a law."
+     },
+     {
+      "type": "split",
+      "tag": "LONG PROJECT",
+      "title": "Split it in *three*",
+      "total_label": "EXAMPLE SCHEDULE",
+      "total": "100%",
+      "segs": [
+       {
+        "pct": 30,
+        "label": "30%",
+        "when": "to *start*",
+        "note": "Your start date is held once it clears."
+       },
+       {
+        "pct": 30,
+        "label": "30%",
+        "when": "at the *midpoint*",
+        "note": "Name the deliverable that triggers it."
+       },
+       {
+        "pct": 40,
+        "label": "40%",
+        "when": "on *delivery*",
+        "note": "Due within 14 days."
+       }
+      ],
+      "foot": "Rule: never carry more than one phase of work unpaid."
+     },
+     {
+      "type": "chat",
+      "label": "COPY THIS",
+      "n": "",
+      "title": "Can we skip the *deposit?*",
+      "who": "Client",
+      "status": "online",
+      "msgs": [
+       {
+        "from": "them",
+        "text": "Can we skip the deposit? We always pay on time."
+       },
+       {
+        "from": "you",
+        "text": "My standard terms: 50% to lock your start date, the rest 14 days after delivery. I start when it clears."
+       }
+      ],
+      "note": "State it as your policy. Don't ask permission."
+     },
+     {
+      "type": "doc",
+      "tag": "SCREENSHOT THIS",
+      "title": "Put it in the *proposal*",
+      "head": "PROPOSAL · PAYMENT TERMS",
+      "meta": "Example terms · not legal advice",
+      "lines": [
+       {
+        "k": "Deposit",
+        "v": "50% on signing",
+        "n": "1"
+       },
+       {
+        "k": "Start date",
+        "v": "Held once the deposit clears",
+        "n": "2"
+       },
+       {
+        "k": "Balance",
+        "v": "Due 14 days after delivery",
+        "n": "3"
+       },
+       {
+        "k": "Cancel early",
+        "v": "Full refund if work hasn't started",
+        "n": "4"
+       },
+       {
+        "k": "After start",
+        "v": "Deposit covers work done",
+        "n": "5"
+       }
+      ],
+      "foot": "Agree it before the yes, not after the work."
+     },
+     {
+      "type": "recap",
+      "tag": "SCREENSHOT THIS",
+      "title": "Deposit *cheat sheet*",
+      "items": [
+       "*25–50%* is the usual range",
+       "Small jobs: up to *100%*",
+       "Long jobs: *30 / 30 / 40*",
+       "Say it as *policy*"
+      ]
+     },
+     {
+      "type": "cta",
+      "title": "Save this for your next *proposal*",
+      "keyword": null,
+      "sub": "Send it to the friend who starts work on a handshake. Follow @claybyte.in for creator money tips.",
+      "scene": {
+       "set": "desk",
+       "cam": "wide",
+       "action": "celebrate",
+       "props": [
+        "coins"
+       ],
+       "sets": {
+        "desk": {
+         "phone": {
+          "app": "Bank",
+          "title": "Payment in",
+          "lines": [
+           "Deposit · 50%",
+           "Project starts Mon"
+          ],
+          "pill": "Received"
+         }
+        }
+       }
+      }
+     }
+    ]
+   },
+   "caption": "No deposit? Then you're the client's bank, lending them your time for free.\n\nHow much to ask (common ranges from freelance payment guides):\n- Small one-off job (one logo, one post): 50–100% upfront\n- Typical project: 25–50%, lean to 50% with a new client\n- Big or long project: 25–33% to start, then milestones\n\nLong project? Split it 30 / 30 / 40: to start, at a named midpoint, on delivery. Never carry more than one phase of work unpaid.\n\nWhen they ask to skip it, don't ask permission. Say it as policy:\n\"My standard terms: 50% to lock your start date, the rest 14 days after delivery. I start when it clears.\"\n\nPut it in the proposal, before the yes (example terms, not legal advice).\n\nSave this for your next proposal. Send it to the friend who starts work on a handshake.\n\n#freelancetips #creatorbusiness #getpaid #agencylife #freelancer #contentcreator",
+   "keyword": null,
+   "topic": "Deposits: 25-50% usual range, by project size (small up to 100%, long 25-33% + milestones), 30/30/40 split, policy-not-permission reply, payment terms in the proposal",
+   "pillar": 4,
+   "sources": [
+    "https://penly.it.com/blog/how-to-collect-a-deposit-from-freelance-clients",
+    "https://ruul.io/blog/freelance-payment-terms",
+    "https://www.rocketlawyer.com/q-and-a/answer/how-much-deposit-to-require-in-contract"
+   ]
+  },
+  {
+   "slot": 2,
+   "kind": "reel",
+   "publish_at": "2026-11-14T13:30:00+05:30",
+   "script": {
+    "id": "2026-11-14-r1",
+    "keyword": null,
+    "voice": "af_bella:0.7+af_heart:0.3",
+    "speed": 1.15,
+    "seed": 45,
+    "caps": "bold",
+    "caps_y": 985,
+    "highlight": [
+     "Four",
+     "four",
+     "original",
+     "Original",
+     "watermark",
+     "subtitles",
+     "credit",
+     "remix",
+     "new",
+     "followers",
+     "75%",
+     "three"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "desk": {
+      "phone": {
+       "app": "Reels",
+       "title": "repost_04.mp4",
+       "lines": [
+        "+ watermark",
+        "+ credit"
+       ],
+       "pill": "0 recs"
+      }
+     },
+     "studio": {
+      "laptop": {
+       "title": "edit",
+       "lines": [
+        "> add: your take",
+        "> add: new info"
+       ]
+      }
+     },
+     "machine": {
+      "sign": "REMIX",
+      "wall": "#8DB2DA"
+     }
+    },
+    "beats": [
+     {
+      "banner": "ORIGINAL OR NOT?",
+      "vo": "Instagram stopped recommending repost accounts. Four posts. Original or not?",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "stamp",
+       "text": "NOT RECOMMENDED",
+       "mark": "x",
+       "at": 0.35,
+       "size": 50
+      }
+     },
+     {
+      "banner": "ROUND 1",
+      "vo": "Round one. Someone else's clip, plus your watermark. Not original.",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "verdict",
+       "tag": "ROUND 1",
+       "head": "Original?",
+       "title": "Someone else's clip",
+       "adds": [
+        "your watermark"
+       ],
+       "ok": false,
+       "at": 0.72
+      }
+     },
+     {
+      "banner": "ROUND 2",
+      "vo": "Round two. Their clip, plus subtitles and a credit. Still not original.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "sad"
+      },
+      "overlay": {
+       "type": "verdict",
+       "tag": "ROUND 2",
+       "head": "Original?",
+       "title": "Their clip",
+       "adds": [
+        "subtitles",
+        "a credit"
+       ],
+       "ok": false,
+       "at": 0.74
+      }
+     },
+     {
+      "banner": "ROUND 3",
+      "vo": "Round three. A meme template, with your own joke on it. That can count.",
+      "set": "machine",
+      "cam": "low",
+      "caps_y": 1150,
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "verdict",
+       "tag": "ROUND 3",
+       "head": "Original?",
+       "title": "A meme template",
+       "adds": [
+        "your own text"
+       ],
+       "ok": true,
+       "mark": "CAN COUNT",
+       "at": 0.78
+      }
+     },
+     {
+      "banner": "ROUND 4",
+      "vo": "Round four. Their clip, remixed with your reaction and a new point. Original.",
+      "set": "stage",
+      "cam": "low",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "verdict",
+       "tag": "ROUND 4",
+       "head": "Original?",
+       "title": "Their clip, remixed",
+       "adds": [
+        "your reaction",
+        "a new point"
+       ],
+       "ok": true,
+       "at": 0.8
+      }
+     },
+     {
+      "banner": "THE TEST",
+      "vo": "The test. Does your edit add something new? Or just restate it?",
+      "set": "desk",
+      "cam": "wide",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "checklist",
+       "items": [
+        "Does it add new info?",
+        "Or just restate it?"
+       ]
+      }
+     },
+     {
+      "banner": "WHY IT MATTERS",
+      "vo": "Instagram says three in four US recommendations are now original posts.",
+      "set": "studio",
+      "cam": "wide",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "overlay": {
+       "type": "bigstat",
+       "value": "75%",
+       "label": "OF US RECS ARE ORIGINAL POSTS"
+      }
+     },
+     {
+      "banner": "SEND THIS",
+      "vo": "Send this to the friend who reposts with a watermark.",
+      "set": "stage",
+      "cam": "wide",
+      "mascot": {
+       "action": "wave"
+      },
+      "overlay": {
+       "type": "send",
+       "title": "Send this to",
+       "who": "the friend who reposts with a watermark",
+       "sub": "Followers still see reposts. Recommendations don't."
+      }
+     }
+    ]
+   },
+   "caption": "Adding a watermark doesn't make a repost yours.\n\nSince April 30, 2026, Instagram doesn't recommend accounts that mostly post unoriginal reels, photos or carousels. Your followers still see them; new people don't.\n\n4 quick calls:\n1. Someone else's clip + your watermark: not original\n2. Their clip + subtitles + a credit in the caption: still not original\n3. A meme template with your own text on it: can count\n4. Their clip, remixed with your reaction and a new point: original\n\nThe test: does your edit add something new, or just restate it?\n\nInstagram says 75% of US recommendations now come from original posts.\n\nSend this to the friend who reposts with a watermark.\n\n#instagramtips #contentcreator #reelstips #creatortips #instagramgrowth #originalcontent",
+   "keyword": null,
+   "topic": "Instagram originality rule (Apr 30 2026): watermark/subtitles/credit don't make reposts original; own text on templates and remix with a new point can; the add-something-new test",
+   "pillar": 2,
+   "sources": [
+    "https://creators.instagram.com/blog/rewarding-original-creators-on-instagram",
+    "https://techcrunch.com/2026/04/30/instagram-restricts-reach-of-content-aggregators-in-new-crackdown/"
+   ]
+  },
+  {
+   "slot": 3,
+   "kind": "reel",
+   "publish_at": "2026-11-14T19:30:00+05:30",
+   "script": {
+    "id": "2026-11-14-r2",
+    "keyword": "IDEA",
+    "style": "duet",
+    "caps": "bold",
+    "caps_y": 960,
+    "banner_style": "chip",
+    "voices": {
+     "pip": "am_michael:0.6+am_fenrir:0.4",
+     "byte": "af_heart"
+    },
+    "voice": "af_heart",
+    "speed": 1.08,
+    "seed": 46,
+    "highlight": [
+     "night",
+     "Adobe",
+     "Claude",
+     "connector",
+     "light",
+     "background",
+     "Straighten",
+     "portrait",
+     "crop",
+     "IDEA",
+     "login"
+    ],
+    "cover_beat": 0,
+    "sets": {
+     "night": {}
+    },
+    "beats": [
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "IF YOU SHOOT *AT NIGHT*",
+      "vo": "If you shoot your covers on a phone at night, this one's for you.",
+      "mascot": {
+       "action": "point"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "BYTE FIXES · *EP 11*",
+      "vo": "That's me. Look. Dark, crooked, messy background.",
+      "pip": {
+       "action": "sad"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "BYTE FIXES · *EP 11*",
+      "vo": "Oof. Okay. Do you know Photoshop?",
+      "mascot": {
+       "action": "think"
+      },
+      "overlay": {
+       "type": "pill",
+       "label": "COVER PHOTO",
+       "from": 3,
+       "to": 3,
+       "suffix": " problems"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "BYTE FIXES · *EP 11*",
+      "vo": "No. I open it and close it again.",
+      "pip": {
+       "action": "facepalm"
+      },
+      "speed": 0.98
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "THE *SHORTCUT*",
+      "vo": "You don't need to. Claude has an Adobe connector.",
+      "mascot": {
+       "action": "point"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "two",
+      "banner": "THE *SHORTCUT*",
+      "vo": "Wait. Adobe, inside Claude?",
+      "pip": {
+       "action": "shock"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 1 · *CONNECT*",
+      "step": [
+       1,
+       3
+      ],
+      "vo": "Step one. Add the Adobe connector in Claude.",
+      "mascot": {
+       "action": "type"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 2 · *ASK*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Step two. Upload the photo. Say exactly what's wrong.",
+      "mascot": {
+       "action": "point"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "two",
+      "banner": "STEP 2 · *ASK*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Like… make it better?",
+      "pip": {
+       "action": "think"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 2 · *ASK*",
+      "step": [
+       2,
+       3
+      ],
+      "vo": "Be specific. Balance the light. Blur the background. Straighten it.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "terminal",
+       "lines": [
+        {
+         "role": "you",
+         "text": "Balance the lighting"
+        },
+        {
+         "role": "you",
+         "text": "Blur the background"
+        },
+        {
+         "role": "you",
+         "text": "Straighten it"
+        }
+       ]
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "byte",
+      "banner": "STEP 3 · *CROP*",
+      "step": [
+       3,
+       3
+      ],
+      "vo": "Step three. Ask for a portrait crop for your cover.",
+      "mascot": {
+       "action": "celebrate"
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "wide",
+      "banner": "STEP 3 · *CROP*",
+      "step": [
+       3,
+       3
+      ],
+      "vo": "Okay. That actually looks like a real cover.",
+      "pip": {
+       "action": "celebrate"
+      },
+      "speed": 1.0,
+      "overlay": {
+       "type": "stamp",
+       "text": "COVER READY",
+       "mark": "check",
+       "at": 0.35,
+       "size": 52
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "pip",
+      "banner": "*PAYOFF*",
+      "vo": "Do I need to pay for Adobe?",
+      "pip": {
+       "action": "think"
+      },
+      "speed": 1.0
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "*PAYOFF*",
+      "vo": "No Adobe login needed to start. Sign in for more tools and higher limits.",
+      "mascot": {
+       "action": "point"
+      },
+      "overlay": {
+       "type": "card",
+       "title": "ADOBE IN CLAUDE",
+       "items": [
+        "No Adobe login needed to start",
+        "Sign in: more tools + limits"
+       ]
+      }
+     },
+     {
+      "who": "pip",
+      "set": "night",
+      "cam": "two",
+      "banner": "*PAYOFF*",
+      "vo": "One chat. Cover fixed. Okay, I'm posting.",
+      "pip": {
+       "action": "celebrate"
+      }
+     },
+     {
+      "who": "byte",
+      "set": "night",
+      "cam": "wide",
+      "banner": "FREE *TOOL*",
+      "vo": "Need reel ideas to shoot next? Comment IDEA.",
+      "mascot": {
+       "action": "celebrate"
+      },
+      "caps_y": 1080,
+      "overlay": {
+       "type": "cta",
+       "keyword": "IDEA",
+       "follow": false,
+       "y": 960
+      }
+     }
+    ]
+   },
+   "caption": "Comment IDEA and I'll DM you the Reel Idea Machine (free Claude skill + PDF guide).\n\nIf you shoot your covers on a phone at night, this one's for you. (Byte fixes · EP 11)\n\nClaude has an Adobe connector (Adobe for creativity), so you can fix a photo in chat:\n1. Add the Adobe connector in Claude\n2. Upload the photo and say exactly what's wrong: balance the lighting, blur the background, straighten it\n3. Ask for a portrait crop for your cover\n\nBe specific. \"Make it better\" gets you a guess.\n\nNo Adobe login is needed to start; signing in with Adobe gets you more tools and higher limits.\n\n#claudeai #aitools #contentcreator #photoediting #creatortips #instagramtips",
+   "keyword": "IDEA",
+   "topic": "Fix a dark, crooked cover photo inside Claude with the Adobe connector: connect, ask specifically (light, background blur, straighten), portrait crop (Byte fixes EP 11)",
+   "pillar": 1,
+   "sources": [
+    "https://blog.adobe.com/en/publish/2026/04/28/adobe-for-creativity-connector",
+    "https://claude.com/blog/interactive-connectors-full-tool"
+   ]
+  }
+ ]
+}

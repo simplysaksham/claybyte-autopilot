@@ -85,7 +85,7 @@ Characters: **Pip** (original clay creator: teal hoodie, lilac beanie) and **Byt
 - Pip actions: talk (default when speaking), listen (default otherwise), sad, shock, think, point, wave, celebrate, facepalm, type (holds a laptop).
 - `banner_style:"chip"`: banner is a small header; `*word*` turns yellow; `step:[i,n]` adds progress dashes. Keep the same banner for a section ("STEP 2 · *SCORE*").
 - `caps:"bold"`: 3-word white captions with yellow keywords and numbers.
-- New overlays: `pill` {label,from,to,suffix,compact,log} (views pill that counts up) · `bigcount` {label,from,to,prefix,suffix,of,unit,bar,sub,log} · `grid` {n,cols,label} (thumbnails filling in) · `stamp` {text,mark:"x"|"check",at} · `phone` {text,pill,sub,bg}. Also `beforeafter`, `send` and all older overlays.
+- New overlays: `pill` {label,from,to,suffix,compact,log} (views pill that counts up) · `bigcount` {label,from,to,prefix,suffix,of,unit,bar,sub,log} · `grid` {n,cols,label} (thumbnails filling in) · `stamp` {text,mark:"x"|"check",at,size} · `verdict` {tag,head,title,adds:[≤2],ok,mark,at,why,y} · `phone` {text,pill,sub,bg}. Also `beforeafter`, `send` and all older overlays.
 - Proof beats must be honest: show a before → after rewrite or an illustrative character moment ("my last reel got 6 views"), never fake view counts presented as real results.
 
 ## Carousel JSON (engine/carousel/build_carousel.py)
@@ -102,6 +102,7 @@ Characters: **Pip** (original clay creator: teal hoodie, lilac beanie) and **Byt
            {"type":"flag","n":"01","label":"RED FLAG","title":"…","says":"…","fix":"…"},
            {"type":"recap","title":"…","items":["…"]},
            {"type":"doc","tag":"SCREENSHOT THIS","title":"…","head":"INVOICE #024","meta":"…","lines":[{"k":"Due by","v":"15 Nov","n":"1"}],"foot":"…"},
+           {"type":"split","title":"…","segs":[{"pct":30,"label":"30%","when":"to *start*","note":"…"}],"foot":"…"},
            {"type":"cta","title":"…","keyword":"IDEA","scene":{"set":"studio","cam":"wide","action":"celebrate"}}]}
 ```
 ### Cover (slide 1): the most important slide
