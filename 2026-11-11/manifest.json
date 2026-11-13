@@ -1,0 +1,51 @@
+{
+ "date": "2026-11-11",
+ "rows": [
+  {
+   "kind": "carousel",
+   "title": "Client offboarding: notice in writing, sign-off, separate final invoice, handover pack, testimonial after payment",
+   "caption": "Fire clients. Keep the bridge. Save this for the day you need it.\n\nGhosting feels easier. It also kills the referral and the testimonial you earned.\n\nThe clean exit:\n1. Give notice in writing, with the last day named\n2. Finish or close open work and get sign-off in writing (silence isn't a yes)\n3. Send the final invoice as its own email\n4. Hand over logins, files, the posting schedule and a 1-page how-to\n5. Ask for a testimonial only after the invoice is paid\n\nKeep the notice to dates and deliverables. Vent to your friends, not the client.\n\nSend this to a freelancer stuck with a client they've outgrown.\n\n#freelancelife #socialmediamanager #agencylife #clientmanagement #freelancetips #creatorbusiness",
+   "media_urls": [
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-11/2026-11-11-c1_01.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-11/2026-11-11-c1_02.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-11/2026-11-11-c1_03.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-11/2026-11-11-c1_04.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-11/2026-11-11-c1_05.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-11/2026-11-11-c1_06.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-11/2026-11-11-c1_07.jpg",
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-11/2026-11-11-c1_08.jpg"
+   ],
+   "cover_url": null,
+   "keyword": null,
+   "publish_at": "2026-11-11T10:00:00+05:30",
+   "topic": "Client offboarding: notice in writing, sign-off, separate final invoice, handover pack, testimonial after payment",
+   "pillar": 3
+  },
+  {
+   "kind": "reel",
+   "title": "Exclusivity fee: price category exclusivity by length (30/90/365 days) on top of the base fee; write category, end date, 30-day after-window",
+   "caption": "\"Just don't work with our competitors.\" That line is worth money. Save this before you sign.\n\nExclusive means saying no to other paid deals, so it gets its own fee on top of your content fee. One 2026 pricing guide suggests, for category exclusivity:\n\u2022 30 days: +20\u201335%\n\u2022 90 days: +50\u201375%\n\u2022 12 months: +100\u2013150%\n\u2022 No other brands at all, 30 days: +50\u201380%\n\nBefore you sign, write down:\n1. The category (name the competitor brands)\n2. The end date\n3. A short after-window (aim for 30 days)\n\nThese are one guide's ranges, not rules. Not legal advice.\n\nSend this to the friend who said yes to \"exclusive\" for free.\n\n#branddeals #creatorbusiness #influencertips #ugccreator #contentcreator #creatoreconomy",
+   "media_urls": [
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-11/2026-11-11-r1.mp4"
+   ],
+   "cover_url": "https://simplysaksham.github.io/claybyte-autopilot/2026-11-11/2026-11-11-r1_cover.jpg",
+   "keyword": null,
+   "publish_at": "2026-11-11T13:30:00+05:30",
+   "topic": "Exclusivity fee: price category exclusivity by length (30/90/365 days) on top of the base fee; write category, end date, 30-day after-window",
+   "pillar": 4
+  },
+  {
+   "kind": "reel",
+   "title": "Build a 30-day content calendar in Claude Sheets (beta) with one prompt (Byte fixes EP 8)",
+   "caption": "Comment IDEA and I'll DM you the free Reel Idea Machine (a Claude skill + PDF guide) to fill your calendar.\n\nA folder of 42 screenshots is not a content plan.\n\nByte fixes \u00b7 EP 8: Claude Sheets just launched in beta (paid plans, Nov 10). It builds spreadsheets with tabs, formulas, formatting and drop-downs from a prompt.\n\n1. Ask: \"Make a 30-day Instagram content calendar. Columns: date, pillar, hook, format, status.\"\n2. Add: \"Make status a drop-down: idea / filmed / posted. Add a tab that counts posts by pillar.\"\n3. Use it: every time you post, flip the status.\n\nTonight you don't scroll your screenshots. You check the sheet and film what it says.\n\n#claudeai #aitools #contentcalendar #contentcreator #creatortips #aiforcreators",
+   "media_urls": [
+    "https://simplysaksham.github.io/claybyte-autopilot/2026-11-11/2026-11-11-r2.mp4"
+   ],
+   "cover_url": "https://simplysaksham.github.io/claybyte-autopilot/2026-11-11/2026-11-11-r2_cover.jpg",
+   "keyword": "IDEA",
+   "publish_at": "2026-11-11T19:30:00+05:30",
+   "topic": "Build a 30-day content calendar in Claude Sheets (beta) with one prompt (Byte fixes EP 8)",
+   "pillar": 1
+  }
+ ]
+}
